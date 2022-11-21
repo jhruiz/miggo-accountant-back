@@ -30,20 +30,20 @@ class CreateUsersTable extends Migration
 
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('username')->unique();
-            $table->string('imagen');
-            $table->string('password');
-            $table->integer('estadologin');
-            $table->integer('intentos');
-            $table->integer('preselect');
-            $table->date('validaciongestion');
-            $table->string('email')->unique();
+            $table->string('username')->unique()->nullable();
+            $table->string('imagen')->nullable();
+            $table->string('password')->nullable();
+            $table->integer('estadologin')->nullable();
+            $table->integer('intentos')->nullable();
+            $table->integer('preselect')->nullable();
+            $table->date('validaciongestion')->nullable();
+            $table->string('email')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->rememberToken();
+            $table->rememberToken()->nullable();
 
-            $table->unsignedBigInteger('persona_id');
-            $table->unsignedBigInteger('perfile_id');
-            $table->unsignedBigInteger('estado_id');
+            $table->unsignedBigInteger('persona_id')->nullable();
+            $table->unsignedBigInteger('perfile_id')->nullable();
+            $table->unsignedBigInteger('estado_id')->nullable();
             $table->unsignedBigInteger('empresa_id')->unsigned()->nullable();
 
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
