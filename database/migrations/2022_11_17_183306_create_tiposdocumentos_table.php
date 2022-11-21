@@ -24,11 +24,11 @@ class CreateTiposdocumentosTable extends Migration
 
             $table->unsignedBigInteger('tiposdocumento_id');
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
 
             $table->foreign('tiposdocumento_id')->references('id')->on('tiposdocumentos')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

@@ -20,14 +20,14 @@ class CreatePrecargueinventariosTable extends Migration
 
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('estado_id');
             $table->unsignedBigInteger('proveedore_id');
             $table->unsignedBigInteger('tipopago_id');
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
             $table->foreign('deposito_id')->references('id')->on('depositos')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
             $table->foreign('proveedore_id')->references('id')->on('proveedores')->onDelete('cascade');
             $table->foreign('tipopago_id')->references('id')->on('tipopagos')->onDelete('cascade');

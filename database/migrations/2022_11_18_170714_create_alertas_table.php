@@ -51,7 +51,7 @@ class CreateAlertasTable extends Migration
             $table->unsignedBigInteger('estadoalerta_id');
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('vehiculo_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('prefactura_id');
             $table->unsignedBigInteger('factura_id');
 
@@ -61,7 +61,7 @@ class CreateAlertasTable extends Migration
             $table->foreign('estadoalerta_id')->references('id')->on('estadoalertas')->onDelete('cascade');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->foreign('vehiculo_id')->references('id')->on('vehiculos')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('prefactura_id')->references('id')->on('prefacturas')->onDelete('cascade');
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');
 

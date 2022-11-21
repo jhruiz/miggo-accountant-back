@@ -14,10 +14,10 @@ class CreateItemsgastosTable extends Migration
             $table->text('descripcion');
             $table->date('fechagasto');
 
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();

@@ -42,14 +42,14 @@ class CreateTipodepositosTable extends Migration
             $table->unsignedBigInteger('empresa_id');
             $table->unsignedBigInteger('ciudade_id');
             $table->unsignedBigInteger('estado_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('regimene_id');
             $table->unsignedBigInteger('tipodeposito_id')->unsigned()->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('regimene_id')->references('id')->on('regimenes')->onDelete('cascade');
             $table->foreign('tipodeposito_id')->references('id')->on('tipodepositos')->onDelete('cascade');
             
@@ -70,15 +70,15 @@ class CreateTipodepositosTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('deposito_usuario_empresa', function (Blueprint $table) {
+        Schema::create('deposito_user_empresa', function (Blueprint $table) {
             $table->id();
 
             $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('deposito_id')->references('id')->on('depositos')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
            
             $table->softDeletes();
@@ -93,7 +93,7 @@ class CreateTipodepositosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deposito_usuario_empresa');
+        Schema::dropIfExists('deposito_user_empresa');
         Schema::dropIfExists('deposito_cliente_empresa');
         Schema::dropIfExists('depositos');
         Schema::dropIfExists('tipodepositos');

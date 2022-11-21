@@ -35,12 +35,12 @@ class CreateReteicaretefuentesTable extends Migration
             $table->double('prcretefuente');
             $table->double('vlrretefuente');
 
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('proveedore_id');
             $table->unsignedBigInteger('reteica_id');
             $table->unsignedBigInteger('retefuente_id');
             
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('proveedore_id')->references('id')->on('proveedores')->onDelete('cascade');
             $table->foreign('reteica_id')->references('id')->on('reteicaretefuentes')->onDelete('cascade');
             $table->foreign('retefuente_id')->references('id')->on('reteicaretefuentes')->onDelete('cascade');

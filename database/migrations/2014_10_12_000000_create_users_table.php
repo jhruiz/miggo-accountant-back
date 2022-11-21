@@ -4,13 +4,9 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsuariosTable extends Migration
+class CreateUsersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
 
@@ -32,7 +28,7 @@ class CreateUsuariosTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('usuarios', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('username')->unique();
             $table->string('imagen');
@@ -71,13 +67,13 @@ class CreateUsuariosTable extends Migration
         $table->string('limitecredito');
         $table->text('observaciones');
 
-        $table->unsignedBigInteger('usuario_id');//creador
+        $table->unsignedBigInteger('user_id');//creador
         $table->unsignedBigInteger('estado_id');
         $table->unsignedBigInteger('empresa_id');
         $table->unsignedBigInteger('regimene_id');
         $table->unsignedBigInteger('persona_id')->unsigned()->nullable();
 
-        $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
         $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
         $table->foreign('regimene_id')->references('id')->on('regimenes')->onDelete('cascade');
@@ -97,13 +93,13 @@ class CreateUsuariosTable extends Migration
         $table->text('observaciones');
         $table->integer('estadisticas');
 
-        $table->unsignedBigInteger('usuario_id');
+        $table->unsignedBigInteger('user_id');
         $table->unsignedBigInteger('estado_id')->unsigned()->nullable();
         $table->unsignedBigInteger('empresa_id');
         $table->unsignedBigInteger('clasificacioncliente_id')->unsigned()->nullable();
         $table->unsignedBigInteger('persona_id')->unsigned()->nullable();
 
-        $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
         $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
         $table->foreign('clasificacioncliente_id')->references('id')->on('clasificacionclientes')->onDelete('cascade');
@@ -119,7 +115,7 @@ class CreateUsuariosTable extends Migration
     {
         Schema::dropIfExists('clientes');
         Schema::dropIfExists('proveedores');
-        Schema::dropIfExists('usuarios');
+        Schema::dropIfExists('users');
         Schema::dropIfExists('personas');
 
     }

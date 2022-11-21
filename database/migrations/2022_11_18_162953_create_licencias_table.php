@@ -40,18 +40,18 @@ class CreateLicenciasTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('licencias_usuarios', function (Blueprint $table) {
+        Schema::create('licencias_users', function (Blueprint $table) {
             $table->id();
             $table->date('fechainicio');
             $table->date('fechafin');
             $table->string('codigo');
 
             $table->unsignedBigInteger('licencia_id');
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('estado_id');
 
             $table->foreign('licencia_id')->references('id')->on('licencias')->onDelete('cascade');
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
 
             $table->softDeletes();
@@ -66,7 +66,7 @@ class CreateLicenciasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('licencias_usuarios');
+        Schema::dropIfExists('licencias_users');
         Schema::dropIfExists('licencia_empresa');
         Schema::dropIfExists('licencias');
     }

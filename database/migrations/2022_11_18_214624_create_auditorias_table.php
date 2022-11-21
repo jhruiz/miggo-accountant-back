@@ -18,9 +18,9 @@ class CreateAuditoriasTable extends Migration
             $table->string('accion');
             $table->text('descripcion');
 
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

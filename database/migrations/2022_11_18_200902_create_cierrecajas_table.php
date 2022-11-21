@@ -18,11 +18,11 @@ class CreateCierrecajasTable extends Migration
             $table->integer('traslados_gas');
             $table->integer('abonos');
 
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('caja_id');
             $table->unsignedBigInteger('empresa_id');
 
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('caja_id')->references('id')->on('cuentas')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 

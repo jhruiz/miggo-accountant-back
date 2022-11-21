@@ -40,12 +40,12 @@ class CreateTipoeventosTable extends Migration
                 $table->string('telefono');
                 $table->string('placa');
 
-                $table->unsignedBigInteger('usuario_id');
+                $table->unsignedBigInteger('user_id');
                 $table->unsignedBigInteger('empresa_id');
                 $table->unsignedBigInteger('estadoalerta_id');
                 $table->unsignedBigInteger('tipoevento_id');
 
-                $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+                $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
                 $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
                 $table->foreign('estadoalerta_id')->references('id')->on('estadoalertas')->onDelete('cascade');
                 $table->foreign('tipoevento_id')->references('id')->on('tipoeventos')->onDelete('cascade');

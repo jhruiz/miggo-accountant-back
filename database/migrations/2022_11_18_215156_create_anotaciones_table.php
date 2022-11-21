@@ -13,11 +13,11 @@ class CreateAnotacionesTable extends Migration
             $table->id();
             $table->text('descripcion');
 
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('documento_id');
             
-            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->foreign('documento_id')->references('id')->on('documentos')->onDelete('cascade');
 

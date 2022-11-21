@@ -17,11 +17,11 @@ class CreateCotizacionesTable extends Migration
             $table->string('direccion_cliente');
             $table->text('observacion');
             
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('vehiculo_id');
 
-            $table->foreign('usuario_id')->references('id')->on('empresas')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->foreign('vehiculo_id')->references('id')->on('vehiculos')->onDelete('cascade');
 
