@@ -38,12 +38,14 @@ class CreateUsersTable extends Migration
             $table->integer('preselect');
             $table->date('validaciongestion');
             $table->string('email')->unique();
+
+            $table->boolean('estatus')->default('1');//activo o desctivado
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
 
-            $table->unsignedBigInteger('persona_id');
-            $table->unsignedBigInteger('perfile_id');
-            $table->unsignedBigInteger('estado_id');
+            $table->unsignedBigInteger('persona_id')->nullable();
+            $table->unsignedBigInteger('perfile_id')->nullable();
+            $table->unsignedBigInteger('estado_id')->nullable();
             $table->unsignedBigInteger('empresa_id')->unsigned()->nullable();
 
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
