@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\ApiController;
-use App\Http\Controllers\Controller;
+//use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -19,25 +19,34 @@ class UserController extends ApiController
         return $this->showAll($usuarios);
     }
 
-    public function store(Request $request) //form-data
+    public function store(UserRequest $request) //form-data
     {
-        /*
-        $reglas = [
-                'name' => 'required',
+        
+      /*  $rules = [
+                'username' => 'min:6|required',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:6|confirmed'
             ];*/
 
-        //$this->validate($request, $reglas);
+       // $this->validate($request, $rules);
 
         $user = new User($request->all());
+
+        if ($request->file('imagen')) {
+
+            $file = $request->file('imagen');
+            $nombre = 'user'.time() . '.' . $file->getClientOriginalExtension();
+            $path = public_path() . '\images\img_api\users';
+            $file->move($path, $nombre);
+            $user->imagen = $nombre;
+        }
 
         $user->password  = bcrypt($request->password);
 
         if($request->has('empresa_id')){
             $user->empresa_id = $request->empresa_id;
         }
-        
+        $user->save();
         return $this->showOne($user, 201);
     }
 
@@ -46,20 +55,8 @@ class UserController extends ApiController
         return $this->showOne($user);
     }
 
-    public function update(Request $request, User $user)//create UserRequest $request  // x-www-form-urlencoded //todo admin only if verificate 052
+    public function update(UserRequest $request, User $user)  // x-www-form-urlencoded //todo admin only if verificate 052
     {
-
-       if($user->isDirty()){
-        return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
-         'code' => 422], 422);
-        }
-
-        $reglas = [
-            'email' => 'email|unique:users,email,'.$user->id,
-            'password' => 'min:6|confirmed'
-        ];
-
-        $this->validate($request, $reglas);
 
         $user->fill($request->all());
 
@@ -68,12 +65,30 @@ class UserController extends ApiController
         if($request->has('empresa_id')){
             $user->empresa_id = $request->empresa_id;
         }
+
+        if ($request->file('imagen')) {
+
+            $imagen_path = public_path().'/images/img_api/users/'.$user->imagen;
+            unlink($imagen_path);
+
+            $file = $request->file('imagen');
+            $nombre = 'user'.time() . '.' . $file->getClientOriginalExtension();
+            $path = public_path() . '\images\img_api\users';
+            $file->move($path, $nombre);
+            $user->imagen = $nombre;
+
+            }
         
+            //if($user->isDirty()){
+            if($user->isClean()){
+                return $this->errorResponse('Se debe especificar al menos un valor diferente para actualizar', 422);
+              }
+
         $user->save();
         return $this->showOne($user);
     }
 
-    public function destroy(User $user)//User $user
+    public function destroy(User $user)
     {
         $user->delete($user);
         return $this->showOne($user);

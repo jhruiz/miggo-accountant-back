@@ -31,12 +31,12 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('username')->unique();
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->string('password');
-            $table->integer('estadologin');
-            $table->integer('intentos');
-            $table->integer('preselect');
-            $table->date('validaciongestion');
+            $table->integer('estadologin')->nullable();
+            $table->integer('intentos')->nullable();
+            $table->integer('preselect')->nullable();
+            $table->date('validaciongestion')->nullable();
             $table->string('email')->unique();
             $table->boolean('estatus')->default('1');//activo o desctivado
             $table->timestamp('email_verified_at')->nullable();
@@ -52,7 +52,7 @@ class CreateUsersTable extends Migration
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
-            $table->softDeletes();
+            $table->softDeletes(); //note no add in table pivot
             $table->timestamps();
         });
     

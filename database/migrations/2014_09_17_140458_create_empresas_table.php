@@ -27,8 +27,10 @@ class CreateEmpresasTable extends Migration
             $table->integer('vercuentasdb');
             
             $table->unsignedBigInteger('ciudade_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
             
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
+            $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

@@ -13,7 +13,9 @@ trait ApiResponser
     }
 
     protected function errorResponse($mesaje, $codigo){
-        return response()->json(['error'=>$mesaje, 'code'=> $codigo], $codigo);
+       // return response()->json(['error'=>$mesaje, 'code'=> $codigo], $codigo);
+        return response()->json( ['error'=>['status'=> 'error','message'=> $mesaje, 'code'=> $codigo]], $codigo);
+
     }
     
     protected function showAll(Collection $collection, $codigo = 200){
