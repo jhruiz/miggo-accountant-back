@@ -39,17 +39,18 @@ class CreateDetalledocumentosTable extends Migration
         Schema::create('trasladoinventarios', function (Blueprint $table) {
             $table->id();
             $table->integer('cantidadtraslado');
+            $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('depositoorigen_id');
             $table->unsignedBigInteger('depositodestino_id');
-            $table->unsignedBigInteger('user_id');
+           // $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
             $table->foreign('depositoorigen_id')->references('id')->on('depositos')->onDelete('cascade');
             $table->foreign('depositodestino_id')->references('id')->on('depositos')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+           // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             
             $table->softDeletes();
@@ -59,15 +60,16 @@ class CreateDetalledocumentosTable extends Migration
         Schema::create('descargueinventarios', function (Blueprint $table) {
             $table->id();
             $table->integer('cantidaddescargue');
+            $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('depositoorigen_id');
-            $table->unsignedBigInteger('user_id');
+            //$table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
             $table->foreign('depositoorigen_id')->references('id')->on('depositos')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+           // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             
             $table->softDeletes();

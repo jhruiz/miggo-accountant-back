@@ -22,14 +22,6 @@ class UserController extends ApiController
     public function store(UserRequest $request) //form-data
     {
         
-      /*  $rules = [
-                'username' => 'min:6|required',
-                'email' => 'required|email|unique:users',
-                'password' => 'required|min:6|confirmed'
-            ];*/
-
-       // $this->validate($request, $rules);
-
         $user = new User($request->all());
 
         if ($request->file('imagen')) {

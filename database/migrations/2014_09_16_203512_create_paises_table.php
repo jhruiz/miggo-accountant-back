@@ -9,7 +9,7 @@ class CreatePaisesTable extends Migration
 
     public function up()
     {
-        Schema::create('paises', function (Blueprint $table) {
+        Schema::create('paises', function (Blueprint $table) {//TODO AGREGAR DEPARTAMENTO
             $table->id();
             $table->text('descripcion');
 

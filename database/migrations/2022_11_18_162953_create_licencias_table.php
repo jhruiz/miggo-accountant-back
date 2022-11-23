@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateLicenciasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('licencias', function (Blueprint $table) {
@@ -39,7 +35,7 @@ class CreateLicenciasTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
-
+/*
         Schema::create('licencias_users', function (Blueprint $table) {
             $table->id();
             $table->date('fechainicio');
@@ -56,17 +52,14 @@ class CreateLicenciasTable extends Migration
 
             $table->softDeletes();
             $table->timestamps();
-        });
+        });   */
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+ 
+
     public function down()
     {
-        Schema::dropIfExists('licencias_users');
+        //Schema::dropIfExists('licencias_users');
         Schema::dropIfExists('licencia_empresa');
         Schema::dropIfExists('licencias');
     }
