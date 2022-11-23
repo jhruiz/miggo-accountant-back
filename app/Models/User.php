@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
+
 //use Caffeinated\Shinobi\Models\Role;
 //use Caffeinated\Shinobi\Models\Permission;
 //use Caffeinated\Shinobi\Concerns\HasRolesAndPermissions;
@@ -20,9 +21,9 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;//HasRolesAndPermissions
 
     protected $fillable = [
-        'email',
-        'password',
 
+       'email',
+        'password',
         'username',
         'imagen',
         'estadologin',
@@ -39,6 +40,33 @@ class User extends Authenticatable
 
     protected $table = "users";
 
+    protected $dates = ['deleted_at'];
+
+    /*****************  Accesores  *****************/
+    
+    public function getNameAttribute($valor)//vista
+    {
+        //return ucfirst($valor);
+        return ucwords($valor);
+
+    }
+
+/*****************  Mutadores  *****************/
+
+    public function setNameAttribute($valor)//DB
+    {
+        $this->attributes['username'] = strtolower($valor);
+
+    }
+
+
+    public function setEmailAttribute($valor)//DB
+    {
+        $this->attributes['email'] = strtolower($valor);
+
+    }
+    //************************************************* */
+
     protected $hidden = [
         'password',
         'remember_token',
@@ -48,7 +76,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',  'estatus' => 'boolean',
     ];
 
-    protected $dates = ['deleted_at'];
 
     
 }
