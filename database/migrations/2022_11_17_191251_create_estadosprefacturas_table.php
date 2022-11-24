@@ -21,8 +21,9 @@ class CreateEstadosprefacturasTable extends Migration
             $table->id();
             $table->text('observacion');
             $table->integer('eliminar');
+            $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('user_id');
+            //$table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('ordentrabajo_id')->unsigned()->nullable();
             $table->unsignedBigInteger('estadoprefactura_id');

@@ -20,10 +20,10 @@ class CreateCuentaspendientesTable extends Migration
             $table->string('eliminar');
             $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('documento_id');
-            $table->unsignedBigInteger('producto_id');
-            $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('proveedore_id');
+            $table->unsignedBigInteger('documento_id')->nullable();
+            $table->unsignedBigInteger('producto_id')->nullable();
+            $table->unsignedBigInteger('deposito_id')->nullable();
+            $table->unsignedBigInteger('proveedore_id')->nullable();
             //$table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 

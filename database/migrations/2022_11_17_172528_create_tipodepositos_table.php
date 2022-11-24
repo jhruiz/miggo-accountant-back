@@ -41,10 +41,10 @@ class CreateTipodepositosTable extends Migration
             $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('ciudade_id');
-            $table->unsignedBigInteger('estado_id');
+            $table->unsignedBigInteger('ciudade_id')->nullable();
+            $table->unsignedBigInteger('estado_id')->nullable();
            // $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('regimene_id');
+            $table->unsignedBigInteger('regimene_id')->nullable();
             $table->unsignedBigInteger('tipodeposito_id')->unsigned()->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');

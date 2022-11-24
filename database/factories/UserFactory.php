@@ -29,6 +29,8 @@ class UserFactory extends Factory
             'preselect' => $this->faker->randomElement($array = array (1,2,3)),
             'email_verified_at' => now(),
             'validaciongestion'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),
+            //'empresa_id' => 1,
+
 
             'imagen' =>  $fileName,
             

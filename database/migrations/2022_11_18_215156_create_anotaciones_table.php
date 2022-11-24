@@ -13,9 +13,9 @@ class CreateAnotacionesTable extends Migration
             $table->id();
             $table->text('descripcion');
 
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('cliente_id');
-            $table->unsignedBigInteger('documento_id');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('cliente_id')->nullable();
+            $table->unsignedBigInteger('documento_id')->nullable();
             
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');

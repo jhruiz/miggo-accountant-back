@@ -18,12 +18,12 @@ class CreateDetalledocumentosTable extends Migration
             $table->string('precioventa');
             $table->string('numerofactura');
 
-            $table->unsignedBigInteger('producto_id');
-            $table->unsignedBigInteger('depositoorigen_id');
-            $table->unsignedBigInteger('depositodestino_id');
-            $table->unsignedBigInteger('proveedore_id');
-            $table->unsignedBigInteger('tipopago_id');
-            $table->unsignedBigInteger('documento_id');
+            $table->unsignedBigInteger('producto_id')->nullable();
+            $table->unsignedBigInteger('depositoorigen_id')->nullable();
+            $table->unsignedBigInteger('depositodestino_id')->nullable();
+            $table->unsignedBigInteger('proveedore_id')->nullable();
+            $table->unsignedBigInteger('tipopago_id')->nullable();
+            $table->unsignedBigInteger('documento_id')->nullable();
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
             $table->foreign('depositoorigen_id')->references('id')->on('depositos')->onDelete('cascade');
@@ -41,9 +41,9 @@ class CreateDetalledocumentosTable extends Migration
             $table->integer('cantidadtraslado');
             $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('producto_id');
-            $table->unsignedBigInteger('depositoorigen_id');
-            $table->unsignedBigInteger('depositodestino_id');
+            $table->unsignedBigInteger('producto_id')->nullable();
+            $table->unsignedBigInteger('depositoorigen_id')->nullable();
+            $table->unsignedBigInteger('depositodestino_id')->nullable();
            // $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
@@ -62,9 +62,9 @@ class CreateDetalledocumentosTable extends Migration
             $table->integer('cantidaddescargue');
             $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('producto_id');
-            $table->unsignedBigInteger('depositoorigen_id');
-            //$table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('producto_id')->nullable();
+            $table->unsignedBigInteger('depositoorigen_id')->nullable();
+            //$table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');

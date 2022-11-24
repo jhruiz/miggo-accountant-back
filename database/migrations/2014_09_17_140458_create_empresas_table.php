@@ -47,7 +47,7 @@ class CreateEmpresasTable extends Migration
             $table->string('imagen');
             $table->string('codigo');
             
-            $table->unsignedBigInteger('empresa_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
             
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 

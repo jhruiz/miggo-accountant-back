@@ -14,11 +14,11 @@ class CreatePublicidadmovilesTable extends Migration
             $table->string('url_img');
             $table->integer('mostrar');
             $table->integer('ubicacion');
-
-            $table->unsignedBigInteger('user_id');
+            $table->BigInteger('user_id');
+           // $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
             
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();

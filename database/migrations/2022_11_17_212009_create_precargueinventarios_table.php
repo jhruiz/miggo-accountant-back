@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePrecargueinventariosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('precargueinventarios', function (Blueprint $table) {
@@ -52,11 +48,6 @@ class CreatePrecargueinventariosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('precargueinventario_impuesto');

@@ -13,13 +13,13 @@ class CreateAbonofacturasTable extends Migration
             $table->string('valor');
             $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('prefactura_id');
-            $table->unsignedBigInteger('factura_id');
-           // $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('prefactura_id')->nullable();
+            $table->unsignedBigInteger('factura_id')->nullable();
+           // $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('cuenta_id');
-            $table->unsignedBigInteger('cuentascliente_id');
-            $table->unsignedBigInteger('tipopago_id');
+            $table->unsignedBigInteger('cuenta_id')->nullable();
+            $table->unsignedBigInteger('cuentascliente_id')->nullable();
+            $table->unsignedBigInteger('tipopago_id')->nullable();
 
             $table->foreign('prefactura_id')->references('id')->on('prefacturas')->onDelete('cascade');
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');

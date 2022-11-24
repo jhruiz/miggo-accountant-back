@@ -21,8 +21,8 @@ class CreatePartevehiculosTable extends Migration
         Schema::create('partevehiculo_tipovehiculo', function (Blueprint $table) {
             $table->increments('id');
             
-            $table->unsignedBigInteger('partevehiculo_id');
-            $table->unsignedBigInteger('tipovehiculo_id');
+            $table->unsignedBigInteger('partevehiculo_id')->nullable();
+            $table->unsignedBigInteger('tipovehiculo_id')->nullable();
 
             $table->foreign('partevehiculo_id')->references('id')->on('partevehiculos')->onDelete('cascade');
             $table->foreign('tipovehiculo_id')->references('id')->on('tipovehiculos')->onDelete('cascade');
@@ -34,9 +34,9 @@ class CreatePartevehiculosTable extends Migration
         Schema::create('ordentrabajo_partevehiculo_estadoparte', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->unsignedBigInteger('ordentrabajo_id');
-            $table->unsignedBigInteger('partevehiculo_id');
-            $table->unsignedBigInteger('estadoparte_id');
+            $table->unsignedBigInteger('ordentrabajo_id')->nullable();
+            $table->unsignedBigInteger('partevehiculo_id')->nullable();
+            $table->unsignedBigInteger('estadoparte_id')->nullable();
 
             $table->foreign('ordentrabajo_id')->references('id')->on('ordentrabajos')->onDelete('cascade');
             $table->foreign('partevehiculo_id')->references('id')->on('partevehiculos')->onDelete('cascade');

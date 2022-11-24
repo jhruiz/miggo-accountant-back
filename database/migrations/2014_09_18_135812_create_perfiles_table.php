@@ -13,7 +13,7 @@ class CreatePerfilesTable extends Migration
             $table->id();
             $table->text('description');
 
-            $table->unsignedBigInteger('empresa_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 

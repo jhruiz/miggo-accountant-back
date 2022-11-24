@@ -6,27 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateEstadosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('estados', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
+            $table->text('modulo');
+
+            $table->unsignedBigInteger('empresa_id')->nullable();
+
+            $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('estados');

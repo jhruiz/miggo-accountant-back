@@ -13,11 +13,12 @@ class CreateItemsgastosTable extends Migration
             $table->id();
             $table->text('descripcion');
             $table->date('fechagasto');
+            $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('user_id');
+            //$table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('empresa_id');
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();
@@ -33,9 +34,9 @@ class CreateItemsgastosTable extends Migration
             $table->integer('cuentadestino');
             $table->string('tipoempresa');
 
-            $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('itemsgasto_id');
-            $table->unsignedBigInteger('empresaasg_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();//saber si se deja nulo
+            $table->unsignedBigInteger('itemsgasto_id')->nullable();
+            $table->unsignedBigInteger('empresaasg_id')->nullable();
 
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');

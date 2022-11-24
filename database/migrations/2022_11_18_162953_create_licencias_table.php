@@ -24,9 +24,9 @@ class CreateLicenciasTable extends Migration
             $table->string('codigo');
             $table->string('cantidad');
 
-            $table->unsignedBigInteger('licencia_id');
+            $table->unsignedBigInteger('licencia_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('estado_id');
+            $table->unsignedBigInteger('estado_id')->nullable();
 
             $table->foreign('licencia_id')->references('id')->on('licencias')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');

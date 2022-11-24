@@ -12,8 +12,8 @@ class CreateOrdentrabajosSuministrosTable extends Migration
             $table->id();
             $table->integer('cantidad');
 
-            $table->unsignedBigInteger('ordentrabajo_id');
-            $table->unsignedBigInteger('cargueinventario_id');
+            $table->unsignedBigInteger('ordentrabajo_id')->nullable();
+            $table->unsignedBigInteger('cargueinventario_id')->nullable();
 
             $table->foreign('ordentrabajo_id')->references('id')->on('ordentrabajos')->onDelete('cascade');
             $table->foreign('cargueinventario_id')->references('id')->on('cargueinventarios')->onDelete('cascade');

@@ -22,12 +22,12 @@ class CreateCargueinventariosTable extends Migration
             $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('producto_id');
-            $table->unsignedBigInteger('deposito_id');
-            //$table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('estado_id');
-            $table->unsignedBigInteger('proveedore_id');
-            $table->unsignedBigInteger('tipopago_id');
+            $table->unsignedBigInteger('producto_id')->nullable();
+            $table->unsignedBigInteger('deposito_id')->nullable();
+            //$table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('estado_id')->nullable();
+            $table->unsignedBigInteger('proveedore_id')->nullable();
+            $table->unsignedBigInteger('tipopago_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');

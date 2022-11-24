@@ -24,9 +24,9 @@ class CreateNotafacturasTable extends Migration
         Schema::create('factura_notafactura_user', function (Blueprint $table) { //facturas_notafacturas
             $table->id();
 
-            $table->unsignedBigInteger('factura_id');
-            $table->unsignedBigInteger('notafactura_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('factura_id')->nullable();
+            $table->unsignedBigInteger('notafactura_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
 
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');
             $table->foreign('notafactura_id')->references('id')->on('notafacturas')->onDelete('cascade');
@@ -39,18 +39,19 @@ class CreateNotafacturasTable extends Migration
         Schema::create('factura_cuenta_valores', function (Blueprint $table) {
             $table->id();
             $table->string('valor');
+            $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('factura_id');
-            $table->unsignedBigInteger('cuenta_id');
-            $table->unsignedBigInteger('prefactura_id');
-            $table->unsignedBigInteger('tipopago_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('factura_id')->nullable();
+            $table->unsignedBigInteger('cuenta_id')->nullable();
+            $table->unsignedBigInteger('prefactura_id')->nullable();
+            $table->unsignedBigInteger('tipopago_id')->nullable();
+            //$table->unsignedBigInteger('user_id');
 
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');
             $table->foreign('cuenta_id')->references('id')->on('cuentas')->onDelete('cascade');
             $table->foreign('prefactura_id')->references('id')->on('prefacturas')->onDelete('cascade');
             $table->foreign('tipopago_id')->references('id')->on('tipopagos')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -63,13 +64,13 @@ class CreateNotafacturasTable extends Migration
             $table->string('total');
             $table->integer('eliminar');
 
-            $table->unsignedBigInteger('documento_id');
-            $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('cliente_id');
-            //$table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('documento_id')->nullable();
+            $table->unsignedBigInteger('deposito_id')->nullable();
+            $table->unsignedBigInteger('cliente_id')->nullable();
+            //$table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('factura_id');
-            $table->unsignedBigInteger('prefactura_id');
+            $table->unsignedBigInteger('factura_id')->nullable();
+            $table->unsignedBigInteger('prefactura_id')->nullable();
 
             $table->foreign('documento_id')->references('id')->on('facturas')->onDelete('cascade');
             $table->foreign('deposito_id')->references('id')->on('cuentas')->onDelete('cascade');

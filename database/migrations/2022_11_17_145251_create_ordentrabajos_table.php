@@ -27,11 +27,11 @@ class CreateOrdentrabajosTable extends Migration
             $table->BigInteger('user_id');
 
 
-            $table->unsignedBigInteger('ordenestado_id');
-            $table->unsignedBigInteger('vehiculo_id');
+            $table->unsignedBigInteger('ordenestado_id')->nullable();
+            $table->unsignedBigInteger('vehiculo_id')->nullable();
             //$table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('cliente_id');
-            $table->unsignedBigInteger('plantaservicio_id');
+            $table->unsignedBigInteger('cliente_id')->nullable();
+            $table->unsignedBigInteger('plantaservicio_id')->nullable();
 
             $table->foreign('ordenestado_id')->references('id')->on('ordentrabajos')->onDelete('cascade');
             $table->foreign('vehiculo_id')->references('id')->on('vehiculos')->onDelete('cascade');
