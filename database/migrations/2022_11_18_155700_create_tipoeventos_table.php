@@ -14,6 +14,10 @@ class CreateTipoeventosTable extends Migration
             $table->text('descripcion');
             $table->integer('preselect');
 
+            $table->unsignedBigInteger('empresa_id')->nullable();
+
+            $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
+
             $table->softDeletes();
             $table->timestamps();
         });

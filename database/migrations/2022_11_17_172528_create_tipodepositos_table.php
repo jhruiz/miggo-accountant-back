@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTipodepositosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('tipodepositos', function (Blueprint $table) {

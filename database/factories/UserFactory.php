@@ -11,10 +11,10 @@ class UserFactory extends Factory
     public function definition()
     {
 
-        $img = file_get_contents(__DIR__.'/../../public/images/profile/user-uploads'.'/user-'.'0'.rand(1, 9).'.jpg');//TODO no Conecta
+        $img = file_get_contents(__DIR__.'/../../public/images/profile/user-uploads'.'/user-'.'0'.rand(1, 9).'.jpg');
         $fileName = Str::random(5).'_'.'.jpg';
         static $password;
-
+        file_put_contents("public/images/img_api/users/$fileName", $img);
 
         return [
             'username' => $this->faker->name(),
@@ -29,15 +29,11 @@ class UserFactory extends Factory
             'preselect' => $this->faker->randomElement($array = array (1,2,3)),
             'email_verified_at' => now(),
             'validaciongestion'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),
-            //'empresa_id' => 1,
-
-
+            'empresa_id' => 1,
             'imagen' =>  $fileName,
-            
-        ];
+            ];
 
 
-        file_put_contents("public/images/img_api/users/$fileName", $img);
 
     }
 

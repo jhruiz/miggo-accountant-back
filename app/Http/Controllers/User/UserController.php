@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\ApiController;
-//use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -15,7 +14,6 @@ class UserController extends ApiController
     public function index()
     {
         $usuarios = User::all();
-        $data = ['data'=>$usuarios];
         return $this->showAll($usuarios);
     }
 
@@ -71,10 +69,10 @@ class UserController extends ApiController
 
             }
         
-            //if($user->isDirty()){
-            if($user->isClean()){
+            //if($user->isDirty()){ //TODO:test 
+           /* if($user->isClean()){
                 return $this->errorResponse('Se debe especificar al menos un valor diferente para actualizar', 422);
-              }
+              }*/
 
         $user->save();
         return $this->showOne($user);

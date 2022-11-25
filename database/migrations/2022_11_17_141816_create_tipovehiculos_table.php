@@ -13,7 +13,6 @@ class CreateTipovehiculosTable extends Migration
             $table->id();
             $table->text('descripcion');
 
-
             $table->softDeletes();
             $table->timestamps();
         });

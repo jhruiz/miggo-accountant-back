@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateNotafacturasTable extends Migration
 {
-
     public function up()
     {
         Schema::create('notafacturas', function (Blueprint $table) {

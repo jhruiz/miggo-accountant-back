@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCuentaspendientesTable extends Migration
 {
-
     public function up()
     {
         Schema::create('cuentaspendientes', function (Blueprint $table) {

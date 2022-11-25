@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateOrdentrabajosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('ordentrabajos', function (Blueprint $table) {
@@ -44,11 +40,6 @@ class CreateOrdentrabajosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('ordentrabajos');

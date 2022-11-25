@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateDetalledocumentosTable extends Migration
 {
-
     public function up()
     {
         Schema::create('detalledocumentos', function (Blueprint $table) {

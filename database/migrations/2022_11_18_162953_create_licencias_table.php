@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateLicenciasTable extends Migration
 {
-
     public function up()
     {
         Schema::create('licencias', function (Blueprint $table) {

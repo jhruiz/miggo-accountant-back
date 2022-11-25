@@ -26,7 +26,7 @@ class CreateEmpresasTable extends Migration
             $table->string('texto4');
             $table->integer('vercuentasdb');
             
-            $table->unsignedBigInteger('ciudade_id');
+            $table->unsignedBigInteger('ciudade_id')->nullable();
             $table->unsignedBigInteger('empresa_id')->nullable();
             
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
