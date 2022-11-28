@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCategoriasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('categorias', function (Blueprint $table) {
@@ -18,12 +14,13 @@ class CreateCategoriasTable extends Migration
             $table->text('descripcion');
             $table->integer('mostrarencatalogo');
             $table->integer('servicio');
+            $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('user_id');
+           // $table->unsignedBigInteger('user_id');
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+          //  $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -44,11 +41,6 @@ class CreateCategoriasTable extends Migration
         */
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
        // Schema::dropIfExists('categoriacompras');

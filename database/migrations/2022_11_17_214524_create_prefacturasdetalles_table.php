@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePrefacturasdetallesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('prefacturasdetalles', function (Blueprint $table) {
@@ -32,11 +28,6 @@ class CreatePrefacturasdetallesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('prefacturasdetalles');

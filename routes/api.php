@@ -25,3 +25,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //Route::get('/users2', 'App\Http\Controllers\User\UserController@index');
 
 Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
+Route::ApiResource('perfiles', 'App\Http\Controllers\User\PerfileController');
+
+Route::ApiResource('pucs', 'App\Http\Controllers\Contabilidad\PucController');
+
+Route::ApiResource('empresas', 'App\Http\Controllers\Empresa\EmpresaController');
+Route::ApiResource('provedores', 'App\Http\Controllers\Empresa\ProveedoreController');
+Route::ApiResource('clientes', 'App\Http\Controllers\Empresa\ClienteController');
+Route::ApiResource('personas', 'App\Http\Controllers\Empresa\PersonaController');
+Route::ApiResource('impuestos', 'App\Http\Controllers\Empresa\ImpuestoController');
+Route::ApiResource('eventos', 'App\Http\Controllers\Empresa\EventoController');
+Route::ApiResource('tipoeventos', 'App\Http\Controllers\Empresa\TipoeventoController');
+Route::ApiResource('estodoalertas', 'App\Http\Controllers\Empresa\EstadoalertaController');
+Route::ApiResource('alertas', 'App\Http\Controllers\Empresa\AlertaController');
+Route::ApiResource('auditorias', 'App\Http\Controllers\Empresa\AuditoriaController', ['only'=> ['index','show']]);

@@ -11,18 +11,19 @@ class CreateAbonofacturasTable extends Migration
         Schema::create('abonofacturas', function (Blueprint $table) {
             $table->id();
             $table->string('valor');
+            $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('prefactura_id');
-            $table->unsignedBigInteger('factura_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('prefactura_id')->nullable();
+            $table->unsignedBigInteger('factura_id')->nullable();
+           // $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('cuenta_id');
-            $table->unsignedBigInteger('cuentascliente_id');
-            $table->unsignedBigInteger('tipopago_id');
+            $table->unsignedBigInteger('cuenta_id')->nullable();
+            $table->unsignedBigInteger('cuentascliente_id')->nullable();
+            $table->unsignedBigInteger('tipopago_id')->nullable();
 
             $table->foreign('prefactura_id')->references('id')->on('prefacturas')->onDelete('cascade');
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+           // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('cuenta_id')->references('id')->on('cuentas')->onDelete('cascade');
             $table->foreign('cuentascliente_id')->references('id')->on('cuentasclientes')->onDelete('cascade');

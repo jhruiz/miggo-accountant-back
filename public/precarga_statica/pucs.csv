@@ -1,0 +1,2503 @@
+1;ACTIVO;1;D
+11;DISPONIBLE;2;D
+1105;CAJA;3;D
+110505;Caja general;4;D
+110510;Cajas menores;4;D
+110515;Moneda extranjera;4;D
+1110;BANCOS;3;D
+111005;Moneda nacional;4;D
+111010;Moneda extranjera;4;D
+1115;REMESAS EN TRÁNSITO;3;D
+111505;Moneda nacional;4;D
+111510;Moneda extranjera;4;D
+1120;CUENTAS DE AHORRO;3;D
+112005;Bancos;4;D
+112010;Corporaciones de ahorro y vivienda;4;D
+112015;Organismos cooperativos financieros;4;D
+1125;FONDOS;3;D
+112505;Rotatorios moneda nacional;4;D
+112510;Rotatorios moneda extranjera;4;D
+112515;Especiales moneda nacional;4;D
+112520;Especiales moneda extranjera;4;D
+112525;De amortización moneda nacional;4;D
+112530;De amortización moneda extranjera;4;D
+12;INVERSIONES;2;D
+1205;ACCIONES;3;D
+120505;Agricultura, ganadería, caza y silvicultura;4;D
+120510;Pesca;4;D
+120515;Explotación de minas y canteras;4;D
+120520;Industria manufacturera;4;D
+120525;Suministro de electricidad, gas y agua;4;D
+120530;Construcción;4;D
+120535;Comercio al por mayor y al por menor;4;D
+120540;Hoteles y restaurantes;4;D
+120545;Transporte, almacenamiento y comunicaciones;4;D
+120550;Actividad financiera;4;D
+120555;Actividades inmobiliar empresar y de alquiler;4;D
+120560;Enseñanza;4;D
+120565;Servicios sociales y de salud;4;D
+120570;Otras activid. de servic com. soc. y personal;4;D
+120599;Ajustes por inflación;4;D
+1210;CUOTAS O PARTES DE INTERÉS SOCIAL;3;D
+121005;Agricultura, ganadería, caza y silvicultura;4;D
+121010;Pesca;4;D
+121015;Explotación de minas y canteras;4;D
+121020;Industria manufacturera;4;D
+121025;Suministro de electricidad, gas y agua;4;D
+121030;Construcción;4;D
+121035;Comercio al por mayor y al por menor;4;D
+121040;Hoteles y restaurantes;4;D
+121045;Transporte, almacenamiento y comunicaciones;4;D
+121050;Actividad financiera;4;D
+121055;Actividades inmobiliar empresar y de alquiler;4;D
+121060;Enseñanza;4;D
+121065;Servicios sociales y de salud;4;D
+121070;Otras activid. de servic com. soc. y personal;4;D
+121099;Ajustes por inflación;4;D
+1215;BONOS;3;D
+121505;Bonos públicos moneda nacional;4;D
+121510;Bonos públicos moneda extranjera;4;D
+121515;Bonos ordinarios;4;D
+121520;Bonos convertibles en acciones;4;D
+121595;Otros;4;D
+1220;CÉDULAS;3;D
+122005;Cédulas de capitalización;4;D
+122010;Cédulas hipotecarias;4;D
+122015;Cédulas de inversión;4;D
+122095;Otras;4;D
+1225;CERTIFICADOS;3;D
+122505;Certificados de depósito a término (CDT);4;D
+122510;Certificados de depósito de ahorro;4;D
+122515;Certific. de ahorro de valor constante (CAVC);4;D
+122520;Certificados de cambio;4;D
+122525;Certificados cafeteros valorizables;4;D
+122530;Certificados eléctricos valorizables (CEV);4;D
+122535;Certificados de reembolso tributario (CERT);4;D
+122540;Certificados de desarrollo turístico;4;D
+122545;Certificados de inversión forestal (CIF);4;D
+122595;Otros;4;D
+1230;PAPELES COMERCIALES;3;D
+123005;Empresas comerciales;4;D
+123010;Empresas industriales;4;D
+123015;Empresas de servicios;4;D
+1235;TÍTULOS;3;D
+123505;Títulos de desarrollo agropecuario;4;D
+123510;Títulos canjeables por Certificados de cambio;4;D
+123515;Títulos de tesorería (TES);4;D
+123520;Títulos de participación;4;D
+123525;Títulos de crédito de fomento;4;D
+123530;Títulos financieros agroindustriales (TFA);4;D
+123535;Títulos de ahorro cafetero (TAC);4;D
+123540;Títulos de ahorro nacional (TAN);4;D
+123545;Títulos energéticos rentabil. Creciente (TER);4;D
+123550;Títulos de ahorro educativo (TAE);4;D
+123555;Títulos financieros industriales y comerc/les;4;D
+123560;Tesoros;4;D
+123565;Títulos de devolución de imptos nales (TIDIS);4;D
+123570;Títulos inmobiliarios;4;D
+123595;Otros;4;D
+1240;ACEPTACIONES BANCARIAS O FINANCIERAS;3;D
+124005;Bancos comerciales;4;D
+124010;Compañías de financiamiento comercial;4;D
+124015;Corporaciones financieras;4;D
+124095;Otras;4;D
+1245;DERECHOS FIDUCIARIOS;3;D
+124505;Fideicomisos de inversión moneda nacional;4;D
+124510;Fideicomisos de inversión moneda extranjera;4;D
+1250;DERECHOS DE RECOMPRA DE INVERS.NEGOC.(;3;D
+125005;Acciones;4;D
+125010;Cuotas o partes de interés social;4;D
+125015;Bonos;4;D
+125020;Cédulas;4;D
+125025;Certificados;4;D
+125030;Papeles comerciales;4;D
+125035;Títulos;4;D
+125040;Aceptaciones bancarias o financieras;4;D
+125095;Otros;4;D
+125099;Ajustes por inflación;4;D
+1255;OBLIGATORIAS;3;D
+125505;Bonos de financiamiento especial;4;D
+125510;Bonos de financiamiento presupuestal;4;D
+125515;Bonos para desarr soc/l y segur.interna(BDSI);4;D
+125595;Otras;4;D
+1260;CUENTAS EN PARTICIPACIÓN;3;D
+126099;Ajustes por inflación;4;D
+1295;OTRAS INVERSIONES;3;D
+129505;Aportes en cooperativas;4;D
+129510;Derechos en clubes sociales;4;D
+129515;Acciones o derechos en clubes deportivos;4;D
+129520;Bonos en colegios;4;D
+129595;Diversas;4;D
+129599;Ajustes por inflación;4;D
+1299;PROVISIONES;3;C
+129905;Acciones;4;C
+129910;Cuotas o partes de interés social;4;C
+129915;Bonos;4;C
+129920;Cédulas;4;C
+129925;Certificados;4;C
+129930;Papeles comerciales;4;C
+129935;Títulos;4;C
+129940;Aceptaciones bancarias o financieras;4;C
+129945;Derechos fiduciarios;4;C
+129950;Derechos de recompra de inversiones negociada;4;C
+129955;Obligatorias;4;C
+129960;Cuentas en participación;4;C
+129995;Otras inversiones;4;C
+13;DEUDORES;2;D
+1305;CLIENTES;3;D
+130505;Nacionales;4;D
+130510;Del exterior;4;D
+130515;Deudores del sistema;4;D
+1310;CUENTAS CORRIENTES COMERCIALES;3;D
+131005;Casa matriz;4;D
+131010;Compañías vinculadas;4;D
+131015;Accionistas o socios;4;D
+131020;Particulares;4;D
+131095;Otras;4;D
+1315;CUENTAS POR COBRAR A CASA MATRIZ;3;D
+131505;Ventas;4;D
+131510;Pagos a nombre de casa matriz;4;D
+131515;Valores recibidos por casa matriz;4;D
+131520;Préstamos;4;D
+1320;CUENTAS POR COBRAR A VINCULADOS ECONÓM;3;D
+132005;Filiales;4;D
+132010;Subsidiarias;4;D
+132015;Sucursales;4;D
+1323;CUENTAS POR COBRAR A DIRECTORES;3;D
+1325;CUENTAS POR COBRAR A SOCIOS Y ACCIONISTA;3;D
+132505;A socios;4;D
+132510;A accionistas;4;D
+1328;APORTES POR COBRAR;3;D
+1330;ANTICIPOS Y AVANCES;3;D
+133005;A proveedores;4;D
+133010;A contratistas;4;D
+133015;A trabajadores;4;D
+133020;A agentes;4;D
+133025;A concesionarios;4;D
+133030;De adjudicaciones;4;D
+133095;Otros;4;D
+133099;Ajustes por inflación;4;D
+1332;CUENTAS DE OPERACIÓN CONJUNTA;3;D
+1335;DEPÓSITOS;3;D
+133505;Para importaciones;4;D
+133510;Para servicios;4;D
+133515;Para contratos;4;D
+133520;Para responsabilidades;4;D
+133525;Para juicios ejecutivos;4;D
+133530;Para adquisic. de acciones,cuotas o der. Soc.;4;D
+133535;En garantía;4;D
+133595;Otros;4;D
+1340;PROMESAS DE COMPRA VENTA;3;D
+134005;De bienes raíces;4;D
+134010;De maquinaria y equipo;4;D
+134015;De flota y equipo de transporte;4;D
+134020;De flota y equipo aéreo;4;D
+134025;De flota y equipo férreo;4;D
+134030;De flota y equipo fluvial y/o marítimo;4;D
+134035;De semovientes;4;D
+134095;De otros bienes;4;D
+1345;INGRESOS POR COBRAR;3;D
+134505;Dividendos y/o participaciones;4;D
+134510;Intereses;4;D
+134515;Comisiones;4;D
+134520;Honorarios;4;D
+134525;Servicios;4;D
+134530;Arrendamientos;4;D
+134535;CERT por cobrar;4;D
+134595;Otros;4;D
+1350;RETENCIÓN SOBRE CONTRATOS;3;D
+135005;De construcción;4;D
+135010;De prestación de servicios;4;D
+135095;Otros;4;D
+1355;ANTIC DE IMPTOS Y CONTRIBUC. O SALDOS A FA;3;D
+135505;Anticipo de impuestos de renta y complementar;4;D
+135510;Anticipo de impuestos de industria y comercio;4;D
+135515;Retención en la fuente;4;D
+135517;Impuesto a las ventas retenido;4;D
+135518;Impuesto de industria y comercio retenido;4;D
+135520;Sobrantes en liquidación privada de impuestos;4;D
+135525;Contribuciones;4;D
+135530;Impuestos descontables;4;D
+135595;Otros;4;D
+1360;RECLAMACIONES;3;D
+136005;A compañías aseguradoras;4;D
+136010;A transportadores;4;D
+136015;Por tiquetes aéreos;4;D
+136095;Otras;4;D
+1365;CUENTAS POR COBRAR A TRABAJADORES;3;D
+136505;Vivienda;4;D
+136510;Vehículos;4;D
+136515;Educación;4;D
+136520;Médicos, odontológicos y similares;4;D
+136525;Calamidad doméstica;4;D
+136530;Responsabilidades;4;D
+136595;Otros;4;D
+1370;PRÉSTAMOS A PARTICULARES;3;D
+137005;Con garantía real;4;D
+137010;Con garantía personal;4;D
+1380;DEUDORES VARIOS;3;D
+138005;Depositarios;4;D
+138010;Comisionistas de bolsas;4;D
+138015;Fondo de inversión;4;D
+138020;Cuentas por cobrar de terceros;4;D
+138025;Pagos por cuenta de terceros;4;D
+138030;Fondos de inversión social;4;D
+138095;Otros;4;D
+1385;DERECHOS DE RECOMPRA DE CARTERA NEGOC;3;D
+1390;DEUDAS DE DIFÍCIL COBRO;3;D
+1399;PROVISIONES;3;C
+139905;Clientes;4;C
+139910;Cuentas corrientes comerciales;4;C
+139915;Cuentas por cobrar a casa matriz;4;C
+139920;Cuentas por cobrar a vinculados económicos;4;C
+139925;Cuentas por cobrar a socios y accionistas;4;C
+139930;Anticipos y avances;4;C
+139932;Cuentas de operación conjunta;4;C
+139935;Depósitos;4;C
+139940;Promesas de compraventa;4;C
+139945;Ingresos por cobrar;4;C
+139950;Retención sobre contratos;4;C
+139955;Reclamaciones;4;C
+139960;Cuentas por cobrar a trabajadores;4;C
+139965;Préstamos a particulares;4;C
+139975;Deudores varios;4;C
+139980;Derechos de recompra de cartera negociada;4;C
+14;INVENTARIOS;2;D
+1405;MATERIAS PRIMAS;3;D
+140599;*Ajustes por inflación;4;D
+1410;PRODUCTOS EN PROCESO;3;D
+141099;*Ajustes por inflación;4;D
+1415;OBRAS DE CONSTRUCCIÓN EN CURSO;3;D
+141599;*Ajustes por inflación;4;D
+1417;OBRAS DE URBANISMO;3;D
+141799;*Ajustes por inflación;4;D
+1420;CONTRATOS EN EJECUCIÓN;3;D
+142099;*Ajustes por inflación;4;D
+1425;CULTIVOS EN DESARROLLO;3;D
+142599;*Ajustes por inflación;4;D
+1428;PLANTACIONES AGRÍCOLAS;3;D
+142899;*Ajustes por inflación;4;D
+1430;PRODUCTOS TERMINADOS;3;D
+143005;Productos manufacturados;4;D
+143010;Productos extraídos y/o procesados;4;D
+143015;Productos agrícolas y forestales;4;D
+143020;Subproductos;4;D
+143025;Productos de pesca;4;D
+143099;*Ajustes por inflación;4;D
+1435;MERCANCÍAS NO FABRICADAS POR LA EMPRESA;3;D
+143599;*Ajustes por inflación;4;D
+1440;BIENES RAÍCES PARA LA VENTA;3;D
+144099;*Ajustes por inflación;4;D
+1445;SEMOVIENTES;3;D
+144599;*Ajustes por inflación;4;D
+1450;TERRENOS;3;D
+145005;Por urbanizar;4;D
+145010;Urbanizados por construir;4;D
+145099;*Ajustes por inflación;4;D
+1455;MATERIALES, REPUESTOS Y ACCESORIOS;3;D
+145599;*Ajustes por inflación;4;D
+1460;ENVASES Y EMPAQUES;3;D
+146099;*Ajustes por inflación;4;D
+1465;INVENTARIOS EN TRÁNSITO;3;D
+146599;*Ajustes por inflación;4;D
+1499;PROVISIONES;3;C
+149905;Para obsolescencia;4;C
+149910;Para diferencia de inventario físico;4;C
+149915;Para pérdidas de inventarios;4;C
+149920;Lifo;4;C
+15;PROPIEDADES, PLANTA Y EQUIPO;2;D
+1504;TERRENOS;3;D
+150405;Urbanos;4;D
+150410;Rurales;4;D
+150499;Ajustes por inflación;4;D
+1506;MATERIALES PROYECTOS PETROLEROS;3;D
+150605;Tuberías y equipo;4;D
+150610;Costos de importación materiales;4;D
+150615;Proyectos de construcción;4;D
+150699;Ajustes por inflación;4;D
+1508;CONSTRUCCIONES EN CURSO;3;D
+150805;Construcciones y edificaciones;4;D
+150810;Acueductos, plantas y redes;4;D
+150815;Vías de comunicación;4;D
+150820;Pozos artesianos;4;D
+150825;Proyectos de exploración;4;D
+150830;Proyectos de desarrollo;4;D
+150899;Ajustes por inflación;4;D
+1512;MAQUINARIA Y EQUIPOS EN MONTAJE;3;D
+151205;Maquinaria y equipo;4;D
+151210;Equipo de oficina;4;D
+151215;Equipo de computación y comunicación;4;D
+151220;Equipo médico-científico;4;D
+151225;Equipo de hoteles y restaurantes;4;D
+151230;Flota y equipo de transporte;4;D
+151235;Flota y equipo fluvial y/o marítimo;4;D
+151240;Flota y equipo aéreo;4;D
+151245;Flota y equipo férreo;4;D
+151250;Plantas y redes;4;D
+151299;Ajustes por inflación;4;D
+1516;CONSTRUCCIONES Y EDIFICACIONES;3;D
+151605;Edificios;4;D
+151610;Oficinas;4;D
+151615;Almacenes;4;D
+151620;Fábricas y plantas industriales;4;D
+151625;Salas de exhibición y ventas;4;D
+151630;Cafetería y casinos;4;D
+151635;Silos;4;D
+151640;Invernaderos;4;D
+151645;Casetas y campamentos;4;D
+151650;Instalaciones agropecuarias;4;D
+151655;Viviendas para empleados y obreros;4;D
+151660;Terminal de buses y taxis;4;D
+151663;Terminal marítimo;4;D
+151665;Terminal férreo;4;D
+151670;Parqueaderos garajes y depósitos;4;D
+151675;Hangares;4;D
+151680;Bodegas;4;D
+151695;Otros;4;D
+151699;Ajustes por inflación;4;D
+1520;MAQUINARIA Y EQUIPO;3;D
+152099;Ajustes por inflación;4;D
+1524;EQUIPO DE OFICINA;3;D
+152405;Muebles y enseres;4;D
+152410;Equipos;4;D
+152495;Otros;4;D
+152499;Ajustes por inflación;4;D
+1528;EQUIPO DE COMPUTACIÓN Y COMUNICACIÓN;3;D
+152805;Equipos de procesamiento de datos;4;D
+152810;Equipos de telecomunicaciones;4;D
+152815;Equipos de radio;4;D
+152820;Satélites y antenas;4;D
+152825;Líneas telefónicas;4;D
+152895;Otros;4;D
+152899;Ajustes por inflación;4;D
+1532;EQUIPO MÉDICO-CIENTÍFICO;3;D
+153205;Médico;4;D
+153210;Odontológico;4;D
+153215;Laboratorio;4;D
+153220;Instrumental;4;D
+153295;Otros;4;D
+153299;Ajustes por inflación;4;D
+1536;EQUIPO DE HOTELES Y RESTAURANTES;3;D
+153605;De habitaciones;4;D
+153610;De comestibles y bebidas;4;D
+153695;Otros;4;D
+153699;Ajustes por inflación;4;D
+1540;FLOTA Y EQUIPO DE TRANSPORTE;3;D
+154005;Autos, camionetas y camperos;4;D
+154008;Camiones, volquetas y furgones;4;D
+154010;Tractomulas y remolques;4;D
+154015;Buses y busetas;4;D
+154017;Recolectores y contenedores;4;D
+154020;Montacargas;4;D
+154025;Palas y grúas;4;D
+154030;Motocicletas;4;D
+154035;Bicicletas;4;D
+154040;Estibas y carretas;4;D
+154045;Bandas transportadoras;4;D
+154095;Otros;4;D
+154099;Ajustes por inflación;4;D
+1544;FLOTA Y EQUIPO FLUVIAL Y/O MARÍTIMO;3;D
+154405;Buques;4;D
+154410;Lanchas;4;D
+154415;Remolcadoras;4;D
+154420;Botes;4;D
+154425;Boyas;4;D
+154430;Amarres;4;D
+154435;Contenedores y chasises;4;D
+154440;Gabarras;4;D
+154495;Otros;4;D
+154499;Ajustes por inflación;4;D
+1548;FLOTA Y EQUIPO AÉREO;3;D
+154805;Aviones;4;D
+154810;Avionetas;4;D
+154815;Helicópteros;4;D
+154820;Turbinas y motores;4;D
+154825;Manuales de entrenamiento personal técnico;4;D
+154830;Equipos de vuelo;4;D
+154895;Otros;4;D
+154899;Ajustes por inflación;4;D
+1552;FLOTA Y EQUIPO FÉRREO;3;D
+155205;Locomotoras;4;D
+155210;Vagones;4;D
+155215;Redes férreas;4;D
+155295;Otros;4;D
+155299;Ajustes por inflación;4;D
+1556;ACUEDUCTOS, PLANTAS Y REDES;3;D
+155605;Instalaciones para agua y energía;4;D
+155610;Acueducto, acequias y canalizaciones;4;D
+155615;Plantas de generación hidráulica;4;D
+155620;Plantas de generación térmica;4;D
+155625;Plantas de generación a gas;4;D
+155628;Plantas de generac. diesel, gasolina y petrol;4;D
+155630;Plantas de distribución;4;D
+155635;Plantas de transmisión y subestaciones;4;D
+155640;Oleoductos;4;D
+155645;Gasoductos;4;D
+155647;Poliductos;4;D
+155650;Redes de distribución;4;D
+155655;Plantas de tratamiento;4;D
+155660;Redes de recolección de aguas negras;4;D
+155665;Instalaciones y equipo de bombeo;4;D
+155670;Redes de distribución de vapor;4;D
+155675;Redes de aire;4;D
+155680;Redes alimentación de gas;4;D
+155682;Redes externas de telefonía;4;D
+155685;Plantas deshidratadoras;4;D
+155695;Otros;4;D
+155699;Ajustes por inflación;4;D
+1560;ARMAMENTO DE VIGILANCIA;3;D
+156099;Ajustes por inflación;4;D
+1562;ENVASES Y EMPAQUES;3;D
+156299;Ajustes por inflación;4;D
+1564;PLANTACIONES AGRÍCOLAS Y FORESTALES;3;D
+156405;Cultivos en desarrollo;4;D
+156410;Cultivos amortizables;4;D
+156499;Ajustes por inflación;4;D
+1568;VÍAS DE COMUNICACIÓN;3;D
+156805;Pavimentación y patios;4;D
+156810;Vías;4;D
+156815;Puentes;4;D
+156820;Calles;4;D
+156825;Aeródromos;4;D
+156895;Otros;4;D
+156899;Ajustes por inflación;4;D
+1572;MINAS Y CANTERAS;3;D
+157205;Minas;4;D
+157210;Canteras;4;D
+157299;Ajustes por inflación;4;D
+1576;POZOS ARTESIANOS;3;D
+157699;Ajustes por inflación;4;D
+1580;YACIMIENTOS;3;D
+158099;Ajustes por inflación;4;D
+1584;SEMOVIENTES;3;D
+158499;Ajustes por inflación;4;D
+1588;PROPIEDADES, PLANTA Y EQUIPO EN TRÁNSITO;3;D
+158805;Maquinaria y equipo;4;D
+158810;Equipo de oficina;4;D
+158815;Equipo de computación y comunicación;4;D
+158820;Equipo médico-científico;4;D
+158825;Equipo de hoteles y restaurantes;4;D
+158830;Flota y equipo de transporte;4;D
+158835;Flota y equipo fluvial y/o marítimo;4;D
+158840;Flota y equipo aéreo;4;D
+158845;Flota y equipo férreo;4;D
+158850;Plantas y redes;4;D
+158855;Armamento de vigilancia;4;D
+158860;Semovientes;4;D
+158865;Envases y empaques;4;D
+158899;Ajustes por inflación;4;D
+1592;DEPRECIACIÓN ACUMULADA;3;C
+159205;Construcciones y edificaciones;4;C
+159210;Maquinaria y equipo;4;C
+159215;Equipo de oficina;4;C
+159220;Equipo de computación y comunicación;4;C
+159225;Equipo médico-científico;4;C
+159230;Equipo de hoteles y restaurantes;4;C
+159235;Flota y equipo de transporte;4;C
+159240;Flota y equipo fluvial y/o marítimo;4;C
+159245;Flota y equipo aéreo;4;C
+159250;Flota y equipo férreo;4;C
+159255;Acueductos, plantas y redes;4;C
+159260;Armamento de vigilancia;4;C
+159265;Envases y empaques;4;C
+159299;Ajustes por inflación;4;C
+1596;DEPRECIACIÓN DIFERIDA;3;C
+159605;Exceso fiscal sobre la contable;4;C
+159610;Defecto fiscal sobre la contable (CR);4;C
+159699;Ajustes por inflación;4;C
+1597;AMORTIZACIÓN ACUMULADA;3;C
+159705;Plantaciones agrícolas y forestales;4;C
+159710;Vías de comunicación;4;C
+159715;Semovientes;4;C
+159799;Ajustes por inflación;4;C
+1598;AGOTAMIENTO ACUMULADO;3;C
+159805;Minas y canteras;4;C
+159815;Pozos artesianos;4;C
+159820;Yacimientos;4;C
+159899;Ajustes por inflación;4;C
+1599;PROVISIONES;3;D
+159904;Terrenos;4;C
+159906;Materiales proyectos petroleros;4;C
+159908;Construcciones en curso;4;C
+159912;Maquinaria en montaje;4;C
+159916;Construcciones y edificaciones;4;C
+159920;Maquinaria y equipo;4;C
+159924;Equipo de oficina;4;C
+159928;Equipo de computación y comunicación;4;C
+159932;Equipo médico-científico;4;C
+159936;Equipo de hoteles y restaurantes;4;C
+159940;Flota y equipo de transporte;4;C
+159944;Flota y equipo fluvial y/o marítimo;4;C
+159948;Flota y equipo aéreo;4;C
+159952;Flota y equipo férreo;4;C
+159956;Acueductos, plantas y redes;4;C
+159960;Armamento de vigilancia;4;C
+159962;Envases y empaques;4;C
+159964;Plantaciones agrícolas y forestales;4;C
+159968;Vías de comunicación;4;C
+159972;Minas y canteras;4;C
+159980;Pozos artesianos;4;C
+159984;Yacimientos;4;C
+159988;Semovientes;4;C
+159992;Propiedades, planta y equipo en tránsito;4;C
+16;INTANGIBLES;2;D
+1605;CRÉDITO MERCANTIL;3;D
+160505;Formado o estimado;4;D
+160510;Adquirido o comprado;4;D
+160599;Ajustes por inflación;4;D
+1610;MARCAS;3;D
+161005;Adquiridas;4;D
+161010;Formadas;4;D
+161099;Ajustes por inflación;4;D
+1615;PATENTES;3;D
+161505;Adquiridas;4;D
+161510;Formadas;4;D
+161599;Ajustes por inflación;4;D
+1620;CONCESIONES Y FRANQUICIAS;3;D
+162005;Concesiones;4;D
+162010;Franquicias;4;D
+162099;Ajustes por inflación;4;D
+1625;DERECHOS;3;D
+162505;Derechos de autor;3;D
+162510;Puesto de bolsa;4;D
+162515;En fideicomisos inmobiliarios;4;D
+162520;En fideicomisos de garantía;4;D
+162525;En fideicomisos de administración;4;D
+162530;De exhibición - películas;4;D
+162535;En bienes recib en arrendto financ (leasing);4;D
+162595;Otros;4;D
+162599;Ajustes por inflación;4;D
+1630;KNOW HOW;3;D
+163099;Ajustes por inflación;4;D
+1635;LICENCIAS;3;D
+163599;Ajustes por inflación;4;D
+1698;DEPRECIACIÓN Y/O AMORTIZACIÓN ACUMULADA;3;D
+169805;Crédito mercantil;4;D
+169810;Marcas;4;D
+169815;Patentes;4;D
+169820;Concesiones y franquicias;4;D
+169830;Derechos;4;D
+169835;Know how;4;D
+169840;Licencias;4;D
+169899;Ajustes por inflación;4;D
+1699;PROVISIONES;3;C
+17;DIFERIDOS;2;D
+1705;GASTOS PAGADOS POR ANTICIPADO;3;D
+170505;Intereses;4;D
+170510;Honorarios;4;D
+170515;Comisiones;4;D
+170520;Seguros y fianzas;4;D
+170525;Arrendamientos;4;D
+170530;Bodegajes;4;D
+170535;Mantenimiento de equipo;4;D
+170540;Servicios;4;D
+170545;Suscripciones;4;D
+170595;Otros;4;D
+1710;CARGOS DIFERIDOS;3;D
+171004;Organización y preoperativos;4;D
+171008;Remodelaciones;4;D
+171012;Estudios, investigaciones y proyectos;4;D
+171016;Programas para computador (software);4;D
+171020;Útiles y papelería;4;D
+171024;Mejoras a propiedades ajenas;4;D
+171028;Contribuciones y afiliaciones;4;D
+171032;Entrenamiento de personal;4;D
+171036;Ferias y exposiciones;4;D
+171040;Licencias;4;D
+171044;Publicidad, propaganda y avisos;4;D
+171048;Elementos de aseo y cafetería;4;D
+171052;Moldes y troqueles;4;D
+171056;Instrumental quirúrgico;4;D
+171060;Dotación y suministro a trabajadores;4;D
+171064;Elementos de ropería y lencería;4;D
+171068;Loza y cristalería;4;D
+171069;Platería;4;D
+171070;Cubiertería;4;D
+171076;Impto de renta dif ''deb'' por dif temporales;4;D
+171080;Concursos y licitaciones;4;D
+171095;Otros;4;D
+171099;Ajustes por inflación;4;D
+1715;COSTOS DE EXPLORACIÓN POR AMORTIZAR;3;D
+171505;Pozos secos;4;D
+171510;Pozos no comerciales;4;D
+171515;Otros costos de exploración;4;D
+171599;Ajustes por inflación;4;D
+1720;COSTOS DE EXPLOTACIÓN Y DESARROLLO;3;D
+172005;Perforación y explotación;4;D
+172010;Perforaciones campos en desarrollo;4;D
+172015;Facilidades de producción;4;D
+172020;Servicios a pozos;4;D
+172099;Ajustes por inflación;4;D
+1730;CARGOS POR CORRECCIÓN MONETARIA DIFERI;3;D
+1798;AMORTIZACIÓN ACUMULADA;3;D
+179805;Costos de exploración por amortizar;4;D
+179810;Costos de explotación y desarrollo;4;D
+179899;Ajustes por inflación;4;D
+18;OTROS ACTIVOS;2;D
+1805;BIENES DE ARTE Y CULTURA;3;D
+180505;Obras de arte;4;D
+180510;Bibliotecas;4;D
+180595;Otros;4;D
+180599;Ajustes por inflación;4;D
+1895;DIVERSOS;3;D
+189505;Máquinas porteadoras;4;D
+189510;Bienes entregados en comodato;4;D
+189515;Amort acum de bienes entreg en comodato (CR);4;C
+189520;Bienes recibidos en pago;4;D
+189525;Derechos sucesorales;4;D
+189530;Estampillas;4;D
+189595;Otros;4;D
+189599;Ajustes por inflación;4;D
+1899;PROVISIONES;3;C
+189905;Bienes de arte y cultura;4;C
+189995;Diversos;4;C
+19;VALORIZACIONES;2;D
+1905;DE INVERSIONES;3;D
+190505;Acciones;4;D
+190510;Cuotas o partes de interés social;4;D
+190515;Derechos fiduciarios;4;D
+1910;DE PROPIEDADES, PLANTA Y EQUIPO;3;D
+191004;Terrenos;4;D
+191006;Materiales proyectos petroleros;4;D
+191008;Construcciones y edificaciones;4;D
+191012;Maquinaria y equipo;4;D
+191016;Equipo de oficina;4;D
+191020;Equipo de computación y comunicación;4;D
+191024;Equipo médico-científico;4;D
+191028;Equipo de hoteles y restaurantes;4;D
+191032;Flota y equipo de transporte;4;D
+191036;Flota y equipo fluvial y/o marítimo;4;D
+191040;Flota y equipo aéreo;4;D
+191044;Flota y equipo férreo;4;D
+191048;Acueductos, plantas y redes;4;D
+191052;Armamento de vigilancia;4;D
+191056;Envases y empaques;4;D
+191060;Plantaciones agrícolas y forestales;4;D
+191064;Vías de comunicación;4;D
+191068;Minas y canteras;4;D
+191072;Pozos artesianos;4;D
+191076;Yacimientos;4;D
+191080;Semovientes;4;D
+1995;DE OTROS ACTIVOS;3;D
+199505;Bienes de arte y cultura;4;D
+199510;Bienes entregados en comodato;4;D
+199515;Bienes recibidos en pago;4;D
+199520;Inventarios de semovientes;4;D
+2;PASIVO;1;D
+21;OBLIGACIONES FINANCIERAS;2;D
+2105;BANCOS NACIONALES;3;D
+210505;Sobregiros;4;D
+210510;Pagarés;4;D
+210515;Cartas de crédito;4;D
+210520;Aceptaciones bancarias;4;D
+2110;BANCOS DEL EXTERIOR;3;D
+211005;Sobregiros;4;D
+211010;Pagarés;4;D
+211015;Cartas de crédito;4;D
+211020;Aceptaciones bancarias;4;D
+2115;CORPORACIONES FINANCIERAS;3;D
+211505;Pagarés;4;D
+211510;Aceptaciones financieras;4;D
+211515;Cartas de crédito;4;D
+211520;Contratos de arrendam/to financiero (leasing);4;C
+2120;COMPAÑÍAS DE FINANCIAMIENTO COMERCIAL;3;D
+212005;Pagarés;4;D
+212010;Aceptaciones financieras;4;D
+212020;Contratos de arrendam/to financiero (leasing);4;D
+2125;CORPORACIONES DE AHORRO Y VIVIENDA;3;D
+212505;Sobregiros;4;D
+212510;Pagarés;4;D
+212515;Hipotecarias;4;D
+2130;ENTIDADES FINANCIERAS DEL EXTERIOR;3;D
+2135;COMPROMISOS DE RECOMPRA DE INVERS NEG;3;D
+213505;Acciones;4;D
+213510;Cuotas o partes de interés social;4;D
+213515;Bonos;4;D
+213520;Cédulas;4;D
+213525;Certificados;4;D
+213530;Papeles comerciales;4;D
+213535;Títulos;4;D
+213540;Aceptaciones bancarias o financieras;4;D
+213595;Otros;4;D
+2140;COMPROMISOS DE RECOMPRA DE CARTERA NE;3;D
+2145;OBLIGACIONES GUBERNAMENTALES;3;D
+214505;Gobierno nacional;4;D
+214510;Entidades oficiales;4;D
+2195;OTRAS OBLIGACIONES;3;D
+219505;Particulares;4;D
+219510;Compañías vinculadas;4;D
+219515;Casa matriz;4;D
+219520;Socios o accionistas;4;D
+219525;Fondos y cooperativa;4;D
+219530;Directores;4;D
+219595;Otras;4;D
+22;PROVEEDORES;2;D
+2205;NACIONALES;3;D
+2210;DEL EXTERIOR;3;D
+2215;CUENTAS CORRIENTES COMERCIALES;3;D
+2220;CASA MATRIZ;3;D
+2225;COMPAÑÍAS VINCULADAS;3;D
+23;CUENTAS POR PAGAR;2;D
+2305;CUENTAS CORRIENTES COMERCIALES;3;D
+2310;A CASA MATRIZ;3;D
+2315;A COMPAÑÍAS VINCULADAS;3;D
+2320;A CONTRATISTAS;3;D
+2330;ÓRDENES DE COMPRA POR UTILIZAR;3;D
+2335;COSTOS Y GASTOS POR PAGAR;3;D
+233505;Gastos financieros;4;D
+233510;Gastos legales;4;D
+233515;Libros, suscripciones, periódicos y revistas;4;D
+233520;Comisiones;4;D
+233525;Honorarios;4;D
+233530;Servicios técnicos;4;D
+233535;Servicios de mantenimiento;4;D
+233540;Arrendamientos;4;D
+233545;Transportes, fletes y acarreos;4;D
+233550;Servicios públicos;4;D
+233555;Seguros;4;D
+233560;Gastos de viaje;4;D
+233565;Gastos de representac/n y relaciones públicas;4;D
+233570;Servicios aduaneros;4;D
+233595;Otros;4;D
+2340;INSTALAMENTOS POR PAGAR;3;D
+2345;ACREEDORES OFICIALES;3;D
+2350;REGALÍAS POR PAGAR;3;D
+2355;DEUDAS CON ACCIONISTAS O SOCIOS;3;D
+235505;Accionistas;4;D
+235510;Socios;4;D
+2357;DEUDAS CON DIRECTORES;3;D
+2360;DIVIDENDOS O PARTICIPACIONES POR PAGAR;3;D
+236005;Dividendos;4;D
+236010;Participaciones;4;D
+2365;RETENCIÓN EN LA FUENTE;3;D
+236505;Salarios y pagos laborales;4;D
+236510;Dividendos y/o participaciones;4;D
+236515;Honorarios;4;D
+236520;Comisiones;4;D
+236525;Servicios;4;D
+236530;Arrendamientos;4;D
+236535;Rendimientos financieros;4;D
+236540;Compras;4;D
+236545;Loterías, rifas, apuestas y similares;4;D
+236550;Por pagos al exterior;4;D
+236555;Por ingresos obtenidos en el exterior;4;D
+236560;Enajenac. propied planta y equipo, person nat;4;D
+236565;Por impuesto de timbre;4;D
+236570;Otras retenciones y patrimonio;4;D
+236575;Autorretenciones;4;D
+2367;IMPUESTO A LAS VENTAS RETENIDO;3;D
+2368;IMPUESTO DE INDUSTRIA Y COMERCIO RETENID;3;D
+2370;RETENCIONES Y APORTES DE NÓMINA;3;D
+237005;Aportes a entidades promotoras de salud EPS;4;D
+237006;Aportes a administrador de riesgos profes ARP;4;D
+237010;Aportes al ICBF, SENA y cajas de compensación;4;D
+237015;Aportes al FIC;4;D
+237025;Embargos judiciales;4;D
+237030;Libranzas;4;D
+237035;Sindicatos;4;D
+237040;Cooperativas;4;D
+237045;Fondos;4;D
+237095;Otros;4;D
+2375;CUOTAS POR DEVOLVER;3;D
+2380;ACREEDORES VARIOS;3;D
+238005;Depositarios;4;D
+238010;Comisionistas de bolsas;4;D
+238015;Sociedad administradora - fondos de inversión;4;D
+238020;Reintegros por pagar;4;D
+238025;Fondo de perseverancia;4;D
+238030;Fondos de cesantías y/o pensiones;4;D
+238035;Donaciones asignadas por pagar;4;D
+238095;Otros;4;D
+24;IMPUESTOS, GRAVÁMENES Y TASAS;2;D
+2404;DE RENTA Y COMPLEMENTARIOS;3;D
+240405;Vigencia fiscal corriente;4;D
+240410;Vigencias fiscales anteriores;4;D
+2408;IMPUESTO SOBRE LAS VENTAS POR PAGAR;3;D
+2412;DE INDUSTRIA Y COMERCIO;3;D
+241205;Vigencia fiscal corriente;4;D
+241210;Vigencias fiscales anteriores;4;D
+2416;A LA PROPIEDAD RAÍZ;3;D
+2420;DERECHOS SOBRE INSTRUMENTOS PÚBLICOS;3;D
+2424;DE VALORIZACIÓN;3;D
+242405;Vigencia fiscal corriente;4;D
+242410;Vigencias fiscales anteriores;4;D
+2428;DE TURISMO;3;D
+2432;TASA POR UTILIZACIÓN DE PUERTOS;3;D
+2436;DE VEHÍCULOS;3;D
+243605;Vigencia fiscal corriente;4;D
+243610;Vigencias fiscales anteriores;4;D
+2440;DE ESPECTÁCULOS PÚBLICOS;3;D
+2444;DE HIDROCARBUROS Y MINAS;3;D
+244405;De hidrocarburos;4;D
+244410;De minas;4;D
+2448;REGALÍAS E IMPTOS A LA PEQUEÑA Y MEDIANA;3;D
+2452;A LAS EXPORTACIONES CAFETERAS;3;D
+2456;A LAS IMPORTACIONES;3;D
+2460;CUOTAS DE FOMENTO;3;D
+2464;DE LICORES CERVEZAS Y CIGARRILLOS;3;D
+246405;De licores;4;D
+246410;De cervezas;4;D
+246415;De cigarrillos;4;D
+2468;AL SACRIFICIO DE GANADO;3;D
+2472;AL AZAR Y JUEGOS;3;D
+2476;GRAVÁMENES Y REGALÍAS POR UTILIZ DEL SUEL;3;D
+2495;OTROS;3;D
+25;OBLIGACIONES LABORALES;2;D
+2505;SALARIOS POR PAGAR;3;D
+2510;CESANTÍAS CONSOLIDADAS;3;D
+251005;Ley laboral anterior;4;D
+251010;Ley 50 de 1990 y normas posteriores;4;D
+2515;INTERESES SOBRE CESANTÍAS;3;D
+2520;PRIMA DE SERVICIOS;3;D
+2525;VACACIONES CONSOLIDADAS;3;D
+2530;PRESTACIONES EXTRALEGALES;3;D
+253005;Primas;4;D
+253010;Auxilios;4;D
+253015;Dotación y suministro a trabajadores;4;D
+253020;Bonificaciones;4;D
+253025;Seguros;4;D
+253095;Otras;4;D
+2532;PENSIONES POR PAGAR;3;D
+2535;CUOTAS PARTES PENSIONES DE JUBILACIÓN;3;D
+2540;INDEMNIZACIONES LABORALES;3;D
+26;PASIVOS ESTIMADOS Y PROVISIONES;2;D
+2605;PARA COSTOS Y GASTOS;3;D
+260505;Intereses;4;D
+260510;Comisiones;4;D
+260515;Honorarios;4;D
+260520;Servicios técnicos;4;D
+260525;Transportes, fletes y acarreos;4;D
+260530;Gastos de viaje;4;D
+260535;Servicios públicos;4;D
+260540;Regalías;4;D
+260545;Garantías;4;D
+260550;Materiales y repuestos;4;D
+260595;Otros;4;D
+2610;PARA OBLIGACIONES LABORALES;3;D
+261005;Cesantías;4;D
+261010;Intereses sobre cesantías;4;D
+261015;Vacaciones;4;D
+261020;Prima de servicios;4;D
+261025;Prestaciones extralegales;4;D
+261030;Viáticos;4;D
+261095;Otras;4;D
+2615;PARA OBLIGACIONES FISCALES;3;D
+261505;De renta y complementarios;4;D
+261510;De industria y comercio;4;D
+261515;Tasa por utilización de puertos;4;D
+261520;De vehículos;4;D
+261525;De hidrocarburos y minas;4;D
+261595;Otros;4;D
+2620;PENSIONES DE JUBILACIÓN;3;D
+262005;Cálculo actuarial pensiones de jubilación;4;D
+262010;Pensiones de jubilación por amortizar (DB);4;D
+2625;PARA OBRAS DE URBANISMO;3;D
+262505;Acueducto y alcantarillado;4;D
+262510;Energía eléctrica;4;D
+262515;Teléfonos;4;D
+262595;Otros;4;D
+2630;PARA MANTENIMIENTO Y REPARACIONES;3;D
+263005;Terrenos;4;D
+263010;Construcciones y edificaciones;4;D
+263015;Maquinaria y equipo;4;D
+263020;Equipo de oficina;4;D
+263025;Equipo de computación y comunicación;4;D
+263030;Equipo médico-científico;4;D
+263035;Equipo de hoteles y restaurantes;4;D
+263040;Flota y equipo de transporte;4;D
+263045;Flota y equipo fluvial y/o marítimo;4;D
+263050;Flota y equipo aéreo;4;D
+263055;Flota y equipo férreo;4;D
+263060;Acueductos, plantas y redes;4;D
+263065;Armamento de vigilancia;4;D
+263070;Envases y empaques;4;D
+263075;Plantaciones agrícolas y forestales;4;D
+263080;Vías de comunicación;4;D
+263085;Pozos artesianos;4;D
+263095;Otros;4;D
+2635;PARA CONTINGENCIAS;3;D
+263505;Multas y sanciones autoridades administrativa;4;D
+263510;Intereses por multas y sanciones;4;D
+263515;Reclamos;4;D
+263520;Laborales;4;D
+263525;Civiles;4;D
+263530;Penales;4;D
+263535;Administrativos;4;D
+263540;Comerciales;4;D
+263595;Otras;4;D
+2640;PARA OBLIGACIONES DE GARANTÍAS;3;D
+2695;PROVISIONES DIVERSAS;3;D
+269505;Para beneficencia;4;D
+269510;Para comunicaciones;4;D
+269515;Para pérdida en transporte;4;D
+269520;Para operación;4;D
+269525;Para protección de bienes agotables;4;D
+269530;Para ajustes en redención de unidades;4;D
+269535;Autoseguro;4;D
+269540;Planes y programas de reforest y electrific/n;4;D
+269595;Otras;4;D
+27;DIFERIDOS;2;D
+2705;INGRESOS RECIBIDOS POR ANTICIPADO;3;D
+270505;Intereses;4;D
+270510;Comisiones;4;D
+270515;Arrendamientos;4;D
+270520;Honorarios;4;D
+270525;Servicios técnicos;4;D
+270530;De suscriptores;4;D
+270535;Transportes, fletes y acarreos;4;D
+270540;Mercancía en transito ya vendida;4;D
+270545;Matriculas y pensiones;4;D
+270550;Cuotas de administración;4;D
+270595;Otros;4;D
+2710;ABONOS DIFERIDOS;3;D
+271005;Reajuste del sistema;4;D
+2715;UTILIDAD DIFERIDA EN VENTAS A PLAZOS;3;D
+2720;CRÉDITO POR CORRECCIÓN MONETARIA DIFERI;3;D
+2725;IMPUESTOS DIFERIDOS;3;D
+272505;Por depreciación flexible;4;D
+272595;Diversos;4;D
+272599;Ajustes por inflación;4;D
+28;OTROS PASIVOS;2;D
+2805;ANTICIPOS Y AVANCES RECIBIDOS;3;D
+280505;De clientes;4;D
+280510;Sobre contratos;4;D
+280515;Para obras en proceso;4;D
+280595;Otros;4;D
+2810;DEPÓSITOS RECIBIDOS;3;D
+281005;Para futura suscripción de acciones;4;D
+281010;Para futuro pago de cuotas o derechos soc/les;4;D
+281015;Para garantía en la prestación de servicios;4;D
+281020;Para garantía de contratos;4;D
+281025;De licitaciones;4;D
+281030;De manejo de bienes;4;D
+281035;Fondo de reserva;4;D
+281095;Otros;4;D
+2815;INGRESOS RECIBIDOS PARA TERCEROS;3;D
+281505;Valores recibidos para terceros;4;D
+281510;Venta por cuenta de terceros;4;D
+2820;CUENTAS DE OPERACIÓN CONJUNTA;3;D
+2825;RETENCIONES A TERCEROS SOBRE CONTRATAT;3;D
+282505;Cumplimiento obligaciones laborales;4;D
+282510;Para estabilidad de obra;4;D
+282515;Garantía cumplimiento de contratos;4;D
+2830;EMBARGOS JUDICIALES;3;D
+283005;Indemnizaciones;4;D
+283010;Depósitos judiciales;4;D
+2835;ACREEDORES DEL SISTEMA;3;D
+283505;Cuotas netas;4;D
+283510;Grupos en formación;4;D
+2840;CUENTAS EN PARTICIPACIÓN;3;D
+2895;DIVERSOS;3;D
+289505;Préstamos de productos;4;D
+289510;Reembolso de costos exploratorios;4;D
+289515;Programa de extensión agropecuaria;4;D
+29;BONOS Y PAPELES COMERCIALES;2;D
+2905;BONOS EN CIRCULACIÓN;3;D
+2910;BONOS OBLIGATORIAMENTE CONVERTIBLES EN;3;D
+2915;PAPELES COMERCIALES;3;D
+2920;BONOS PENSIONALES;3;D
+292005;Valor bonos pensionales;4;D
+292010;Bonos pensionales por amortizar (DB);4;D
+292015;Intereses causados sobre bonos pensionales;4;D
+2925;TÍTULOS PENSIONALES;3;D
+292505;Valor títulos pensionales;4;D
+292510;Títulos pensionales por amortizar (DB);4;D
+292515;Intereses causados sobre títulos pensionales;4;D
+3;PATRIMONIO;1;C
+31;CAPITAL SOCIAL;2;C
+3105;CAPITAL SUSCRITO Y PAGADO;3;C
+310505;Capital autorizado;4;C
+310510;Capital por suscribir (DB);4;D
+310515;Capital suscrito por cobrar (DB);4;D
+3115;APORTES SOCIALES;3;C
+311505;Cuotas o partes de interés social;4;C
+311510;Aportes de socios-fondo mutuo de inversión;4;C
+311515;Contribuc de la empresa-fondo mutuo inversión;4;C
+311520;Suscripciones del público;4;C
+3120;CAPITAL ASIGNADO;3;C
+3125;INVERSIÓN SUPLEMENTARIA AL CAPITAL ASIGNA;3;C
+3130;CAPITAL DE PERSONAS NATURALES;3;C
+3135;APORTES DEL ESTADO;3;C
+3140;FONDO SOCIAL;3;C
+32;SUPERÁVIT DE CAPITAL;2;C
+3205;PRIMA EN COLOCAC DE ACCIONES,CUOTAS O P;3;C
+320505;Prima en colocación de acciones;4;C
+320510;Prima en colocac de acciones por cobrar (DB);4;D
+320515;Prima en colocac de cuotas o part de ints soc;4;C
+3210;DONACIONES;3;C
+321005;En dinero;4;C
+321010;En valores mobiliarios;4;C
+321015;En bienes muebles;4;C
+321020;En bienes inmuebles;4;C
+321025;En intangibles;4;C
+3215;CRÉDITO MERCANTIL;3;C
+3220;KNOW HOW;3;C
+3225;SUPERÁVIT MÉTODO DE PARTICIPACIÓN;3;C
+322505;De acciones;4;C
+322510;De cuotas o partes de interés social;4;C
+33;RESERVAS;2;C
+3305;RESERVA OBLIGATORIAS;3;C
+330505;Reserva legal;4;C
+330510;Reserva por disposiciones fiscales;4;C
+330515;Reserva para readquisición de acciones;4;C
+330516;Acciones propias readquiridas (DB);4;D
+330517;Reserva para readq cuotas partes de int/s soc;4;C
+330518;Cuotas o partes de int. social prop readq(DB);4;D
+330520;Reserva para extensión agropecuaria;4;C
+330525;Reserva ley 78 de 1990;4;C
+330530;Reserva para reposición de semovientes;4;C
+330535;Reserva ley 4ta de 1980;4;C
+330595;Otras;4;C
+3310;RESERVA ESTATUTARIAS;3;C
+331005;Para futuras capitalizaciones;4;C
+331010;Para reposición de activos;4;C
+331015;Para futuros ensanches;4;C
+331095;Otras;4;C
+3315;RESERVA OCASIONALES;3;C
+331505;Para beneficencia y civismo;4;C
+331510;Para futuras capitalizaciones;4;C
+331515;Para futuros ensanches;4;C
+331520;Para adquisic o reposic de prop plant equipo;4;C
+331525;Para investigación y desarrollo;4;C
+331530;Para fomento económico;4;C
+331535;Para capital de trabajo;4;C
+331540;Para estabilización de rendimientos;4;C
+331545;A disposición del máximo órgano social;4;C
+331595;Otras;4;C
+34;REVALORIZACIÓN DEL PATRIMONIO;2;C
+3405;AJUSTES POR INFLACIÓN;3;C
+340505;De capital social;4;C
+340510;De superávit de capital;4;C
+340515;De reservas;4;C
+340520;De resultados de ejercicios anteriores;4;C
+340525;De activos en período improductivo;4;C
+340530;De saneamiento fiscal;4;C
+340535;De ajustes decreto 3019 de 1989;4;C
+340540;De divid y partic decr en accs, cuot o partes;4;C
+340545;Superávit método de participación;4;C
+3410;SANEAMIENTO FISCAL;3;C
+3415;AJUSTES POR INFLACIÓN;3;C
+35;DIVIDENDS O PARTICIPAC DECRETADAS EN ACC;2;C
+3505;DIVIDENDOS DECRETADOS EN ACCIONES;3;C
+3510;PARTIC/N DECRETS EN CUOTAS  O PART INTS S;3;C
+36;RESULTADOS DEL EJERCICIO;2;C
+3605;UTILIDAD DEL EJERCICIO;3;C
+3610;PÉRDIDA DEL EJERCICIO;3;C
+361005;Pérdida del ejercicio;4;C
+361010;Pérdida por exposición a la inflación;4;C
+37;RESULTADOS DEL EJERCICIO ANTERIORES;2;C
+3705;UTILIDADES ACUMULADAS;3;C
+3710;PÉRDIDAS ACUMULADAS;3;C
+38;SUPERÁVIT POR VALORACIONES;2;C
+3805;DE INVERSIONES;3;C
+380505;Acciones;4;C
+380510;Cuotas o partes de interés social;4;C
+380515;Derechos fiduciarios;4;C
+3810;DE PROPIEDADES, PLANTA Y EQUIPO;3;C
+381004;Terrenos;4;C
+381006;Materiales proyectos petroleros;4;C
+381008;Construcciones y edificaciones;4;C
+381012;Maquinaria y equipo;4;C
+381016;Equipo de oficina;4;C
+381020;Equipo de computación y comunicación;4;C
+381024;Equipo médico-científico;4;C
+381028;Equipo de hoteles y restaurantes;4;C
+381032;Flota y equipo de transporte;4;C
+381036;Flota y equipo fluvial y/o marítimo;4;C
+381040;Flota y equipo aéreo;4;C
+381044;Flota y equipo férreo;4;C
+381048;Acueductos, plantas y redes;4;C
+381052;Armamento de vigilancia;4;C
+381056;Envases y empaques;4;C
+381060;Plantaciones agrícolas y forestales;4;C
+381064;Vías de comunicación;4;C
+381068;Minas y canteras;4;C
+381072;Pozos artesianos;4;C
+381076;Yacimientos;4;C
+381080;Semovientes;4;C
+3895;DE OTROS ACTIVOS;3;C
+389505;Bienes de arte y cultura;4;C
+389510;Bienes entregados en comodato;4;C
+389515;Bienes recibidos en pago;4;C
+389520;Inventarios de semovientes;4;C
+4;INGRESOS;1;C
+41;OPERACIONALES;2;C
+4105;AGRICULTURA, GANADERÍA, CAZA Y SILVICULTU;3;C
+410505;Cultivo de cereales;4;C
+410510;Cultiv de hortalizas, legumbres y plant ornam;4;C
+410515;Cultiv de frutas, nueces y plantas aromáticas;4;C
+410520;Cultivo de café;4;C
+410525;Cultivo de flores;4;C
+410530;Cultivo de caña de azúcar;4;C
+410535;Cultivo de algodón y plantas para mat textil;4;C
+410540;Cultivo de banano;4;C
+410545;Otros cultivos agrícolas;4;C
+410550;Cría ovejas,cabras,asnos,mulas y burdéganos;4;C
+410555;Cría de ganado caballar y vacuno;4;C
+410560;Producción avícola;4;C
+410565;Cría de otros animales;4;C
+410570;Servicios agrícolas y ganaderos;4;C
+410575;Actividad de caza;4;C
+410580;Actividad de silvicultura;4;C
+410595;Actividades conexas;4;C
+410599;*Ajustes por inflación;4;C
+4110;PESCA;3;C
+411005;Actividad de pesca;4;C
+411010;Explotación de criaderos de peces;4;C
+411095;Actividades conexas;4;C
+411099;*Ajustes por inflación;4;C
+4115;EXPLOTACIÓN DE MINAS Y CANTERAS;3;C
+411505;Carbón;4;C
+411510;Petróleo crudo;4;C
+411512;Gas natural;4;C
+411514;Servicios relac con extracc de petróleo y gas;4;C
+411515;Minerales de hierro;4;C
+411520;Minerales metalíferos no ferrosos;4;C
+411525;Piedra, arena y arcilla;4;C
+411527;Piedras preciosas;4;C
+411528;Oro;4;C
+411530;Otras minas y canteras;4;C
+411532;Prestación de Servicios sector minero;4;C
+411595;Actividades conexas;4;C
+411599;*Ajustes por inflación;4;C
+4120;INDUSTRIAS MANUFACTURERAS;3;C
+412001;Producc y proce/to de carnes y prods cárnicos;4;C
+412002;Productos de pescado;4;C
+412003;Productos de frutas ,legumbres y hortalizas;4;C
+412004;Elaboración de aceites y grasas;4;C
+412005;Elaboración de productos lácteos;4;C
+412006;Elaboración de productos de molinería;4;C
+412007;Elab. de almidones y derivados;4;C
+412008;Elab. de alimentos para animales;4;C
+412009;Elaboración de productos para panadería;4;C
+412010;Elaboración de azúcar y melazas;4;C
+412011;Elab. de cacao, chocolate y confitería;4;C
+412012;Elab. de pastas y productos farináceos;4;C
+412013;Elaboración de productos de café;4;C
+412014;Elab. de otros productos alimenticios;4;C
+412015;Elab. de bebidas alcohólica y alcohol etílico;4;C
+412016;Elaboración de vinos;4;C
+412017;Elab. de bebidas malteadas y de malta;4;C
+412018;Elab. de bebidas no alcohólicas;4;C
+412019;Elaboración de productos de tabaco;4;C
+412020;Preparac e hilatura de fibras text y tejedur;4;C
+412021;Acabado de productos textiles;4;C
+412022;Elab. de artículos de materiales textiles;4;C
+412023;Elaboración de tapices y alfombras;4;C
+412024;Elab. de cuerdas,cordeles,bramantes y redes;4;C
+412025;Elaboración de otros productos textiles;4;C
+412026;Elaboración de tejidos;4;C
+412027;Elaboración de prendas de vestir;4;C
+412028;Preparación, adobo y tejido de pieles;4;C
+412029;Curtido, adobo o preparación de cuero;4;C
+412030;Elaboración de maletas, bolsos y similares;4;C
+412031;Elaboración de calzado;4;C
+412032;Producc de madera, artic/s de madera y corcho;4;C
+412033;Elab. de pasta y prods madera, papel y cartón;4;C
+412034;Ediciones y publicaciones;4;C
+412035;Impresión;4;C
+412036;Servicios relac con la edición y la impresión;4;C
+412037;Reproducción de grabaciones;4;C
+412038;Elaboración de productos de horno de coque;4;C
+412039;Elab. de prods de la refinación de petróleo;4;C
+412040;Elab. de sustancias químicas básicas;4;C
+412041;Elab. de abonos y compuestos de nitrógeno;4;C
+412042;Elaboración de plástico y caucho sintético;4;C
+412043;Elab. de prods químicos de uso agropecuario;4;C
+412044;Elaboración de pinturas tintas y masillas;4;C
+412045;Elab. de productos farmacéuticos y botánicos;4;C
+412046;Elab. de jabon,detergente y prepar de tocador;4;C
+412047;Elab. de otros productos químicos;4;C
+412048;Elaboración de fibras;4;C
+412049;Elab. de otros productos de caucho;4;C
+412050;Elaboración de productos de plástico;4;C
+412051;Elaboración de vidrio y productos de vidrio;4;C
+412052;Elab. de prods de cerámica,loza,piedra y ot;4;C
+412053;Elaboración de cemento, cal y yeso;4;C
+412054;Elab. de arts de hormigón, cemento y yeso;4;C
+412055;Corte, tallado y acabado de la piedra;4;C
+412056;Elab. de otros prodcts minerales no metálicos;4;C
+412057;Ind básicas y fundición de hierro y acero;4;C
+412058;Prods primarios de metales prec y no ferrosos;4;C
+412059;Fundición de metales no ferrosos;4;C
+412060;Fabricac de prods metálicos para uso estruct;4;C
+412061;Forja,prens,estamp,laminado de metal y pulvim;4;C
+412062;Revest de metales y obras de ingen. mecánica;4;C
+412063;Fabricación de artículos de ferretería;4;C
+412064;Elab. de otros productos de metal;4;C
+412065;Fabricación de maquinaria y equipo;4;C
+412066;Fabricac de equipo de elevac y manipulación;4;C
+412067;Elab. de aparatos de uso doméstico;4;C
+412068;Elaboración de equipo de oficina;4;C
+412069;Elaboración de pilas y baterías primarias;4;C
+412070;Elaboración de equipo de iluminación;4;C
+412071;Elab. de otros tipos de equipo eléctrico;4;C
+412072;Fabricac/n de equipos de radio tv y comunicac;4;C
+412073;Fabricac/n de aparatos e instrumentos médicos;4;C
+412074;Fabricac/n de instrum de medición y control;4;C
+412075;Fabricac/n de instrum de óptica y equip fotog;4;C
+412076;Fabricación de relojes;4;C
+412077;Fabricación de vehículos automotores;4;C
+412078;Fabricación de carrocerías para autos;4;C
+412079;Fabric de partes piezas y accesor para autos;4;C
+412080;Fabricac/n y repar de buques y otras embarcac;4;C
+412081;Fabric de locomotor y material rodante ferroc;4;C
+412082;Fabricación de aeronaves;4;C
+412083;Fabricación de motocicletas;4;C
+412084;Fabricación de bicicletas y sillas de ruedas;4;C
+412085;Fabricación de otros tipos de transporte;4;C
+412086;Fabricación de muebles;4;C
+412087;Fabricación de joyas y artículos conexos;4;C
+412088;Fabricación de instrumentos de música;4;C
+412089;Fabricación de artíc/ls y equipo para deporte;4;C
+412090;Fabricación de juegos y juguetes;4;C
+412091;Reciclamiento de desperdicios;4;C
+412095;Productos de otras industrias manufactureras;4;C
+412099;*Ajustes por inflación;4;C
+4125;SUMINISTRO DE ELECTRICIDAD,GAS Y AGUA;3;C
+412505;Generac captac y distrib de energía electrica;4;C
+412510;Fabric/n de gas y distrib de combust gaseosos;4;C
+412515;Captación,depuración y distribución de agua;4;C
+412595;Actividades conexas;4;C
+412599;*Ajustes por inflación;4;C
+4130;CONSTRUCCIÓN;3;C
+413005;Preparación de terrenos;4;C
+413010;Construcc de edific y obras de ingenier civil;4;C
+413015;Acondicionamiento de edificios;4;C
+413020;Terminación de edificaciones;4;C
+413025;Alquiler de equipo con operario;4;C
+413095;Actividades conexas;4;C
+413099;*Ajustes por inflación;4;C
+4135;COMERCIO AL POR MAYOR Y AL POR MENOR;3;C
+413502;Venta de vehículos automotores;4;C
+413504;Manten/to, reparac y lavado de vehic automots;4;C
+413506;Venta de partes piezas y acces de veh automot;4;C
+413508;Venta de combust sólidos, líquidos, gaseosos;4;C
+413510;Venta de lubric aditivos llantas y lujos auto;4;C
+413512;Venta a cambio de retribución o por contrata;4;C
+413514;Venta de insum materias prim agrop y flores;4;C
+413516;Vta de otros insum y materias primas no agrop;4;C
+413518;Venta de animales vivos y cueros;4;C
+413520;Venta de prods en almacenes no especializados;4;C
+413522;Venta de productos agropecuarios;4;C
+413524;Venta de prods textiles vest cuero y calzado;4;C
+413526;Venta de papel y cartón;4;C
+413528;Venta de libr rev elem pap 'útiles y text esc;4;C
+413530;Venta de juegos, juguetes y artícs deportivos;4;C
+413532;Venta de instrum quirúrgicos y ortopédicos;4;C
+413534;Venta de artículos en relojerías y joyerías;4;C
+413536;Venta de electrodomésticos y muebles;4;C
+413538;Vta de prods de aseo,farmac,medicin y art toc;4;C
+413540;Vta de cubiertos,vajillas,cristalería,porcel,;4;C
+413542;Vta de material de const fontan. y calefacc/n;4;C
+413544;Venta de pinturas y lacas;4;C
+413546;Venta de productos de vidrios y marquetería;4;C
+413548;Vta de herramientas y artículos de ferretería;4;C
+413550;Venta de químicos;4;C
+413552;Venta de prod interm,desperdicios y desechos;4;C
+413554;Venta de maq. equipo de ofic progr computador;4;C
+413556;Vta de artículs en cacharrerías y misceláneas;4;C
+413558;Venta de instrumentos musicales;4;C
+413560;Venta de arts en casas de empeño y prenderías;4;C
+413562;Venta de equipo fotográfico;4;C
+413564;Venta de equipo óptico y de precisión;4;C
+413566;Venta de empaques;4;C
+413568;Venta de equipo profesional y científico;4;C
+413570;Vta de loterías rifas chance apuestas y simil;4;C
+413572;Reparac de efectos personal y electrodoméstic;4;C
+413595;Venta de otros productos;4;C
+413599;*Ajustes por inflación;4;C
+4140;HOTELES Y RESTAURANTES;3;C
+414005;Hotelería;4;C
+414010;Campamento y otros tipos de hospedaje;4;C
+414015;Restaurantes;4;C
+414020;Bares y cantinas;4;C
+414095;Actividades conexas;4;C
+414099;*Ajustes por inflación;4;C
+4145;TRANSPORTE, ALMACENAMIENTO Y COMUNICAC;3;C
+414505;Servicio de transporte por carretera;4;C
+414510;Servicio de transporte por vía férrea;4;C
+414515;Servicio de transporte por vía acuática;4;C
+414520;Servicio de transporte por vía aérea;4;C
+414525;Servicio de transporte por tuberías;4;C
+414530;Manipulación de carga;4;C
+414535;Almacenamiento y depósito;4;C
+414540;Servicios complementarios para el transporte;4;C
+414545;Agencias de viaje;4;C
+414550;Otras agencias de transporte;4;C
+414555;Servicio postal y de correo;4;C
+414560;Servicio telefónico;4;C
+414565;Servicio de telégrafo;4;C
+414570;Servicio de transmisión de datos;4;C
+414575;Servicio de radio y televisión por cable;4;C
+414580;Transmisión de sonido e imágenes por contrato;4;C
+414595;Actividades conexas;4;C
+414599;*Ajustes por inflación;4;C
+4150;ACTIVIDAD FINANCIERA;3;C
+415005;Venta de inversiones;4;C
+415010;Dividendos de socieds anónimas y/o asimiladas;4;C
+415015;Participación de socieds ltdas y/o asimilada;4;C
+415020;Intereses;4;C
+415025;Reajuste monetario-UPAC;4;C
+415030;Comisiones;4;C
+415035;Operaciones de descuento;4;C
+415040;Cuotas de inscripción-consorcios;4;C
+415045;Cuotas de administración-consorcios;4;C
+415050;Reajuste del sistema-consorcios;4;C
+415055;Eliminación de suscriptores-consorcios;4;C
+415060;Cuotas de ingreso o retiro-soc.administradora;4;C
+415065;Servicios a comisionistas;4;C
+415070;Inscripciones y cuotas;4;C
+415075;Recuperación de garantias;4;C
+415080;Ingreso método de participación;4;C
+415095;Actividades conexas;4;C
+415099;*Ajustes por inflación;4;C
+4155;ACTIVIDADES INMOBIL/S,EMPRESAR/S Y DE ALQ;3;C
+415505;Arrendamiento de bienes inmuebles;4;C
+415510;Inmobiliarias por retribución o contrata;4;C
+415515;Alquiler equipo de transporte;4;C
+415520;Alquiler maquinaria y equipo;4;C
+415525;Alquiler de efectos personales y ens doméstic;4;C
+415530;Consultoría en equipo y progr de informática;4;C
+415535;Procesamiento de datos;4;C
+415540;Manten/to y reparac de maquinaria de oficina;4;C
+415545;Investigaciones científicas y de desarrollo;4;C
+415550;Actividades empresariales de consultoría;4;C
+415555;Publicidad;4;C
+415560;Dotación de personal;4;C
+415565;Investigación y seguridad;4;C
+415570;Limpieza de inmuebles;4;C
+415575;Fotografía;4;C
+415580;Envase y empaque;4;C
+415585;Fotocopiado;4;C
+415590;Manten/to y reparac. de maquinaria y equipo;4;C
+415595;Actividades conexas;4;C
+415599;*Ajustes por inflación;4;C
+4160;ENSEÑANZA;3;C
+416005;Actividades relacionadas con la educación;4;C
+416095;Actividades conexas;4;C
+416099;*Ajustes por inflación;4;C
+4165;SERVICIOS SOCIALES Y DE SALUD;3;C
+416505;Servicio hospitalario;4;C
+416510;Servicio médico;4;C
+416515;Servicio odontológico;4;C
+416520;Servicio de laboratorio;4;C
+416525;Actividades veterinarias;4;C
+416530;Actividades de servicios sociales;4;C
+416595;Actividades conexas;4;C
+416599;*Ajustes por inflación;4;C
+4170;OTRAS ACTIVIDS DE SERVICS COMUNIT,SOC/L Y;3;C
+417005;Eliminación de desperdic y aguas residuales;4;C
+417010;Actividades de asociación;4;C
+417015;Producción y distribución de filmes y videoc.;4;C
+417020;Exhibición de filmes y videocintas;4;C
+417025;Actividad de radio y televisión;4;C
+417030;Actividad teatral, musical y artística;4;C
+417035;Grabación y producción de discos;4;C
+417040;Entretenimiento y esparcimiento;4;C
+417045;Agencias de noticias;4;C
+417050;Lavanderías y similares;4;C
+417055;Peluquerías y similares;4;C
+417060;Servicios funerarios;4;C
+417065;Zonas francas;4;C
+417095;Actividades conexas;4;C
+417099;*Ajustes por inflación;4;C
+4175;DEVOLUCIONES EN VENTAS (DB);3;D
+417599;*Ajustes por inflación;4;D
+42;NO OPERACIONALES;2;C
+4205;OTRAS VENTAS;3;C
+420505;Materia prima;4;C
+420510;Material de desecho;4;C
+420515;Material varios;4;C
+420520;Productos de diversificación;4;C
+420525;Excedentes de exportación;4;C
+420530;Envases y empaques;4;C
+420535;Productos agrícolas;4;C
+420540;De propaganda;4;C
+420545;Productos en remate;4;C
+420550;Combustibles y lubricantes;4;C
+420599;*Ajustes por inflación;4;C
+4210;FINANCIEROS;3;C
+421005;Intereses;4;C
+421010;Reajuste monetario-UPAC;4;C
+421015;Descuentos amortizados;4;C
+421020;Diferencia en cambio;4;C
+421025;Financiación vehículos;4;C
+421030;Financiación sistemas de viajes;4;C
+421035;Aceptaciones bancarias;4;C
+421040;Descuentos comerciales condicionados;4;C
+421045;Descuentos bancarios;4;C
+421050;Comisiones cheques de otras plazas;4;C
+421055;Multas y recargos;4;C
+421060;Sanciones cheques devueltos;4;C
+421095;Otros;4;C
+421099;*Ajustes por inflación;4;C
+4215;DIVIDENDOS Y PARTICIPACIONES;3;C
+421505;De sociedades anónimas y/o asimiladas;4;C
+421510;De sociedades limitadas y/o asimiladas;4;C
+421599;*Ajustes por inflación;4;C
+4218;INGRESOS MÉTODO DE PARTICIPACIÓN;3;C
+421805;De sociedades anónimas y/o asimiladas;4;C
+421810;De sociedades limitadas y/o asimiladas;4;C
+4220;ARRENDAMIENTOS;3;C
+422005;Terrenos;4;C
+422010;Construcciones y edificios;4;C
+422015;Maquinaria y equipo;4;C
+422020;Equipo de oficina;4;C
+422025;Equipo de computación y comunicación;4;C
+422030;Equipo médico-científico;4;C
+422035;Equipo de hoteles y restaurantes;4;C
+422040;Flota y equipo de transporte;4;C
+422045;Flota y equipo fluvial y/o marítimo;4;C
+422050;Flota y equipo aéreo;4;C
+422055;Flota y equipo férreo;4;C
+422060;Acueductos, plantas y redes;4;C
+422062;Envases y empaques;4;C
+422065;Plantaciones agrícolas y forestales;4;C
+422070;Aeródromos;4;C
+422075;Semovientes;4;C
+422099;*Ajustes por inflación;4;C
+4225;COMISIONES;3;C
+422505;Sobre inversiones;4;C
+422510;De concesionarios;4;C
+422515;De Actividades financieras;4;C
+422520;Por venta de Servicios de taller;4;C
+422525;Por venta de seguros;4;C
+422530;Por ingresos para terceros;4;C
+422535;Por distribución de películas;4;C
+422540;Derechos de autor;4;C
+422545;Derechos de programación;4;C
+422599;*Ajustes por inflación;4;C
+4230;HONORARIOS;3;C
+423005;Asesorías;4;C
+423010;Asistencia técnica;4;C
+423015;Administración de vinculadas;4;C
+423099;*Ajustes por inflación;4;C
+4235;SERVICIOS;3;C
+423505;De báscula;4;C
+423510;De transporte;4;C
+423515;De prensa;4;C
+423520;Administrativos;4;C
+423525;Técnicos;4;C
+423530;De computación;4;C
+423535;De Telefax;4;C
+423540;Taller de vehículos;4;C
+423545;De recepción de aeronaves;4;C
+423550;De transporte programa gas natural;4;C
+423555;Por contratos;4;C
+423560;De trilla;4;C
+423565;De mantenimiento;4;C
+423570;Al personal;4;C
+423575;De casino;4;C
+423580;Fletes;4;C
+423585;Entre compañías;4;C
+423595;Otros;4;C
+423599;*Ajustes por inflación;4;C
+4240;UTILIDAD EN VENTA DE INVERSIONES;3;C
+424005;Acciones;4;C
+424010;Cuotas o partes de interés social;4;C
+424015;Bonos;4;C
+424020;Cédulas;4;C
+424025;Certificados;4;C
+424030;Papeles comerciales;4;C
+424035;Títulos;4;C
+424045;Derechos fiduciarios;4;C
+424050;Obligatorias;4;C
+424095;Otras;4;C
+424099;*Ajustes por inflación;4;C
+4245;UTILIDAD EN VENTA DE PROPIED PLANTA Y EQU;3;C
+424504;Terrenos;4;C
+424506;Materiales industria petrolera;4;C
+424508;Construcciones en curso;4;C
+424512;Maquinaria en montaje;4;C
+424516;Construcciones y edificaciones;4;C
+424520;Maquinaria y equipo;4;C
+424524;Equipo de oficina;4;C
+424528;Equipo de computación y comunicación;4;C
+424532;Equipo médico-científico;4;C
+424536;Equipo de hoteles y restaurantes;4;C
+424540;Flota y equipo de transporte;4;C
+424544;Flota y equipo fluvial y/o marítimo;4;C
+424548;Flota y equipo aéreo;4;C
+424552;Flota y equipo férreo;4;C
+424556;Acueductos, plantas y redes;4;C
+424560;Armamento de vigilancia;4;C
+424562;Envases y empaques;4;C
+424564;Plantaciones agrícolas y forestales;4;C
+424568;Vías de comunicación;4;C
+424572;Minas y canteras;4;C
+424580;Pozos artesianos;4;C
+424584;Yacimientos;4;C
+424588;Semovientes;4;C
+424599;*Ajustes por inflación;4;C
+4248;UTILIDAD EN VENTA DE OTROS BIENES;3;C
+424805;Intangible;4;C
+424810;Otros activos;4;C
+424899;*Ajustes por inflación;4;C
+4250;RECUPERACIONES;3;C
+425005;Deudas malas;4;C
+425010;Seguros;4;C
+425015;Reclamos;4;C
+425020;Reintegro por personal en comisión;4;C
+425025;Reintegro garantías;4;C
+425030;Descuentos concedidos;4;C
+425035;Reintegro provisiones;4;C
+425040;Gastos bancarios;4;C
+425045;De depreciación;4;C
+425050;Reintegro de otros costos y gastos;4;C
+425099;*Ajustes por inflación;4;C
+4255;INDEMNIZACIONES;3;C
+425505;Por siniestro;4;C
+425510;Por suministros;4;C
+425515;Lucro cesante compañías de seguros;4;C
+425520;Daño emergente compañías de seguros;4;C
+425525;Por pérdida de mercancía;4;C
+425530;Por incumplimiento de contratos;4;C
+425535;De terceros;4;C
+425540;Por incapacidades I.S.S;4;C
+425590;Otras;4;C
+425599;*Ajustes por inflación;4;C
+4260;PARTICIPACIONES EN CONCESIONES;3;C
+426099;*Ajustes por inflación;4;C
+4265;INGRESOS DE EJERCICIOS ANTERIORES;3;C
+426599;*Ajustes por inflación;4;C
+4275;DEVOLUCIONES EN OTRAS VENTAS (DB);3;D
+427599;*Ajustes por inflación;4;D
+4295;DIVERSOS;3;C
+429503;CERT;4;C
+429505;Aprovechamientos;4;C
+429507;Auxilios;4;C
+429509;Subvenciones;4;C
+429511;Ingresos por investigación y desarrollo;4;C
+429513;Por trabajos ejecutados;4;C
+429515;Regalías;4;C
+429517;Derivados de las exportaciones;4;C
+429519;Otros ingresos de explotación;4;C
+429521;De la actividad ganadera;4;C
+429525;Derechos y licitaciones;4;C
+429530;Ingresos por elementos perdidos;4;C
+429533;Multas y recargos;4;C
+429535;Preavisos descontados;4;C
+429537;Reclamos;4;C
+429540;Recobro de daños;4;C
+429543;Premios;4;C
+429545;Bonificaciones;4;C
+429547;Productos descontados;4;C
+429549;Reconocimientos ISS;4;C
+429551;Excedentes;4;C
+429553;Sobrantes de caja;4;C
+429555;Sobrantes en liquidación fletes;4;C
+429557;Subsidios estatales;4;C
+429559;Capacitación distribuidores;4;C
+429561;De escrituración;4;C
+429563;Registro promesas de venta;4;C
+429567;Útiles, papelería y fotocopias;4;C
+429571;Resultados matriculas y traspasos;4;C
+429573;Decoraciones;4;C
+429575;Manejo de carga;4;C
+429579;Historia clínica;4;C
+429581;Ajuste al peso;4;C
+429583;LLamadas telefónicas;4;C
+429599;*Ajustes por inflación;4;C
+47;AJUSTES POR INFLACIÓN;2;C
+4705;CORRECCIÓN MONETARIA;3;C
+470505;Inversiones (CR);4;C
+470510;Inventarios (CR);4;C
+470515;Propiedades, planta y equipo (CR);4;C
+470520;Intangibles (CR);4;C
+470525;Activos diferidos;4;C
+470530;Otros activos (CR);4;C
+470535;Pasivos sujetos de ajuste;4;C
+470540;Patrimonio;4;C
+470545;Depreciación acumulada (DB);4;D
+470550;Depreciación diferida (CR);4;C
+470555;Agotamiento acumulado (DB);4;C
+470560;Amortización acumulada (DB);4;D
+470565;Ingresos operacionales (DB);4;D
+470568;Devoluciones en ventas (CR);4;C
+470570;Ingresos no operacionales (DB);4;D
+470575;Gastos operacionales de administración (CR);4;C
+470580;Gastos operacionales de ventas (CR);4;C
+470585;Gastos no operacionales (CR);4;C
+470590;Compras (CR);4;C
+470591;Devoluciones en compras (DB);4;D
+470592;Costo de ventas (CR);4;C
+470594;Costos de producción o de operación (CR);4;C
+5;GASTOS;1;D
+51;OPERACIONALES DE ADMINISTRACIÓN;2;D
+5105;GASTOS DE PERSONAL;3;D
+510503;Salario integral;4;D
+510506;Sueldos;4;D
+510512;Jornales;4;D
+510515;Horas extras y recargos;4;D
+510518;Comisiones;4;D
+510521;Viáticos;4;D
+510524;Incapacidades;4;D
+510527;Auxilio de transporte;4;D
+510530;Cesantías;4;D
+510533;Intereses sobre cesantías;4;D
+510536;Prima de servicios;4;D
+510539;Vacaciones;4;D
+510542;Primas extralegales;4;D
+510545;Auxilios;4;D
+510548;Bonificaciones;4;D
+510551;Dotación y suministro a trabajadores;4;D
+510554;Seguros;4;D
+510557;Cuotas partes pensiones de jubilación;4;D
+510558;Amortiz cálculo actuarial pens de jubilación;4;D
+510559;Pensiones de jubilación;4;D
+510560;Indemnizaciones laborales;4;D
+510561;Amortización bonos pensionales;4;D
+510562;Amortización títulos pensionales;4;D
+510563;Capacitación al personal;4;D
+510566;Gastos deportivos y de recreación;4;D
+510568;Aportes a administrador de riesgos profes ARP;4;D
+510569;Aportes a entidades promotoras de salud EPS;4;D
+510570;Aportes a fondos de pensiones y/o cesantías;4;D
+510572;Aportes cajas de compensación familiar;4;D
+510575;Aportes ICBF;4;D
+510578;SENA;4;D
+510581;Aportes sindicales;4;D
+510584;Gastos médicos y drogas;4;D
+510595;Otros;4;D
+510599;*Ajustes por inflación;4;D
+5110;HONORARIOS;3;D
+511005;Junta directiva;4;D
+511010;Revisoría fiscal;4;D
+511015;Auditoría externa;4;D
+511020;Avalúos;4;D
+511025;Asesoría jurídica;4;D
+511030;Asesoría financiera;4;D
+511035;Asesoría técnica;4;D
+511095;Otros;4;D
+511099;*Ajustes por inflación;4;D
+5115;IMPUESTOS;3;D
+511505;Industria y comercio;4;D
+511510;De timbres;4;D
+511515;A la propiedad raíz;4;D
+511520;Derechos sobre instrumentos públicos;4;D
+511525;De valorización;4;D
+511530;De turismo;4;D
+511535;Tasa por utilización de puertos;4;D
+511540;De vehículos;4;D
+511545;Espectáculos públicos;4;D
+511550;Cuotas de fomento;4;D
+511570;IVA descontable;4;D
+511595;Otros;4;D
+511599;*Ajustes por inflación;4;D
+5120;ARRENDAMIENTOS;3;D
+512005;Terrenos;4;D
+512010;Construcciones y edificaciones;4;D
+512015;Maquinaria y equipo;4;D
+512020;Equipo de oficina;4;D
+512025;Equipo de computación y comunicación;4;D
+512030;Equipo médico-científico;4;D
+512035;Equipo de hoteles y restaurantes;4;D
+512040;Flota y equipo de transporte;4;D
+512045;Flota y equipo fluvial y/o marítimo;4;D
+512050;Flota y equipo aéreo;4;D
+512055;Flota y equipo férreo;4;D
+512060;Acueductos, plantas y redes;4;D
+512065;Aeródromos;4;D
+512070;Semovientes;4;D
+512095;Otros;4;D
+512099;*Ajustes por inflación;4;D
+5125;CONTRIBUCIONES Y AFILIACIONES;3;D
+512505;Contribuciones;4;D
+512510;Afiliaciones y sostenimiento;4;D
+512599;*Ajustes por inflación;4;D
+5130;SEGUROS;3;D
+513005;Manejo;4;D
+513010;Cumplimiento;4;D
+513015;Corriente débil;4;D
+513020;Vida colectiva;4;D
+513025;Incendio;4;D
+513030;Terremoto;4;D
+513035;Sustracción y hurto;4;D
+513040;Flota y equipo de transporte;4;D
+513045;Flota y equipo fluvial y/o marítimo;4;D
+513050;Flota y equipo aéreo;4;D
+513055;Flota y equipo férreo;4;D
+513060;Responsabilidad civil y extracontractual;4;D
+513065;Vuelo;4;D
+513070;Rotura de maquinaria;4;D
+513075;Obligatorio accidente de tránsito;4;D
+513080;Lucro cesante;4;D
+513085;Transporte de mercancía;4;D
+513095;Otros;4;D
+513099;*Ajustes por inflación;4;D
+5135;SERVICIOS;3;D
+513505;Aseo y vigilancia;4;D
+513510;Temporales;4;D
+513515;Asistencia técnica;4;D
+513520;Procesamiento electrónico de datos;4;D
+513525;Acueducto y alcantarillado;4;D
+513530;Energía eléctrica;4;D
+513535;Teléfono;4;D
+513540;Correo, portes y telegramas;4;D
+513545;Fax y télex;4;D
+513550;Transporte, fletes y acarreos;4;D
+513555;Gas;4;D
+513595;Otros;4;D
+513599;*Ajustes por inflación;4;D
+5140;GASTOS LEGALES;3;D
+514005;Notariales;4;D
+514010;Registro mercantil;4;D
+514015;Trámites y licencias;4;D
+514020;Aduaneros;4;D
+514025;Consulares;4;D
+514095;Otros;4;D
+514099;*Ajustes por inflación;4;D
+5145;MANTENIMIENTO Y REPARACIONES;3;D
+514505;Terrenos;4;D
+514510;Construcciones y edificaciones;4;D
+514515;Maquinaria y equipo;4;D
+514520;Equipo de oficina;4;D
+514525;Equipo de computación y comunicación;4;D
+514530;Equipo médico-científico;4;D
+514535;Equipo de hoteles y restaurantes;4;D
+514540;Flota y equipo de transporte;4;D
+514545;Flota y equipo fluvial y/o marítimo;4;D
+514550;Flota y equipo aéreo;4;D
+514555;Flota y equipo férreo;4;D
+514560;Acueductos, plantas y redes;4;D
+514565;Armamento de vigilancia;4;D
+514570;Vías de comunicación;4;D
+514599;*Ajustes por inflación;4;D
+5150;ADECUACIÓN E INSTALACIÓN;3;D
+515005;Instalaciones eléctricas;4;D
+515010;Arreglos ornamentales;4;D
+515015;Reparaciones locativas;4;D
+515095;Otros;4;D
+515099;*Ajustes por inflación;4;D
+5155;GASTOS DE VIAJE;3;D
+515505;Alojamiento y manutención;4;D
+515510;Pasajes fluviales y/o marítimos;4;D
+515515;Pasajes aéreos;4;D
+515520;Pasajes terrestres;4;D
+515525;Pasajes férreos;4;D
+515595;Otros;4;D
+515599;*Ajustes por inflación;4;D
+5160;DEPRECIACIONES;3;D
+516005;Construcciones y edificaciones;4;D
+516010;Maquinaria y equipo;4;D
+516015;Equipo de oficina;4;D
+516020;Equipo de computación y comunicación;4;D
+516025;Equipo médico-científico;4;D
+516030;Equipo de hoteles y restaurantes;4;D
+516035;Flota y equipo de transporte;4;D
+516040;Flota y equipo fluvial y/o marítimo;4;D
+516045;Flota y equipo aéreo;4;D
+516050;Flota y equipo férreo;4;D
+516055;Acueductos, plantas y redes;4;D
+516060;Armamento de vigilancia;4;D
+516099;*Ajustes por inflación;4;D
+5165;AMORTIZACIONES;3;D
+516505;Vías de comunicación;4;D
+516510;Intangibles;4;D
+516515;Cargos diferidos;4;D
+516595;Otras;4;D
+516599;*Ajustes por inflación;4;D
+5195;DIVERSOS;3;D
+519505;Comisiones;4;D
+519510;Libros, suscripciones, periódicos y revistas;4;D
+519515;Música ambiental;4;D
+519520;Gastos de representac/n y relaciones públicas;4;D
+519525;Elementos de aseo y cafetería;4;D
+519530;Útiles, papelería y fotocopias;4;D
+519535;Combustibles y lubricantes;4;D
+519540;Envases y empaques;4;D
+519545;Taxis y buses;4;D
+519550;Estampillas;4;D
+519555;Microfilmación;4;D
+519560;Casino y restaurante;4;D
+519565;Parqueaderos;4;D
+519570;Indemnización por daños a terceros;4;D
+519575;Pólvora y similares;4;D
+519595;Otros;4;D
+519599;*Ajustes por inflación;4;D
+5199;PROVISIONES;3;D
+519905;Inversiones;4;D
+519910;Deudores;4;D
+519915;Propiedades, planta y equipo;4;D
+519995;Otros activos;4;D
+519999;*Ajustes por inflación;4;D
+52;OPERACIONALES DE VENTAS;2;D
+5205;GASTOS DE PERSONAL;3;D
+520503;Salario integral;4;D
+520506;Sueldos;4;D
+520512;Jornales;4;D
+520515;Horas extras y recargos;4;D
+520518;Comisiones;4;D
+520521;Viáticos;4;D
+520524;Incapacidades;4;D
+520527;Auxilio de transporte;4;D
+520530;Cesantías;4;D
+520533;Intereses sobre cesantías;4;D
+520536;Prima de Servicios;4;D
+520539;Vacaciones;4;D
+520542;Primas extralegales;4;D
+520545;Auxilios;4;D
+520548;Bonificaciones;4;D
+520551;Dotación y suministro a trabajadores;4;D
+520554;Seguros;4;D
+520557;Cuotas partes pensiones de jubilación;4;D
+520558;Amortiz cálculo actuarial pens de jubilación;4;D
+520559;Pensiones de jubilación;4;D
+520560;Indemnizaciones laborales;4;D
+520561;Amortización bonos pensionales;4;D
+520562;Amortización títulos pensionales;4;D
+520563;Capacitación al personal;4;D
+520566;Gastos deportivos y de recreación;4;D
+520568;Aportes a administrador de riesgos profes ARP;4;D
+520569;Aportes a entidades promotoras de salud EPS;4;D
+520570;Aportes a fondos de pensiones y/o cesantías;4;D
+520572;Aportes cajas de compensación familiar;4;D
+520575;Aportes ICBF;4;D
+520578;SENA;4;D
+520581;Aportes sindicales;4;D
+520584;Gastos médicos y drogas;4;D
+520595;Otros;4;D
+520599;*Ajustes por inflación;4;D
+5210;HONORARIOS;3;D
+521005;Junta directiva;4;D
+521010;Revisoría fiscal;4;D
+521015;Auditoria externa;4;D
+521020;Avaluos;4;D
+521025;Asesoría jurídica;4;D
+521030;Asesoría financiera;4;D
+521035;Asesoría técnica;4;D
+521095;Otros;4;D
+521099;*Ajustes por inflación;4;D
+5215;IMPUESTOS;3;D
+521505;Industria y comercio;4;D
+521510;De timbres;4;D
+521515;A la propiedad raíz;4;D
+521520;Derechos sobre instrumentos públicos;4;D
+521525;De valorización;4;D
+521530;De turismo;4;D
+521535;Tasa por utilización de puertos;4;D
+521540;De vehículos;4;D
+521545;De espectáculos públicos;4;D
+521550;Cuotas de fomento;4;D
+521555;Licores;4;D
+521560;Cervezas;4;D
+521565;Cigarrillos;4;D
+521570;IVA descontable;4;D
+521595;Otros;4;D
+521599;*Ajustes por inflación;4;D
+5220;ARRENDAMIENTOS;3;D
+522005;Terrenos;4;D
+522010;Construcciones y edificaciones;4;D
+522015;Maquinaria y equipo;4;D
+522020;Equipo de oficina;4;D
+522025;Equipo de computación y comunicación;4;D
+522030;Equipo médico-científico;4;D
+522035;Equipo de hoteles y restaurantes;4;D
+522040;Flota y equípo de transporte;4;D
+522045;Flota y equipo fluvial y/o marítimo;4;D
+522050;Flota y equipo aéreo;4;D
+522055;Flota y equipo férreo;4;D
+522060;Acueductos, plantas y redes;4;D
+522065;Aeródromos;4;D
+522070;Semovientes;4;D
+522095;Otros;4;D
+522099;*Ajustes por inflación;4;D
+5225;CONTRIBUCIONES Y AFILIACIONES;3;D
+522505;Contribuciones;4;D
+522510;Afiliaciones y sostenimiento;4;D
+522599;*Ajustes por inflación;4;D
+5230;SEGUROS;3;D
+523005;Manejo;4;D
+523010;Cumplimiento;4;D
+523015;Corriente débil;4;D
+523020;Vida colectiva;4;D
+523025;Incendio;4;D
+523030;Terremoto;4;D
+523035;Sustracción y hurto;4;D
+523040;Flota y equipo de transporte;4;D
+523045;Flota y equipo fluvial y/o marítimo;4;D
+523050;Flota y equipo aéreo;4;D
+523055;Flota y equipo férreo;4;D
+523060;Responsabilidad civil y extracontractual;4;D
+523065;Vuelo;4;D
+523070;Rotura de maquinaria;4;D
+523075;Obligatorio accidente de tránsito;4;D
+523080;Lucro cesante;4;D
+523095;Otros;4;D
+523099;*Ajustes por inflación;4;D
+5235;SERVICIOS;3;D
+523505;Aseo y vigilancia;4;D
+523510;Temporales;4;D
+523515;Asistencia técnica;4;D
+523520;Procesamiento electrónico de datos;4;D
+523525;Acueducto y alcantarillado;4;D
+523530;Energía eléctrica;4;D
+523535;Teléfono;4;D
+523540;Correo, portes y telegramas;4;D
+523545;Fax y télex;4;D
+523550;Transporte, fletes y acarreos;4;D
+523555;Gas;4;D
+523560;Publicidad, propaganda y promoción;4;D
+523595;Otros;4;D
+523599;*Ajustes por inflación;4;D
+5240;GASTOS LEGALES;3;D
+524005;Notariales;4;D
+524010;Registro mercantil;4;D
+524015;Trámites y licencias;4;D
+524020;Aduaneros;4;D
+524025;Consulares;4;D
+524095;Otros;4;D
+524099;*Ajustes por inflación;4;D
+5245;MANTENIMIENTO Y REPARACIONES;3;D
+524505;Terrenos;4;D
+524510;Construcciones y edificaciones;4;D
+524515;Maquinaria y equipo;4;D
+524520;Equipo de oficina;4;D
+524525;Equipo de computación y comunicación;4;D
+524530;Equipo médico-científico;4;D
+524535;Equipo de hoteles y restaurantes;4;D
+524540;Flota y equipo de transporte;4;D
+524545;Flota y equipo fluvial y/o marítimo;4;D
+524550;Flota y equipo aéreo;4;D
+524555;Flota y equipo férreo;4;D
+524560;Acueductos, plantas y redes;4;D
+524565;Armamento de vigilancia;4;D
+524570;Vías de comunicación;4;D
+524599;*Ajustes por inflación;4;D
+5250;ADECUACIÓN E INSTALACIÓN;3;D
+525005;Instalaciones eléctricas;4;D
+525010;Arreglos ornamentales;4;D
+525015;Reparaciones locativas;4;D
+525095;Otros;4;D
+525099;*Ajustes por inflación;4;D
+5255;GASTOS DE VIAJE;3;D
+525505;Alojamiento y manutención;4;D
+525510;Pasajes fluviales y/o marítimos;4;D
+525515;Pasajes aéreos;4;D
+525520;Pasajes terrestres;4;D
+525525;Pasajes férreos;4;D
+525595;Otros;4;D
+525599;*Ajustes por inflación;4;D
+5260;DEPRECIACIONES;3;D
+526005;Construcciones y edificaciones;4;D
+526010;Maquinaria y equipo;4;D
+526015;Equipo de oficina;4;D
+526020;Equipo de computación y comunicación;4;D
+526025;Equipo médico-científico;4;D
+526030;Equipo de hoteles y restaurantes;4;D
+526035;Flota y equipo de transporte;4;D
+526040;Flota y equipo fluvial y/o marítimo;4;D
+526045;Flota y equipo aéreo;4;D
+526050;Flota y equipo férreo;4;D
+526055;Acueductos, plantas y redes;4;D
+526060;Armamento de vigilancia;4;D
+526065;Envases y empaques;4;D
+526099;*Ajustes por inflación;4;D
+5265;AMORTIZACIONES;3;D
+526505;Vías de comunicación;4;D
+526510;Intangibles;4;D
+526515;Cargos diferidos;4;D
+526595;Otras;4;D
+526599;*Ajustes por inflación;4;D
+5270;FINANCIEROS-REAJUSTE DEL SISTEMA;3;D
+527099;*Ajustes por inflación;4;D
+5275;PÉRDIDAS MÉTODO DE PARTICIPACIÓN;3;D
+527505;De sociedades anónimas y/o asimiladas;4;D
+527510;De sociedades limitadas y/o asimiladas;4;D
+5295;DIVERSOS;3;D
+529505;Comisiones;4;D
+529510;Libros, suscripciones, periódicos y revistas;4;D
+529515;Música ambiental;4;D
+529520;Gastos de representac/n y relaciones públicas;4;D
+529525;Elementos de aseo y cafetería;4;D
+529530;Útiles, papelería y fotocopias;4;D
+529535;Combustibles y lubricantes;4;D
+529540;Envases y empaques;4;D
+529545;Taxis y buses;4;D
+529550;Estampillas;4;D
+529555;Microfilmación;4;D
+529560;Casino y restaurante;4;D
+529565;Parqueaderos;4;D
+529570;Indemnización por daños a terceros;4;D
+529575;Pólvora y similares;4;D
+529595;Otros;4;D
+529599;*Ajustes por inflación;4;D
+5299;PROVISIONES;3;D
+529905;Inversiones;4;D
+529910;Deudores;4;D
+529915;Inventarios;4;D
+529920;Propiedades, planta y equipo;4;D
+529995;Otros activos;4;D
+529999;*Ajustes por inflación;4;D
+53;NO OPERACIONALES;2;D
+5305;FINANCIEROS;3;D
+530505;Gastos bancarios;4;D
+530510;Reajuste monetario-UPAC;4;D
+530515;Comisiones;4;D
+530520;Intereses;4;D
+530525;Diferencia en cambio;4;D
+530530;Gastos en negociac/n certificados de cambio;4;D
+530535;Descuentos comerciales condicionados;4;D
+530540;Gastos manejo y emisión de bonos;4;D
+530545;Prima amortizada;4;D
+530595;Otros;4;D
+530599;*Ajustes por inflación;4;D
+5310;PÉRDIDA EN VENTA Y RETIRO DE BIENES;3;D
+531005;Venta de inversiones;4;D
+531010;Venta de cartera;4;D
+531015;Venta de propiedades, planta y equipo;4;D
+531020;Venta de intangibles;4;D
+531025;Venta de otros activos;4;D
+531030;Retiro de propiedes, planta y equipo;4;D
+531035;Retiro de otros activos;4;D
+531040;Pérdidas por siniestros;4;D
+531095;Otros;4;D
+531099;*Ajustes por inflación;4;D
+5313;PÉRDIDAS MÉTODO DE PARTICIPACIÓN;3;D
+531305;De sociedades anónimas y/o asimiladas;4;D
+531310;De sociedades limitadas y/o asimiladas;4;D
+5315;GASTOS EXTRAORDINARIOS;3;D
+531505;Costas y procesos judiciales;4;D
+531510;Actividades culturales y cívicas;4;D
+531515;Costos y gastos de ejercicios anteriores;4;D
+531520;Impuestos asumidos;4;D
+531595;Otros;4;D
+531599;*Ajustes por inflación;4;D
+5395;GASTOS DIVERSOS;3;D
+539505;Demandas laborales;4;D
+539510;Demandas por incumplimiento de contratos;4;D
+539515;Indemnizaciones;4;D
+539520;Multas, sanciones y litigios;4;D
+539525;Donaciones;4;D
+539530;Constitución de garantías;4;D
+539535;Amortiz de bienes entregados en comodato;4;D
+539595;Otros;4;D
+539599;*Ajustes por inflación;4;D
+54;IMPUESTO DE RENTA Y COMPLEMENTARIOS;2;D
+5405;IMPUESTO DE RENTA Y COMPLEMENTARIOS;3;D
+540505;Impuesto de renta y complementarios;4;D
+59;GANANCIAS Y PÉRDIDAS;2;D
+5905;GANANCIAS Y PÉRDIDAS;3;D
+590505;Ganancias y pérdidas;4;D
+6;COSTOS DE VENTAS;1;D
+61;COSTO DE VENTAS Y DE PRESTACIÓN DE SERVI;2;D
+6105;AGRICULTURA, GANADERÍA, CAZA Y SILVICULTU;3;D
+610505;Cultivos de cereales;4;D
+610510;Cultiv de hortalizas legumbres y plant ornam;4;D
+610515;Cultivos de frutas nueces y plantas aromática;4;D
+610520;Cultivo de café;4;D
+610525;Cultivo de flores;4;D
+610530;Cultivo de caña de azúcar;4;D
+610535;Cultivo de algodón y plantas para mat textil;4;D
+610540;Cultivo de banano;4;D
+610545;Otros cultivos agrícolas;4;D
+610550;Cría ovejas,cabras,asnos mulas y burdéganos;4;D
+610555;Cría de ganado caballar y vacuno;4;D
+610560;Producción avícola;4;D
+610565;Cría de otros animales;4;D
+610570;Servicios agrícolas y ganaderos;4;D
+610575;Actividad de caza;4;D
+610580;Actividad de silvicultura;4;D
+610595;Actividades conexas;4;D
+610599;*Ajustes por inflación;4;D
+6110;PESCA;3;D
+611005;Actividad de pesca;4;D
+611010;Explotación de criaderos de peces;4;D
+611095;Actividades conexas;4;D
+611099;*Ajustes por inflación;4;D
+6115;EXPLOTACIÓN DE MINAS Y CANTERAS;3;D
+611505;Carbón;4;D
+611510;Petróleo crudo;4;D
+611512;Gas natural;4;D
+611514;Servicios relac con extracc de petróleo y gas;4;D
+611515;Minerales de hierro;4;D
+611520;Minerales metalíferos no ferrosos;4;D
+611525;Piedra, arena y arcilla;4;D
+611527;Piedras preciosas;4;D
+611528;Oro;4;D
+611530;Otras minas y canteras;4;D
+611532;Prestación de Servicios sector minero;4;D
+611595;Actividades conexas;4;D
+611599;*Ajustes por inflación;4;D
+6120;INDUSTRIAS MANUFACTURERAS;3;D
+612001;Producc/n y proces/to de carnes y prods cárn;4;D
+612002;Productos de pescado;4;D
+612003;Productos de frutas, legumbres y hortalizas;4;D
+612004;Elaboración de aceites y grasas;4;D
+612005;Elaboración de productos lácteos;4;D
+612006;Elaboración de productos de molinería;4;D
+612007;Elaboración de almidones y derivados;4;D
+612008;Elaboración de alimentos para animales;4;D
+612009;Elaboración de productos para panadería;4;D
+612010;Elaboración de azúcar y melazas;4;D
+612011;Elaboración de cacao, chocolate y confitería;4;D
+612012;Elaboración de pastas y productos farináceos;4;D
+612013;Elaboración de productos de café;4;D
+612014;Elaboración de otros productos alimenticios;4;D
+612015;Elab. de bebidas alcohólica y alcohol etílico;4;D
+612016;Elaboración de vinos;4;D
+612017;Elaboración de bebidas malteadas y de malta;4;D
+612018;Elaboración de bebidas no alcohólicas;4;D
+612019;Elaboración de productos de tabaco;4;D
+612020;Prep e hilatura de fibras textils y tejeduría;4;D
+612021;Acabado de productos textiles;4;D
+612022;Elab. de artículos de materiales textiles;4;D
+612023;Elaboración de tapices y alfombras;4;D
+612024;Elab. de cuerdas,cordeles,bramantes y redes;4;D
+612025;Elaboración de otros productos textiles;4;D
+612026;Elaboración de tejidos;4;D
+612027;Elaboración de prendas de vestir;4;D
+612028;Preparación, adobo y teñido de pieles;4;D
+612029;Curtido, adobo o preparación de cuero;4;D
+612030;Elaboración de maletas, bolsos y similares;4;D
+612031;Elaboración de calzado;4;D
+612032;Producc/n de madera,arts de madera y corcho;4;D
+612033;Elab. de pasta y productos de madera pap cart;4;D
+612034;Ediciones y publicaciones;4;D
+612035;Impresión;4;D
+612036;Servicios relac con la edición y la impresión;4;D
+612037;Reproducción de grabaciones;4;D
+612038;Elab. de productos de horno de coque;4;D
+612039;Elab. de productos de la refinac de petróleo;4;D
+612040;Elab. de sustancias quimicas básicas;4;D
+612041;Elab. de abonos y compuestos de nitrógeno;4;D
+612042;Elaboración de plástico y caucho sintético;4;D
+612043;Elab. de prods químicos de uso agropecuario;4;D
+612044;Elaboración de pinturas tintas y masillas;4;D
+612045;Elab. de productos farmacéutic y botánicos;4;D
+612046;Elab.de jabones,detergentes y prep de tocador;4;D
+612047;Elab. de otros productos químicos;4;D
+612048;Elaboración de fibras;4;D
+612049;Elab. de otros productos de caucho;4;D
+612050;Elaboración de productos de plástico;4;D
+612051;Elaboración de vidrio y productos de vidrio;4;D
+612052;Elab. de prods de cerámica,loza,piedra y ot;4;D
+612053;Elaboración de cemento, cal y yeso;4;D
+612054;Elab. de arts de hormigón, cemento y yeso;4;D
+612055;Corte, tallado y acabado de la piedra;4;D
+612056;Elab. de otros prodcts minerales no metálicos;4;D
+612057;Ind básicas y fundición de hierro y acero;4;D
+612058;Prods primarios de metales prec y no ferrosos;4;D
+612059;Fundición de metales no ferrosos;4;D
+612060;Fabricación de prods metal para uso estructur;4;D
+612061;Forja,prens,estamp,laminado de metal y pulvim;4;D
+612062;Revest de metales y obras de ingen. mecánica;4;D
+612063;Fabricación de artículos de ferretería;4;D
+612064;Elaboración de otros productos de metal;4;D
+612065;Fabricación de maquinaria y equipo;4;D
+612066;Fabricación de equip de elevac y manipulación;4;D
+612067;Elaboración de aparatos de uso doméstico;4;D
+612068;Elaboración de equipo de oficina;4;D
+612069;Elaboración de pilas y baterías primarias;4;D
+612070;Elaboración de equipo de iluminación;4;D
+612071;Elab. de otros tipos de equipo eléctrico;4;D
+612072;Fabricación de equipo de radio t.v y comunic;4;D
+612073;Fabricación de aparatos e instrumento médicos;4;D
+612074;Fabricación de instrum de medición y control;4;D
+612075;Fabric/n de instrum de óptica y equip fotogr;4;D
+612076;Fabricación de relojes;4;D
+612077;Fabricación de vehículos automotores;4;D
+612078;Fabricación de carrocerías para autos;4;D
+612079;Fabricaci de partes, piez y acces para autos;4;D
+612080;Fabricac/n y repar de buques y otras embarcac;4;D
+612081;Fabric/n de locomot y material rodante ferroc;4;D
+612082;Fabricación de aeronaves;4;D
+612083;Fabricación de motocicletas;4;D
+612084;Fabricación de bicicletas y sillas de ruedas;4;D
+612085;Fabricación de otros tipos de transporte;4;D
+612086;Fabricación de muebles;4;D
+612087;Fabricación de joyas y artículos conexos;4;D
+612088;Fabricación de instrumentos de música;4;D
+612089;Fabricación de artíc/ls y equipo para deporte;4;D
+612090;Fabricación de juegos y juguetes;4;D
+612091;Reciclamiento de desperdicios;4;D
+612095;Productos de otras industrias manufactureras;4;D
+612099;*Ajustes por inflación;4;D
+6125;SUMINISTRO DE ELECTRICIDAD, GAS Y AGUA;3;D
+612505;Generac captac y distrib de energía eléctrica;4;D
+612510;Fabric/n de gas y distrib de combust gaseosos;4;D
+612515;Captación,depuración y distribución de agua;4;D
+612595;Actividades conexas;4;D
+612599;*Ajustes por inflación;4;D
+6130;CONSTRUCCIÓN;3;D
+613005;Preparación de terrenos;4;D
+613010;Construcc de edific y obras de ingenier civil;4;D
+613015;Acondicionamiento de edificios;4;D
+613020;Terminación de edificaciones;4;D
+613025;Alquiler de equipo con operario;4;D
+613095;Actividades conexas;4;D
+613099;*Ajustes por inflación;4;D
+6135;COMERCIO AL POR MAYOR Y AL POR MENOR;3;D
+613502;Venta de vehículos automotores;4;D
+613504;Manten/to reparac y lavado de vehic automots;4;D
+613506;Venta de partes piezas y acces de veh automot;4;D
+613508;Venta de combust sólidos líquidos gaseosos;4;D
+613510;Venta de lubric aditivos llantas y lujos auto;4;D
+613512;Venta a cambio de retribución o por contrata;4;D
+613514;Vta de insum materias primas agrop y flores;4;D
+613516;Vta de otros insum y materias prim no agrop.;4;D
+613518;Venta de animales vivos y cueros;4;D
+613520;Venta de prods en almacenes no especializados;4;D
+613522;Venta de productos agropecuarios;4;D
+613524;Venta de prods textiles vest cuero  y calzado;4;D
+613526;Venta de papel y cartón;4;D
+613528;Venta de libr rev elem pap útiles y texto esc;4;D
+613530;Venta de juegos juguetes y art deportivos;4;D
+613532;Venta de instrum quirúrgicos y ortopédicos;4;D
+613534;Venta de artículos de relojerías y joyerías;4;D
+613536;Venta de electrodomésticos y muebles;4;D
+613538;Vta de prods de aseo,farmac,médicin y art toc;4;D
+613540;Vta de cubiertos,vajillas,cristalería,porcel;4;D
+613542;Vta de mater de construcc fontan y calefacc;4;D
+613544;Venta de pinturas y lacas;4;D
+613546;Venta de prods de vidrios y marquetería;4;D
+613548;Venta de herramientas y artícul de ferretería;4;D
+613550;Venta de químicos;4;D
+613552;Venta de prod interm,desperdicios y desechos;4;D
+613554;Venta de maq. equipo de ofic. progr computad.;4;D
+613556;Venta de art en cacharrerías y misceláneas;4;D
+613558;Venta de instrumentos musicales;4;D
+613560;Venta de arts en casas de empeño y prenderías;4;D
+613562;Venta de equipo fotográfico;4;D
+613564;Venta de equipo óptico y de precisión;4;D
+613566;Venta de empaques;4;D
+613568;Venta de equipo profesional y científico;4;D
+613570;Vta de loterías,rifas,chance,apuestas y sim;4;D
+613572;Reparac de efectos personales y electrodomést;4;D
+613595;Venta de otros productos;4;D
+613599;*Ajustes por inflación;4;D
+6140;HOTELES Y RESTAURANTES;3;D
+614005;Hotelería;4;D
+614010;Campamento y otros tipos de hospedaje;4;D
+614015;Restaurantes;4;D
+614020;Bares y cantinas;4;D
+614095;Actividades conexas;4;D
+614099;*Ajustes por inflación;4;D
+6145;TRANSPORTE, ALMACENAMIENTO Y COMUNICAC;3;D
+614505;Servicio de transporte por carretera;4;D
+614510;Servicio de transporte por vía férrea;4;D
+614515;Servicio de transporte por vía acuática;4;D
+614520;Servicio de transporte por vía aérea;4;D
+614525;Servicio de transporte por tuberías;4;D
+614530;Manipulación de carga;4;D
+614535;Almacenamiento y depósito;4;D
+614540;Servicios complementarios para el transporte;4;D
+614545;Agencias de viaje;4;D
+614550;Otras agencias de transporte;4;D
+614555;Servicio postal y de correo;4;D
+614560;Servicio telefónico;4;D
+614565;Servicio de telégrafo;4;D
+614570;Servicio de transmisión de datos;4;D
+614575;Servicio de radio y televisión por cable;4;D
+614580;Transmisión de sonido e imágenes por contrato;4;D
+614595;Actividades conexas;4;D
+614599;*Ajustes por inflación;4;D
+6150;ACTIVIDAD FINANCIERA;3;D
+615005;De inversiones;4;D
+615010;De servicio de bolsa;4;D
+615099;*Ajustes por inflación;4;D
+6155;ACTIVIDADES INMOBIL/S, EMPRESAR/S Y DE ALQ;3;D
+615505;Arrendamiento de bienes inmuebles;4;D
+615510;Inmobiliarias por retribución o contrata;4;D
+615515;Alquiler equipo de transporte;4;D
+615520;Alquiler maquinaria y equipo;4;D
+615525;Alquiler de efectos personales y ens doméstic;4;D
+615530;Consultoría en equipo y progr de informática;4;D
+615535;Procesamiento de datos;4;D
+615540;Manten/to y reparac de maquinaria de oficina;4;D
+615545;Investigaciones científicas y de desarrollo;4;D
+615550;Actividades empresariales de consultoría;4;D
+615555;Publicidad;4;D
+615560;Dotación de personal;4;D
+615565;Investigación y seguridad;4;D
+615570;Limpieza de inmuebles;4;D
+615575;Fotografía;4;D
+615580;Envase y empaque;4;D
+615585;Fotocopiado;4;D
+615590;Manten/to y reparac. de maquinaria y equipo;4;D
+615595;Actividades conexas;4;D
+615599;*Ajustes por inflación;4;D
+6160;ENSEÑANZA;3;D
+616005;Actividades relacionadas con la educación;4;D
+616095;Actividades conexas;4;D
+616099;*Ajustes por inflación;4;D
+6165;SERVICIOS SOCIALES Y DE SALUD;3;D
+616505;Servicio hospitalario;4;D
+616510;Servicio médico;4;D
+616515;Servicio odontológico;4;D
+616520;Servicio de laboratorio;4;D
+616525;Actividades veterinarias;4;D
+616530;Actividad de servicios sociales;4;D
+616595;Actividades conexas;4;D
+616599;*Ajustes por inflación;4;D
+6170;OTRAS ACTIVIDS DE SERVICS COMUNIT,SOC/L Y;3;D
+617005;Eliminación de desperdic y aguas residuales;4;D
+617010;Actividades de asociación;4;D
+617015;Producc y distribucc de filmes y videocintas;4;D
+617020;Exhibición de filmes y videocintas;4;D
+617025;Actividad de radio y televisión;4;D
+617030;Actividad teatral, musical y artística;4;D
+617035;Grabación y producción de discos;4;D
+617040;Entretenimiento y esparcimiento;4;D
+617045;Agencias de noticias;4;D
+617050;Lavanderías y similares;4;D
+617055;Peluquerías y similares;4;D
+617060;Servicios funerarios;4;D
+617065;Zonas francas;4;D
+617095;Actividades conexas;4;D
+617099;*Ajustes por inflación;4;D
+62;COMPRAS;2;D
+6205;DE MERCANCÍAS;3;D
+620599;*Ajustes por inflación;4;D
+6210;DE MATERIAS PRIMAS;3;D
+621099;*Ajustes por inflación;4;D
+6215;DE MATERIALES INDIRECTOS;3;D
+621599;*Ajustes por inflación;4;D
+6220;COMPRA DE ENERGÍA;3;D
+622099;*Ajustes por inflación;4;D
+6225;DEVOLUCIONES EN COMPRAS (CR);3;C
+622599;*Ajustes por inflación;4;C
+7;COSTOS DE PRODUCCIÓN O DE OPERACIÓN;1;D
+71;MATERIA PRIMA;2;D
+72;MANO DE OBRA DIRECTA;2;D
+73;COSTOS INDIRECTOS;2;D
+74;CONTRATOS DE SERVICIOS;2;D
+8;CUENTAS DE ORDEN DEUDORAS;1;D
+81;DERECHOS CONTINGENTES;2;D
+8105;BIENES Y VALORES ENTREGADOS EN CUSTODIA;3;D
+810505;Valores mobiliarios;4;D
+810510;Bienes muebles;4;D
+810599;Ajustes por inflación;4;D
+8110;BIENES Y VALORES ENTREGADOS EN GARANTÍA;3;D
+811005;Valores mobiliarios;4;D
+811010;Bienes muebles;4;D
+811015;Bienes inmuebles;4;D
+811020;Contratos de ganado en participación;4;D
+811099;Ajustes por inflación;4;D
+8115;BIENES Y VALORES EN PODER DE TERCEROS;3;D
+811505;En arrendamiento;4;D
+811510;En préstamo;4;D
+811515;En depósito;4;D
+811520;En consignación;4;D
+811599;Ajustes por inflación;4;D
+8120;LITIGIOS Y/O DEMANDAS;3;D
+812005;Ejecutivos;4;D
+812010;Incumplimiento de contratos;4;D
+8125;PROMESAS DE COMPRAVENTA;3;D
+8195;DIVERSAS;3;D
+819505;Valores adquiridos por recibir;4;D
+819595;Otras;4;D
+819599;Ajustes por inflación;4;D
+82;DEUDORAS FISCALES;2;D
+83;DEUDORAS DE CONTROL;2;D
+8305;BIENES RECIBIDOS EN ARRENDAM/TO FINANCIE;3;D
+830505;Bienes muebles;4;D
+830510;Bienes inmuebles;4;D
+830599;Ajustes por inflación;4;D
+8310;TÍTULOS DE INVERSIÓN NO COLOCADOS;3;D
+831005;Acciones;4;D
+831010;Bonos;4;D
+831095;Otros;4;D
+8315;PROP PLANT Y EQUIP DEPREC AGOT Y AMORTIZ;3;D
+831506;Materiales proyectos petroleros;4;D
+831516;Construcciones y edificaciones;4;D
+831520;Maquinaria y equipo;4;D
+831524;Equipo de oficina;4;D
+831528;Equipo de computación y comunicación;4;D
+831532;Equipo médico-científico;4;D
+831536;Equipo de hoteles y restaurantes;4;D
+831540;Flota y equipo de transporte;4;D
+831544;Flota y equipo fluvial y/o marítimo;4;D
+831548;Flota y equipo aéreo;4;D
+831552;Flota y equipo férreo;4;D
+831556;Acueductos, plantas y redes;4;D
+831560;Armamento de vigilancia;4;D
+831562;Envases y empaques;4;D
+831564;Plantaciones agrícolas y forestales;4;D
+831568;Vías de comunicación;4;D
+831572;Minas y canteras;4;D
+831576;Pozos artesianos;4;D
+831580;Yacimientos;4;D
+831584;Semovientes;4;D
+831599;Ajustes por inflación;4;D
+8320;CRÉDITOS A FAVOR NO UTILIZADOS;3;D
+832005;País;4;D
+832010;Exterior;4;D
+8325;ACTIVOS CASTIGADOS;3;D
+832505;Inversiones;4;D
+832510;Deudores;4;D
+832595;Otros activos;4;D
+8330;TÍTULOS DE INVERSIÓN AMORTIZADOS;3;D
+833005;Bonos;4;D
+833095;Otros;4;D
+8335;CAPITALIZAC IÓN POR REVALORIZ  DE PATRIMO;3;D
+8395;OTRAS CUENTAS DEUDORAS DE CONTROL;3;D
+839505;Cheques posfechados;4;D
+839510;Certificados de depósito a término;4;D
+839515;Cheques devueltos;4;D
+839520;Bienes y valores en fideicomiso;4;D
+839525;Intereses sobre deudas vencidas;4;D
+839595;Diversas;4;D
+839599;Ajustes por inflación;4;D
+8399;AJUSTES POR INFLACIÓN ACTIVOS;3;D
+839905;Inversiones;4;D
+839910;Inventarios;4;D
+839915;Propiedades, planta y equipo;4;D
+839920;Intangibles;4;D
+839925;Cargos diferidos;4;D
+839995;Otros activos;4;D
+84;DERECHOS CONTINGENTES POR CONTRA (CR);2;C
+85;DEUDORAS FISCALES POR CONTRA (CR);2;C
+86;DEUDORAS DE CONTROL POR CONTRA (CR);2;C
+9;CUENTAS DE ORDEN ACREEDORAS;1;C
+91;RESPONSABILIDADES CONTINGENTES;2;C
+9105;BIENES Y VALORES RECIBIDOS EN CUSTODIA;3;C
+910505;Valores mobiliarios;4;C
+910510;Bienes muebles;4;C
+910599;Ajustes por inflación;4;C
+9110;BIENES Y VALORES RECIBIDOS EN GARANTÍA;3;C
+911005;Valores mobiliarios;4;C
+911010;Bienes muebles;4;C
+911015;Bienes inmuebles;4;C
+911020;Contratos de ganado en participación;4;C
+911099;Ajustes por inflación;4;C
+9115;BIENES Y VALORES RECIBIDOS DE TERCEROS;3;C
+911505;En arrendamiento;4;C
+911510;En préstamo;4;C
+911515;En depósito;4;C
+911520;En consignación;4;C
+911525;En comodato;4;C
+911599;Ajustes por inflación;4;C
+9120;LITIGIOS Y/O DEMANDAS;3;C
+912005;Laborales;4;C
+912010;Civiles;4;C
+912015;Administrativos o arbitrales;4;C
+912020;Tributarios;4;C
+9125;PROMESAS DE COMPRAVENTA;3;C
+9130;CONTRATOS DE ADMINISTRACIÓN DELEGADA;3;C
+9135;CUENTAS EN PARTICIPACIÓN;3;C
+9195;OTRAS RESPONSABILIDADES CONTINGENTES;3;C
+92;ACREEDORAS FISCALES;2;C
+93;ACREEDORAS DE CONTROL;2;C
+9305;CONTRATOS DE ARRENDAMIENTO FINANCIERO;3;C
+930505;Bienes muebles;4;C
+930510;Bienes inmuebles;4;C
+9395;OTRAS CUENTAS DE ORDEN ACREEDORAS DE C;3;C
+939505;Documentos por cobrar descontados;4;C
+939510;Convenios de pago;4;C
+939515;Contratos de construcc e instal. por ejecutar;4;C
+939525;Adjudicaciones pendientes de legalizar;4;C
+939530;Reserva artículo 3o. Ley 4a. de 1980;4;C
+939535;Reserva costo reposición semovientes;4;C
+939595;Diversas;4;C
+939599;Ajustes por inflación;4;C
+9399;AJUSTES POR INFLACIÓN PATRIMONIO;3;C
+939905;Capital social;4;C
+939910;Superávit de capital;4;C
+939915;Reservas;4;C
+939925;Divids o partic.decret en accs cuot int soc/l;4;C
+939930;Resultados de ejercicios anteriores;4;C
+94;RESPONSABILIDADES CONTINGENTES POR CON;2;D
+95;ACREEDORAS FISCALES POR CONTRA (DB);2;D
+96;ACREEDORAS DE CONTROL POR CONTRA (DB);2;D

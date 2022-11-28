@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->date('cumpleanios');
 
-            $table->unsignedBigInteger('ciudade_id')->unsigned()->nullable();
+            $table->unsignedBigInteger('ciudade_id')->nullable();
           
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
 
@@ -44,12 +44,12 @@ class CreateUsersTable extends Migration
 
             $table->unsignedBigInteger('persona_id')->nullable();
             $table->unsignedBigInteger('perfile_id')->nullable();
-            $table->unsignedBigInteger('estado_id')->nullable();
-            $table->unsignedBigInteger('empresa_id')->unsigned()->nullable();
+           // $table->unsignedBigInteger('estado_id')->nullable();
+            $table->unsignedBigInteger('empresa_id')->nullable();//TODO no debe ir nulo registrar empresa 1
 
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
             $table->foreign('perfile_id')->references('id')->on('perfiles')->onDelete('cascade');
-            $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
+           // $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes(); //note no add in table pivot
@@ -67,15 +67,17 @@ class CreateUsersTable extends Migration
         $table->integer('diascredito');
         $table->string('limitecredito');
         $table->text('observaciones');
+        $table->boolean('estatus')->default('1');//activo o desctivado
+        $table->BigInteger('user_id');
 
-        $table->unsignedBigInteger('user_id');//creador
-        $table->unsignedBigInteger('estado_id');
+        //$table->unsignedBigInteger('user_id');//creador
+       // $table->unsignedBigInteger('estado_id');
         $table->unsignedBigInteger('empresa_id');
-        $table->unsignedBigInteger('regimene_id');
-        $table->unsignedBigInteger('persona_id')->unsigned()->nullable();
+        $table->unsignedBigInteger('regimene_id')->nullable();
+        $table->unsignedBigInteger('persona_id')->nullable();
 
-        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
+        //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        //$table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
         $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
         $table->foreign('regimene_id')->references('id')->on('regimenes')->onDelete('cascade');
         $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
@@ -93,15 +95,18 @@ class CreateUsersTable extends Migration
         $table->string('limitecredito');
         $table->text('observaciones');
         $table->integer('estadisticas');
+        $table->boolean('estatus')->default('1');//activo o desctivado
+        $table->BigInteger('user_id');
 
-        $table->unsignedBigInteger('user_id');
-        $table->unsignedBigInteger('estado_id')->unsigned()->nullable();
+
+       // $table->unsignedBigInteger('user_id');
+        //$table->unsignedBigInteger('estado_id')->unsigned()->nullable();
         $table->unsignedBigInteger('empresa_id');
-        $table->unsignedBigInteger('clasificacioncliente_id')->unsigned()->nullable();
-        $table->unsignedBigInteger('persona_id')->unsigned()->nullable();
+        $table->unsignedBigInteger('clasificacioncliente_id')->nullable();
+        $table->unsignedBigInteger('persona_id')->nullable();
 
-        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
+       // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+       // $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
         $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
         $table->foreign('clasificacioncliente_id')->references('id')->on('clasificacionclientes')->onDelete('cascade');
         $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');

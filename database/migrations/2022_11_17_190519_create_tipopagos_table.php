@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTipopagosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('tipopagos', function (Blueprint $table) {
@@ -18,9 +14,9 @@ class CreateTipopagosTable extends Migration
             $table->integer('contabilizar');
             $table->text('descripcion');
 
-            $table->unsignedBigInteger('estado_id')->unsigned()->nullable();
+            $table->unsignedBigInteger('estado_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('cuenta_id');
+            $table->unsignedBigInteger('cuenta_id')->nullable();
 
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
@@ -31,11 +27,6 @@ class CreateTipopagosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('tipopagos');

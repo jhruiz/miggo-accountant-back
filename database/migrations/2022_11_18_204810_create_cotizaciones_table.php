@@ -16,12 +16,13 @@ class CreateCotizacionesTable extends Migration
             $table->string('telefono_cliente');
             $table->string('direccion_cliente');
             $table->text('observacion');
+            $table->BigInteger('user_id');
             
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('cliente_id');
-            $table->unsignedBigInteger('vehiculo_id');
+           // $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('cliente_id')->nullable();
+            $table->unsignedBigInteger('vehiculo_id')->nullable();
 
-            $table->foreign('user_id')->references('id')->on('empresas')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->foreign('vehiculo_id')->references('id')->on('vehiculos')->onDelete('cascade');
 
@@ -36,8 +37,8 @@ class CreateCotizacionesTable extends Migration
             $table->string('costototal');
             $table->string('nombreproducto');
             
-            $table->unsignedBigInteger('cargueinventario_id');
-            $table->unsignedBigInteger('cotizacione_id');
+            $table->unsignedBigInteger('cargueinventario_id')->nullable();
+            $table->unsignedBigInteger('cotizacione_id')->nullable();
 
             $table->foreign('cargueinventario_id')->references('id')->on('empresas')->onDelete('cascade');
             $table->foreign('cotizacione_id')->references('id')->on('clientes')->onDelete('cascade');

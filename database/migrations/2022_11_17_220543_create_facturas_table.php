@@ -21,11 +21,13 @@ class CreateFacturasTable extends Migration
             $table->text('observacion');
             $table->date('fechapagoservicio');
             $table->integer('eliminar');
+            $table->BigInteger('user_id');
 
-            $table->unsignedBigInteger('cliente_id');
+
+            $table->unsignedBigInteger('cliente_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('tipopago_id');
+            //$table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('tipopago_id')->nullable();
             $table->unsignedBigInteger('documento_id')->nullable();
             $table->unsignedBigInteger('ordentrabajo_id')->unsigned()->nullable();
             $table->unsignedBigInteger('cuenta_id')->nullable();
@@ -33,7 +35,7 @@ class CreateFacturasTable extends Migration
 
             $table->foreign('cliente_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
+           // $table->foreign('user_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
             $table->foreign('tipopago_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
             $table->foreign('documento_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
             $table->foreign('ordentrabajo_id')->references('id')->on('cargueinventarios')->onDelete('cascade');
@@ -53,9 +55,9 @@ class CreateFacturasTable extends Migration
             $table->double('porcentaje');
             $table->string('impuesto');
 
-            $table->unsignedBigInteger('factura_id');
-            $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('producto_id');
+            $table->unsignedBigInteger('factura_id')->nullable();
+            $table->unsignedBigInteger('deposito_id')->nullable();
+            $table->unsignedBigInteger('producto_id')->nullable();
 
             $table->foreign('factura_id')->references('id')->on('facturas')->onDelete('cascade');
             $table->foreign('deposito_id')->references('id')->on('depositos')->onDelete('cascade');

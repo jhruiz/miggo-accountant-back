@@ -21,8 +21,8 @@ class CreateVehiculosTable extends Migration
             $table->date('soat');
             $table->date('tecno');
             
-            $table->unsignedBigInteger('tipovehiculo_id')->unsigned()->nullable();;
-            $table->unsignedBigInteger('marcavehiculo_id')->unsigned()->nullable();;
+            $table->unsignedBigInteger('tipovehiculo_id')->nullable();;
+            $table->unsignedBigInteger('marcavehiculo_id')->nullable();;
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('tipovehiculo_id')->references('id')->on('tipovehiculos')->onDelete('cascade');

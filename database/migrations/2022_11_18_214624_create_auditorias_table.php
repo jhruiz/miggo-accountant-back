@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAuditoriasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('auditorias', function (Blueprint $table) {
@@ -27,11 +23,6 @@ class CreateAuditoriasTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('auditorias');

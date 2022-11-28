@@ -6,28 +6,25 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePrecargueinventariosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('precargueinventarios', function (Blueprint $table) {
             $table->id();
             $table->string('costoproducto');
             $table->integer('cantidad');
+            $table->BigInteger('user_id');
 
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('deposito_id');
-            $table->unsignedBigInteger('user_id');
+            //$table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('estado_id');
             $table->unsignedBigInteger('proveedore_id');
             $table->unsignedBigInteger('tipopago_id');
 
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
             $table->foreign('deposito_id')->references('id')->on('depositos')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+           // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
             $table->foreign('proveedore_id')->references('id')->on('proveedores')->onDelete('cascade');
             $table->foreign('tipopago_id')->references('id')->on('tipopagos')->onDelete('cascade');
@@ -51,11 +48,6 @@ class CreatePrecargueinventariosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('precargueinventario_impuesto');

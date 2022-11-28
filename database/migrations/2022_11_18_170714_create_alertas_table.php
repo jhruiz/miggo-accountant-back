@@ -45,15 +45,15 @@ class CreateAlertasTable extends Migration
             $table->integer('cant_llamadas');
             $table->text('observaciones');
 
-            $table->unsignedBigInteger('alerta_id');
-            $table->unsignedBigInteger('unidadesmedida_id');
-            $table->unsignedBigInteger('ordentrabajo_id');
-            $table->unsignedBigInteger('estadoalerta_id');
-            $table->unsignedBigInteger('cliente_id');
-            $table->unsignedBigInteger('vehiculo_id');
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('prefactura_id');
-            $table->unsignedBigInteger('factura_id');
+            $table->unsignedBigInteger('alerta_id')->nullable();
+            $table->unsignedBigInteger('unidadesmedida_id')->nullable();
+            $table->unsignedBigInteger('ordentrabajo_id')->nullable();
+            $table->unsignedBigInteger('estadoalerta_id')->nullable();
+            $table->unsignedBigInteger('cliente_id')->nullable();
+            $table->unsignedBigInteger('vehiculo_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('prefactura_id')->nullable();
+            $table->unsignedBigInteger('factura_id')->nullable();
 
             $table->foreign('alerta_id')->references('id')->on('alertas')->onDelete('cascade');
             $table->foreign('unidadesmedida_id')->references('id')->on('unidadesmedidas')->onDelete('cascade');

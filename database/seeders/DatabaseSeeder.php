@@ -11,9 +11,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->truncateTable([
-            'users'
+            'users','empresas','departamentos'
         ]);
 
+        $this->call(PaisSeeder::class);
+         \App\Models\Empresa::factory(1)->create();
          \App\Models\User::factory(50)->create();
     }
 

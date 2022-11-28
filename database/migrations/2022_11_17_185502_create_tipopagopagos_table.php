@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTipopagopagosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('tipopagopagos', function (Blueprint $table) {
@@ -22,11 +18,6 @@ class CreateTipopagopagosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('tipopagopagos');
