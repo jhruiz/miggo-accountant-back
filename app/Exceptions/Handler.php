@@ -60,7 +60,6 @@ class Handler extends ExceptionHandler
         if($exception instanceof ModelNotFoundException){
             // $code = $exception->getStatusCode();
             $modelo = strtolower(class_basename($exception->getModel()));
-            // return $this->errorResponse("No Existe ninguna instacia de {$modelo} con el id especificado", $code);
             return $this->errorResponse("No Existe ninguna instacia de {$modelo} con el id especificado", 404);
 
         }
@@ -117,7 +116,6 @@ class Handler extends ExceptionHandler
 
     protected function convertValidationExceptionToResponse(ValidationException $e, $request)
     {
-
         $errors = $e->validator->errors()->getMessages();
 
         // return $this->errorResponse($errors, $exception->getStatusCode());
