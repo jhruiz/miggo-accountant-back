@@ -16,11 +16,11 @@ class CreateCuentasTable extends Migration
             $table->text('saldo');
             $table->date('fecha');
             $table->string('factura');
-            $table->text('concepto');//tipo de pago foreign key
+            $table->text('concepto');
             $table->double('debe');
             $table->double('haber');
 
-            $table->unsignedBigInteger('empresa_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             
@@ -35,7 +35,7 @@ class CreateCuentasTable extends Migration
             $table->double('importe');
             $table->double('saldo');
 
-            $table->unsignedBigInteger('empresa_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             
@@ -54,7 +54,7 @@ class CreateCuentasTable extends Migration
             $table->date('fin');
             $table->double('diferencia');
 
-            $table->unsignedBigInteger('empresa_id');
+            $table->unsignedBigInteger('empresa_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
             
@@ -65,6 +65,8 @@ class CreateCuentasTable extends Migration
 
     public function down()
     {
+        Schema::dropIfExists('conciliacionbancarias');
+        Schema::dropIfExists('bancaria');
         Schema::dropIfExists('cuentas');
     }
 }

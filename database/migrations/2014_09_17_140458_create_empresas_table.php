@@ -12,6 +12,7 @@ class CreateEmpresasTable extends Migration
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('razonsocial')->nullable();
             $table->string('nit');
             $table->text('direccion');
             $table->string('telefono1');
@@ -54,6 +55,7 @@ class CreateEmpresasTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
+        
     }
 
     public function down()

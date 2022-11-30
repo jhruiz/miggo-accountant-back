@@ -17,8 +17,11 @@ class CreatePermisosTable extends Migration
             $table->text('imagen');
             $table->integer('orden');
             $table->integer('administrador');
-            $table->integer('menu_principal');
             $table->string('ayuda');
+
+            $table->unsignedBigInteger('cloudmenu_id');
+
+            $table->foreign('cloudmenu_id')->references('id')->on('cloudmenus')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -52,6 +55,7 @@ class CreatePermisosTable extends Migration
             $table->timestamps();
         });
 
+        /*
         Schema::create('menuprincipales', function (Blueprint $table) {
             $table->id();
             $table->string('descripcion');
@@ -60,13 +64,13 @@ class CreatePermisosTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
-
+*/
 
     }
 
     public function down()
     {
-        Schema::dropIfExists('menuprincipales');
+        //Schema::dropIfExists('menuprincipales');
         Schema::dropIfExists('cloudmenu_perfile');
         Schema::dropIfExists('permisos');
         Schema::dropIfExists('cloudmenus');

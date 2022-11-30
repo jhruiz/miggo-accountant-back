@@ -26,7 +26,7 @@ trait ApiResponser
     protected function showAll(Collection $collection, $codigo = 200){
         $collection = $this->filterData($collection);
         $collection = $this->sortData($collection);
-        $collection = $this->paginate($collection);
+     //   $collection = $this->paginate($collection);
         return $this->successResponse(['data' =>  $collection], $codigo);
     }
 

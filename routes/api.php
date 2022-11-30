@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-/*
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-*/
+
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/datauser', [AuthController::class, 'dataUser'])->middleware('auth:sanctum');
 
 //Route::get('/users', [UserController::class, 'index']);
 
@@ -39,3 +44,9 @@ Route::ApiResource('tipoeventos', 'App\Http\Controllers\Empresa\TipoeventoContro
 Route::ApiResource('estodoalertas', 'App\Http\Controllers\Empresa\EstadoalertaController');
 Route::ApiResource('alertas', 'App\Http\Controllers\Empresa\AlertaController');
 Route::ApiResource('auditorias', 'App\Http\Controllers\Empresa\AuditoriaController', ['only'=> ['index','show']]);
+
+
+//test
+//Route::get('reportetrm/{company}', 'Report\CompanyOrderProviderController@reporte');//->name('usersStoreRole');
+
+
