@@ -32,16 +32,17 @@ class AuthController extends Controller
 
         //se devuelve una respuesta JSON con el token generado y el tipo de token
         return response()->json([
+            'data' => $user,
             'access_token' => $token,
             'token_type' => 'Bearer'
-        ]);
+        ], 200);
     }
 
     public function login(Request $request){
         //valida las credenciales del usuario
         if (!Auth::attempt($request->only('email', 'password'))){
             return response()->json([
-                'message' => 'Invalid access credentials'
+                'message' => 'Credenciales de acceso no válidas'
             ], 401);
         }
 
@@ -53,9 +54,10 @@ class AuthController extends Controller
 
         //devuelve una respuesta JSON con el token generado y el tipo de token
         return response()->json([
+            'data' => $user,
             'access_token' => $token,
             'token_type' => 'Bearer'
-        ]);
+        ], 200);
     }
 
     public function dataUser(Request $request){
@@ -64,5 +66,15 @@ class AuthController extends Controller
         $usuario = User::findOrFail($request->user()->id);
         return $usuario;
     }
+
+    public function logout(Request $request){
+
+        auth()->user()->tokens()->delete();
+
+        return[
+                'message' => 'estas exitosamente deslogeado y el token a sido borrado'
+        ];
+    }
+
     
 }
