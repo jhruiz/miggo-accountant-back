@@ -65,8 +65,8 @@ class Handler extends ExceptionHandler
         }
 
         if($exception instanceof AuthenticationException){
-            return $this->unauthenticated($request, $exception);
-
+           // return $this->unauthenticated($request, $exception);
+            return $this->errorResponse('No esta autenticado', 401);
         }
 
         if($exception instanceof AuthorizationException){

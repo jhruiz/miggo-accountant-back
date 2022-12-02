@@ -12,16 +12,17 @@ class CreatePermisosTable extends Migration
         
         Schema::create('cloudmenus', function (Blueprint $table) {
             $table->id();
-            $table->string('descripcion');
-            $table->string('url');
-            $table->text('imagen');
-            $table->integer('orden');
-            $table->integer('administrador');
-            $table->string('ayuda');
+            $table->string('descripcion')->nullable();
+            $table->text('url')->nullable();
+            $table->string('imagen')->nullable();
+            $table->string('orden')->nullable();
+            $table->string('administrador')->nullable();
+            $table->text('ayuda')->nullable();
 
-            $table->unsignedBigInteger('cloudmenu_id');
+            $table->integer('cloudmenu_id')->nullable();
+            //$table->unsignedBigInteger('cloudmenu_id')->nullable();
 
-            $table->foreign('cloudmenu_id')->references('id')->on('cloudmenus')->onDelete('cascade');
+            //$table->foreign('cloudmenu_id')->references('id')->on('cloudmenus')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -29,11 +30,11 @@ class CreatePermisosTable extends Migration
 
         Schema::create('permisos', function (Blueprint $table) {
             $table->id();
-            $table->text('acciones');
-            $table->text('columnas');
+            $table->text('acciones')->nullable();
+            $table->text('columnas')->nullable();
 
-            $table->unsignedBigInteger('perfile_id');
-            $table->unsignedBigInteger('cloudmenu_id');
+            $table->unsignedBigInteger('perfile_id')->nullable();
+            $table->unsignedBigInteger('cloudmenu_id')->nullable();
             
             $table->foreign('perfile_id')->references('id')->on('perfiles')->onDelete('cascade');
             $table->foreign('cloudmenu_id')->references('id')->on('cloudmenus')->onDelete('cascade');

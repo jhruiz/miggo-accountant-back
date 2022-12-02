@@ -26,7 +26,10 @@ Route::post('/datauser', [AuthController::class, 'dataUser'])->middleware('auth:
 
 Route::middleware(['auth:sanctum'])->group(function(){
     
-    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/logout', [AuthController::class, 'logout']);
+
+    Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
+
 
 });
 
@@ -35,7 +38,6 @@ Route::middleware(['auth:sanctum'])->group(function(){
 
 //Route::get('/users2', 'App\Http\Controllers\User\UserController@index');
 
-Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
 Route::ApiResource('perfiles', 'App\Http\Controllers\User\PerfileController');
 
 Route::ApiResource('pucs', 'App\Http\Controllers\Contabilidad\PucController');
@@ -50,6 +52,7 @@ Route::ApiResource('tipoeventos', 'App\Http\Controllers\Empresa\TipoeventoContro
 Route::ApiResource('estodoalertas', 'App\Http\Controllers\Empresa\EstadoalertaController');
 Route::ApiResource('alertas', 'App\Http\Controllers\Empresa\AlertaController');
 Route::ApiResource('auditorias', 'App\Http\Controllers\Empresa\AuditoriaController', ['only'=> ['index','show']]);
+Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuController', ['only'=> ['index']]);
 
 
 //test
