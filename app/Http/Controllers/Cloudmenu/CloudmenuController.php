@@ -21,10 +21,10 @@ class CloudmenuController extends ApiController
                // dump($val['cloudmenu_id']);
                 // dump($val);
 
-                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']][] = $val['descripcion'];
-                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']][] = $val['url'];
-                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']][] = $val['imagen'];
-                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']][] = $val['ayuda'];
+                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']]['descripcion'] = $val['descripcion'];
+                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']]['url'] = $val['url'];
+                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']]['imagen'] = $val['imagen'];
+                $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']]['ayuda'] = $val['ayuda'];
                 // $arrClMenu[$val['cloudmenu_id']]['hijos'][$val['id']][] = $val['orden'];
 
             } else {
