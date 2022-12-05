@@ -26,10 +26,20 @@ Route::post('/datauser', [AuthController::class, 'dataUser'])->middleware('auth:
 
 Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
 
+
 Route::get('email/verify/{id}', 'App\Http\Controllers\VerificationController@verify')->name('verification.verify'); 
+Route::get('email/resend/{id}', 'App\Http\Controllers\VerificationController@resend')->name('verification.resend');
 
-Route::get('email/resend', 'App\Http\Controllers\VerificationController@resend')->name('verification.resend');
 
+//***************************************************************************************************** */
+
+
+Route::post('sendPasswordResetLink', 'App\Http\Controllers\PasswordResetRequestController@sendEmail');
+Route::post('resetPassword', 'App\Http\Controllers\ChangePasswordController@passwordResetProcess');
+
+Route::post('/send-email', 'App\Http\Controllers\MailController@sendEmailBasic');//basico maillable
+
+//******************************************************************************************************* */
 
 Route::middleware(['auth:sanctum'])->group(function(){
     

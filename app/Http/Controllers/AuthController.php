@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use FFI\Exception;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 
 class AuthController extends Controller
 {
@@ -74,6 +77,9 @@ class AuthController extends Controller
             'message' => 'estas exitosamente deslogeado y el token a sido borrado'
         ]);
     }
+
+
+   
 
     
 }
