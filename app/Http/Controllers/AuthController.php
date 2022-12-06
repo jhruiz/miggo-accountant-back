@@ -23,7 +23,8 @@ class AuthController extends Controller
            // 'name' => $validatedData['name'],
             'email' => $validatedData['email'],
             'password' => Hash::make($validatedData['password'])
-        ]);
+            ]);
+            //])->sendEmailVerificationNotification();
 
         $token = $user->createToken('auth_token')->plainTextToken;
 

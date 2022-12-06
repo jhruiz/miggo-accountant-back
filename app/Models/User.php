@@ -15,7 +15,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 //use Carbon\Carbon;
 
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;//HasRolesAndPermissions
 

@@ -24,12 +24,16 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/datauser', [AuthController::class, 'dataUser'])->middleware('auth:sanctum');
 
+Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
+
+Route::get('email/verify/{id}', 'App\Http\Controllers\VerificationController@verify')->name('verification.verify'); 
+
+Route::get('email/resend', 'App\Http\Controllers\VerificationController@resend')->name('verification.resend');
+
+
 Route::middleware(['auth:sanctum'])->group(function(){
     
     Route::get('/logout', [AuthController::class, 'logout']);
-
-    Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
-
 
 });
 
