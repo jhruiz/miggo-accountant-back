@@ -18,4 +18,14 @@ class UpdatePasswordRequest extends FormRequest
             'password' => 'required|confirmed'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'password.required' => 'El :attribute es obligatorio.',
+            'password.confirmed' => 'La confirmación de la contraseña no coincide',
+            'password.bail' => 'debe introducir un valor valido.',
+            'email.required' => 'El :attribute es obligatorio.'
+        ];
+    }
 }

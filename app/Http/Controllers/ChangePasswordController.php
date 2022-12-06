@@ -6,10 +6,12 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\ApiController;
 use App\Http\Requests\UpdatePasswordRequest;
 use Symfony\Component\HttpFoundation\Response;
 
-class ChangePasswordController extends Controller
+
+class ChangePasswordController extends ApiController
 {
     public function passwordResetProcess(UpdatePasswordRequest $request){
         return $this->updatePasswordRow($request)->count() > 0 ? $this->resetPassword($request) : $this->tokenNotFoundError();
@@ -42,8 +44,9 @@ class ChangePasswordController extends Controller
           $this->updatePasswordRow($request)->delete();
   
           // respuesta de restablecimiento de contraseña
-          return response()->json([
-            'data'=>'La contraseña ha sido actualizada.'
-          ],Response::HTTP_CREATED);
+          // return response()->json([
+          //   'data'=>'La contraseña ha sido actualizada.'
+          // ],Response::HTTP_CREATED);
+          return $this->showMessage('La contraseña ha sido actualizada.', Response::HTTP_CREATED);
       }    
 }

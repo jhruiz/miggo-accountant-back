@@ -3,7 +3,8 @@
 
 El cuerpo de tu mensaje.
 
-@component('mail::button', ['url' => 'http://localhost:85/response-password-reset?token='.$token])
+@component('mail::button', ['url' => env('APP_URL').'miggo-front/pages/forgot/recuperar-password.html?token='.$token])
+
 Button Text
 @endcomponent
 

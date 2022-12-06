@@ -28,7 +28,7 @@ VALUES
 (22,'EMPRESAS-LICENCIAS','/licencias_empresas/index','lgM_EMPRESAS-LICENCIAS.ico',19,1,9,NULL),
 (23,'GESTION DE PAISES','/paises/index/','lgM_GESTION DE PAISES.ico',20,0,9,NULL),
 (24,'GESTION DE PERFILES','/perfiles/index/','lgM_GESTION DE PERFILES.ico',21,0,9,NULL),
-(25,'GESTION DE USUARIOS','/usuarios/index/','lgM_GESTION DE USUARIOS.ico',22,0,1,'Crear y determinar la participacion y el perfil del usuario que utilice el software'),
+(25,'GESTION DE USUARIOS','usuarios/index.html','lgM_GESTION DE USUARIOS.ico',22,0,1,'Crear y determinar la participacion y el perfil del usuario que utilice el software'),
 (26,'TIPOS DE PAGOS','/tipopagos/index/','lgM_TIPOS DE PAGOS.ico',23,0,1,'Especifica hacia que cuenta de caja va dirigido los pago que se realizan ya sea efectivo, cheque, transferencia(banco) etc.'),
 (27,'GESTION DE PROVEEDORES','/proveedores/index','lgM_GESTION DE PROVEEDORES.png',24,0,3,'Con el nit o nombre puedes dar la busqueda de informacion de proveedores, sus datos basicos'),
 (28,'GESTION DE DOCUMENTOS','/documentos/index','lgM_GESTION DE DOCUMENTOS.png',28,0,1,'Se generan registro de cada movimiento realizado en el inventario â€œtrasladosâ€ â€œcargue de inventarioâ€ y datos de quien lo realiza es decir el usuario quien maneja el software y tiene acceso a ingresar al inventario'),
