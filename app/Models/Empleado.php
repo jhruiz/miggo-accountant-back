@@ -7,28 +7,29 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
-class Perfile extends Model
+class Empleado extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'description',
-        'empresa_id'
+    protected $fillable =[
+        'sueldo',
+        'observaciones',
+        'estadisticas',
+        'estatus',
+        'user_id',
+        'empresa_id',
+        'persona_id'
     ];
 
+    protected $table = "empleados";
 
-    protected $table = "perfiles";
- 
     protected $dates = ['deleted_at'];
 
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
+    public function persona(){
+        return $this->belongsTo(Persona::class);
     }
 
     public function empresa(){
         return $this->belongsTo(Empresa::class);
     }
-
 }

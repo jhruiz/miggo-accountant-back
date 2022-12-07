@@ -62,15 +62,15 @@ class CreateUsersTable extends Migration
     Schema::create('proveedores', function (Blueprint $table) {
         $table->id();
         $table->string('nit');
-        $table->string('nombre');
-        $table->string('telefono');
-        $table->string('paginaweb');
+        $table->string('nombre')->nullable();
+        $table->string('telefono')->nullable();
+        $table->string('paginaweb')->nullable();
         $table->string('email')->unique();
-        $table->integer('diascredito');
-        $table->string('limitecredito');
-        $table->text('observaciones');
+        $table->integer('diascredito')->nullable();
+        $table->string('limitecredito')->nullable();
+        $table->text('observaciones')->nullable();
         $table->boolean('estatus')->default('1');//activo o desctivado
-        $table->BigInteger('user_id');
+        $table->BigInteger('user_id')->nullable();
 
         //$table->unsignedBigInteger('user_id');//creador
        // $table->unsignedBigInteger('estado_id');
@@ -88,17 +88,31 @@ class CreateUsersTable extends Migration
         $table->timestamps();
     });
 
+    Schema::create('regimene_proveedore', function (Blueprint $table) {
+        $table->id();
+
+        $table->unsignedBigInteger('regimene_id')->nullable();
+        $table->unsignedBigInteger('proveedore_id')->nullable();
+
+        $table->foreign('regimene_id')->references('id')->on('regimenes')->onDelete('cascade');
+        $table->foreign('proveedore_id')->references('id')->on('proveedores')->onDelete('cascade');
+
+        $table->softDeletes();
+        $table->timestamps();
+    });
+
+
     Schema::create('clientes', function (Blueprint $table) {
         $table->id();
-        $table->string('nit');
-        $table->string('nombre');
-        $table->string('paginaweb');
-        $table->integer('diascredito');
-        $table->string('limitecredito');
-        $table->text('observaciones');
-        $table->integer('estadisticas');
+        $table->string('nit')->nullable();
+        $table->string('nombre')->nullable();
+        $table->string('paginaweb')->nullable();
+        $table->integer('diascredito')->nullable();
+        $table->string('limitecredito')->nullable();
+        $table->text('observaciones')->nullable();
+        $table->integer('estadisticas')->nullable();
         $table->boolean('estatus')->default('1');//activo o desctivado
-        $table->BigInteger('user_id');
+        $table->BigInteger('user_id')->nullable();
 
 
        // $table->unsignedBigInteger('user_id');
@@ -119,11 +133,11 @@ class CreateUsersTable extends Migration
 
     Schema::create('empleados', function (Blueprint $table) {
         $table->id();
-        $table->double('sueldo');
-        $table->text('observaciones');
-        $table->integer('estadisticas');
+        $table->double('sueldo')->nullable();
+        $table->text('observaciones')->nullable();
+        $table->integer('estadisticas')->nullable();
         $table->boolean('estatus')->default('1');//activo o desctivado
-        $table->BigInteger('user_id');
+        $table->BigInteger('user_id')->nullable();
 
 
        // $table->unsignedBigInteger('user_id');
@@ -148,6 +162,7 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('empleados');
         Schema::dropIfExists('clientes');
+        Schema::dropIfExists('regimene_proveedore');
         Schema::dropIfExists('proveedores');
         Schema::dropIfExists('users');
         Schema::dropIfExists('personas');

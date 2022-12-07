@@ -71,7 +71,8 @@ Route::ApiResource('auditorias', 'App\Http\Controllers\Empresa\AuditoriaControll
 Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuController', ['only'=> ['index']]);
 
 
-//test
-//Route::get('reportetrm/{company}', 'Report\CompanyOrderProviderController@reporte');//->name('usersStoreRole');
 
 
+Route::ApiResource('empleados', 'App\Http\Controllers\Empresa\EmpleadoController');
+
+Route::ApiResource('empresas.users','App\Http\Controllers\Empresa\EmpresaUserController', ['only'=> ['index','update','destroy']]);

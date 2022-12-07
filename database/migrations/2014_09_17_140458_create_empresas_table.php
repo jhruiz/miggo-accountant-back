@@ -37,7 +37,7 @@ class CreateEmpresasTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('relacionempresas', function (Blueprint $table) {
+        Schema::create('relacionempresas', function (Blueprint $table) {//TODO: esta tabla no es necesaria debe integrase
             $table->id();
             $table->string('nombre');
             $table->string('nit');

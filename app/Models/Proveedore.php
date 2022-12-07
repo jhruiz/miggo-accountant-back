@@ -30,4 +30,16 @@ class Proveedore extends Model
     protected $table = "proveedores";
 
     protected $dates = ['deleted_at'];
+
+    public function persona(){
+        return $this->belongsTo(Persona::class);
+    }
+
+    public function empresa(){
+        return $this->belongsTo(Empresa::class);
+    }
+
+    public function regimenes(){
+        return $this->belongstoMany(Regimene::class)->withTimestamps();
+    }
 }

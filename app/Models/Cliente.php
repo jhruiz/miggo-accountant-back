@@ -30,4 +30,17 @@ class Cliente extends Model
     protected $table = "clientes";
 
     protected $dates = ['deleted_at'];
+
+    public function persona(){
+        return $this->belongsTo(Persona::class);
+    }
+
+    public function clasificacioncliente(){
+        return $this->hasOne(ClasificacionCliente::class);
+    }
+
+    public function empresa(){
+        return $this->belongsTo(Empresa::class);
+    }
+
 }

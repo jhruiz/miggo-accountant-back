@@ -27,4 +27,28 @@ class Persona extends Model
     protected $dates = ['deleted_at'];
 
 
+    public function users()
+    {
+      return $this->hasMany(User::class);
+    }
+
+    public function clientes()
+    {
+      return $this->hasMany(Cliente::class);
+    }
+
+    public function empleados()
+    {
+      return $this->hasMany(Empleado::class);
+    }
+
+    public function proveedores()
+    {
+      return $this->hasMany(Proveedore::class);
+    }
+
+    public function ciudad()
+    {
+       return $this->hasOne(Ciudad::class);
+    }
 }
