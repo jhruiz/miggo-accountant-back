@@ -26,7 +26,6 @@ class User extends Authenticatable implements MustVerifyEmail
         'validaciongestion',
         'persona_id',
         'perfile_id',
-        'estado_id',
         'empresa_id',
         'estatus'
     ];
@@ -81,4 +80,8 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasOne(Perfile::class);
     }
     
+    public function empleado()
+    {
+        return $this->hasOne(Empleado::class);
+    }
 }

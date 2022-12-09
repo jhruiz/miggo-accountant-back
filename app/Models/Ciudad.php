@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Ciudad extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
 
     protected $fillable = [   
             'descripcion',
@@ -16,8 +16,6 @@ class Ciudad extends Model
      ];
 
     protected $table = "ciudades";
-
-    protected $dates = ['deleted_at'];
 
     public function departamento()
     {

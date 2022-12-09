@@ -15,11 +15,11 @@ class EmpleadoController extends ApiController
      
         $empleados = Empleado::all();
 
-        // $empleados->each(function($empleados){
+        $empleados->each(function($empleados){
         //     $empleados->empresa;
-        //     $empleados->user;// 1 a 1
-        //     $empleados->persona;
-        //   });
+             $empleados->user;// 1 a 1
+            $empleados->persona;
+          });
 
         return $this->showAll($empleados);
           
@@ -28,16 +28,13 @@ class EmpleadoController extends ApiController
     public function store(Request $request)
     {
         $empleado = Empleado::create($request->all());
-        // $empleado->id_type = $request->id_type; CREO que lo hace directo Empleado 1 a 1
-
         return $this->showOne($empleado, 201);
     }
 
     public function show(Empleado $empleado)
     {
-        // $empleado->persona;// 1 a 1
-        // $empleado->user;// 1 a 1
-        // $empleado->empresa;
+        $empleado->persona;
+        $empleado->user;
         return $this->showOne($empleado);
     }
 

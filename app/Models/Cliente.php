@@ -14,7 +14,6 @@ class Cliente extends Model
     protected $fillable =[
 
         'nit',
-        'nombre',
         'paginaweb',
         'diascredito',
         'limitecredito',

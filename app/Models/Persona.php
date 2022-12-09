@@ -12,7 +12,9 @@ class Persona extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable =[
-        'nombre',
+        'nombres',
+        'apellidos',
+        'rut',
         'identificacion',
         'direccion',
         'celular',

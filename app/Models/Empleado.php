@@ -16,9 +16,17 @@ class Empleado extends Model
         'observaciones',
         'estadisticas',
         'estatus',
+        'creador_id',
+        'inicio',
+        'inicio',
+        'inicio',
         'user_id',
+        'numero_cuenta',
+        'tipo_cuenta',
         'empresa_id',
-        'persona_id'
+        'persona_id',
+        'banco_id'
+
     ];
 
     protected $table = "empleados";
@@ -31,5 +39,9 @@ class Empleado extends Model
 
     public function empresa(){
         return $this->belongsTo(Empresa::class);
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }

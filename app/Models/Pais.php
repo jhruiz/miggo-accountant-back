@@ -8,15 +8,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Pais extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
 
     protected $fillable = [   
             'descripcion',
      ];
 
     protected $table = "paises";
-
-    protected $dates = ['deleted_at'];
 
     public function departamentos()
     {

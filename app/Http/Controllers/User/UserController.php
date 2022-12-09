@@ -42,6 +42,8 @@ class UserController extends ApiController
 
    public function show(User $user)
     {
+        $user->persona;
+        $user->empleado;
         return $this->showOne($user);
     }
 

@@ -9,6 +9,7 @@ class CreateEmpresasTable extends Migration
 
     public function up()
     {
+        
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
@@ -29,7 +30,7 @@ class CreateEmpresasTable extends Migration
             
             $table->unsignedBigInteger('ciudade_id')->nullable();
             $table->unsignedBigInteger('empresa_id')->nullable();
-            
+
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
