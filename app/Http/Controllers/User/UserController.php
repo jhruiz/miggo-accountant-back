@@ -15,6 +15,12 @@ class UserController extends ApiController
     {
         $usuarios = User::all();
         return $this->showAll($usuarios);
+
+        // $usuarios = User::paginate(5);
+        // $custom = collect(['my_data' => 'My custom data here']);
+        // $data = $custom->merge($usuarios);
+        // return response()->json($data,200);
+
     }
 
     public function store(UserRequest $request) //form-data
