@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('celular')->nullable();
             $table->string('telefono')->nullable();
             $table->string('email')->unique();
-            $table->date('cumpleanios');
+            $table->date('cumpleanios')->nullable();
 
             $table->unsignedBigInteger('ciudade_id')->nullable();
           

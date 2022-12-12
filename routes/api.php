@@ -47,7 +47,12 @@ Route::middleware(['auth:sanctum'])->group(function(){
     
     Route::get('/logout', [AuthController::class, 'logout']);
 
+    Route::ApiResource('empresas.users','App\Http\Controllers\Empresa\EmpresaUserController', ['only'=> ['index','update','destroy']]);
+    
+
 });
+
+
 
 //Route::get('/users', [UserController::class, 'index']);
 
@@ -75,4 +80,4 @@ Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuContro
 
 Route::ApiResource('empleados', 'App\Http\Controllers\Empresa\EmpleadoController');
 
-Route::ApiResource('empresas.users','App\Http\Controllers\Empresa\EmpresaUserController', ['only'=> ['index','update','destroy']]);
+

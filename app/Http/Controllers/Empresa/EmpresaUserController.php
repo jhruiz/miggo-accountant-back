@@ -12,7 +12,6 @@ class EmpresaUserController extends ApiController
     public function index(Empresa $empresa)//TODO: crear seed para probar nuevos controladores  
     {
         $users = $empresa->users()
-        ->with('empleado')
         ->with('persona')
         ->orderBy('id','DESC')
         ->get()

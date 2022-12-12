@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
+
+use App\Models\User;
+use App\Models\Persona;
+use App\Http\Requests\UserRequest;
 use App\Http\Controllers\ApiController;
 use Illuminate\Http\Request;
-use App\Models\User;
 
 //use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\UserRequest;
 
 class UserController extends ApiController
 {
@@ -26,6 +28,54 @@ class UserController extends ApiController
     public function store(UserRequest $request) //form-data
     {
         
+        if($request->has('identificacion') && $request->has('email') && $request->has('password') && $request->has('nombres') && $request->has('apellidos')){
+
+                $persona = new Persona();
+                if($request->has('nombres')){
+                    $persona->nombres = $request->nombres;
+                }
+
+                if($request->has('apellidos')){
+                    $persona->apellidos = $request->apellidos;
+                }
+
+                $persona->identificacion = $request->identificacion;
+
+                if($request->has('rut')){
+                    $persona->rut = $request->rut;
+                }
+
+                if($request->has('tipo_identificacion')){
+                    $persona->tipo_identificacion = $request->tipo_identificacion;
+                }
+
+                if($request->has('direccion')){
+                    $persona->direccion = $request->direccion;
+                }
+
+                if($request->has('celular')){
+                    $persona->direccion = $request->direccion;
+                }
+
+                if($request->has('telefono')){
+                    $persona->direccion = $request->direccion;
+                }
+                
+                if($request->has('email')){
+                    $persona->email = $request->email;
+                }
+
+                if($request->has('cumpleanios')){
+                    $persona->cumpleanios = $request->cumpleanios;
+                }
+
+                if($request->has('ciudade_id')){
+                    $persona->ciudade_id = $request->ciudade_id;
+                }
+
+                $persona->save();
+
+
         $user = new User($request->all());
 
         if ($request->file('imagen')) {
@@ -38,13 +88,23 @@ class UserController extends ApiController
         }
 
         $user->password  = bcrypt($request->password);
+        $user->persona_id = $persona->id;
 
         if($request->has('empresa_id')){
             $user->empresa_id = $request->empresa_id;
         }
+
         $user->save();
-        return $this->showOne($user, 201);
+
+        $real = User::find($user->id);
+        $real->persona;
+        $real->empresa;
+        return $this->showOne($real, 201);
+    }else{
+        return $this->errorResponse('para crear un usuario se debe incluir minimo el nombre, apellido, identificacion, email y el password', 422);
+        }
     }
+
 
    public function show(User $user)
     {

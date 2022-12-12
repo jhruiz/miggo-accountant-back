@@ -27,7 +27,7 @@ class UserRequest extends FormRequest
               case 'POST':
               {
                   return [
-                    'username' => 'min:4|max:120|required|unique:users',
+                    'username' => 'min:4|max:120|unique:users',
                     'email' => 'bail|min:4|max:120|required|email|unique:users',
                     'password' => 'min:4|max:120|required',
                    // 'role_id' => 'required',

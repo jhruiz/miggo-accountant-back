@@ -16,6 +16,7 @@ class Persona extends Model
         'apellidos',
         'rut',
         'identificacion',
+        'tipo_identificacion',
         'direccion',
         'celular',
         'telefono',
