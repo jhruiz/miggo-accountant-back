@@ -81,3 +81,12 @@ Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuContro
 Route::ApiResource('empleados', 'App\Http\Controllers\Empresa\EmpleadoController');
 
 
+
+
+//***************************************Pais******************************************************************************************** */
+Route::ApiResource('paises.departamentos','App\Http\Controllers\Pais\PaisDepartamentoController', ['only'=> ['index']]);
+Route::ApiResource('departamentos.ciudades','App\Http\Controllers\Pais\DepartamentoCiudadeController', ['only'=> ['index']]);
+
+//*****************************************Perfiles************************************************************************************* */
+Route::ApiResource('perfiles', 'App\Http\Controllers\Empresa\PerfileController');//TODO: sin store
+Route::ApiResource('empresas.perfiles', 'App\Http\Controllers\Empresa\EmpresaPerfileController', ['only'=> ['index','store']]);

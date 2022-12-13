@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Ciudad extends Model
+class Ciudade extends Model
 {
     use HasFactory;
 
     protected $fillable = [   
             'descripcion',
-            'empresa_id'
+            'departamento_id'
      ];
 
     protected $table = "ciudades";

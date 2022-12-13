@@ -12,17 +12,18 @@ class Departamento extends Model
 
     protected $fillable = [   
             'descripcion',
+            'paise_id'
      ];
 
     protected $table = "departamentos";
 
-    public function pais()
+    public function paise()
     {
-      return $this->belongsTo(Pais::class);
+      return $this->belongsTo(Paise::class);
     }
 
     public function ciudades()
     {
-      return $this->hasMany(Ciudad::class);
+      return $this->hasMany(Ciudade::class);
     }
 }
