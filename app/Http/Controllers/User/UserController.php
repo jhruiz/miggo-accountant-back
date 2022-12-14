@@ -153,7 +153,7 @@ class UserController extends ApiController
         return $this->showOne($user);
     }
 
-    public function estatus(User $user)
+    public function estatus(User $user) //TODO: NO DEJAR LOGEAR SI ESTA EN FALSE
     {
         $user->estatus = $user->estatus ? false : true;
         $user->update();
