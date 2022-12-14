@@ -149,6 +149,15 @@ class UserController extends ApiController
     public function destroy(User $user)
     {
         $user->delete($user);
+        $user->persona;
+        return $this->showOne($user);
+    }
+
+    public function estatus(User $user)
+    {
+        $user->estatus = $user->estatus ? false : true;
+        $user->update();
+        $user->persona;
         return $this->showOne($user);
     }
 }

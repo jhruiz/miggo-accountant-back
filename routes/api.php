@@ -16,9 +16,9 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
@@ -45,10 +45,15 @@ Route::post('/send-email', 'App\Http\Controllers\MailController@sendEmailBasic')
 
 Route::middleware(['auth:sanctum'])->group(function(){
     
+    //*************************************RUTAS DE USUARIOS PROTEGIDAS*********** */
     Route::get('/logout', [AuthController::class, 'logout']);
 
     Route::ApiResource('empresas.users','App\Http\Controllers\Empresa\EmpresaUserController', ['only'=> ['index','update','destroy']]);
-    
+
+    Route::ApiResource('users', 'App\Http\Controllers\User\UserController');
+
+    Route::get('estatus/{user}', 'App\Http\Controllers\User\UserController@estatus'); 
+
 
 });
 

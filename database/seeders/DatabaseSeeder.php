@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PerfileSeeder::class);
         \App\Models\Persona::factory(60)->create();
         \App\Models\Empresa::factory(1)->create();
-        \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(5)->create();
         \App\Models\Cliente::factory(10)->create();
         \App\Models\Proveedore::factory(10)->create();
         \App\Models\Empleado::factory(10)->create();

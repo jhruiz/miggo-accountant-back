@@ -24,6 +24,10 @@ class PersonaController extends ApiController
 
     public function show(Persona $persona)
     {
+        $persona->users;
+        $persona->empleados;
+        $persona->clientes;
+        $persona->proveedores;
         return $this->showOne($persona);
     }
 

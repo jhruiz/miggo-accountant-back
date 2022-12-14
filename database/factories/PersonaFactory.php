@@ -2,14 +2,14 @@
 
 namespace Database\Factories;
 
-use App\Models\Ciudad;
+use App\Models\Ciudade;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PersonaFactory extends Factory
 {
     public function definition()
     {
-        $ciudades = Ciudad::orderBy('id', 'ASC')->pluck('id')->all();
+        $ciudades = Ciudade::orderBy('id', 'ASC')->pluck('id')->all();
 
         return [
             'nombres'=>$this->faker->name,
