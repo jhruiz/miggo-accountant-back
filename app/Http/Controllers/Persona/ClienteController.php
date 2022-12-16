@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Empresa;
+namespace App\Http\Controllers\Persona;
 
 use App\Models\Cliente;
 use Illuminate\Http\Request;

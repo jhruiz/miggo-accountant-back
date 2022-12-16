@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Persona;
 use App\Http\Requests\UserRequest;
 use App\Http\Controllers\ApiController;
+use App\Models\Empleado;
 use Illuminate\Http\Request;
 
 //use Illuminate\Support\Facades\Hash;
@@ -96,6 +97,11 @@ class UserController extends ApiController
 
         $user->save();
 
+        $empleado = new Empleado();
+        $empleado->persona_id = $persona->id;
+        $empleado->creador_id = $request->creador_id;
+        $empleado->save();
+
         $real = User::find($user->id);
         $real->persona;
         $real->empresa;
@@ -110,19 +116,21 @@ class UserController extends ApiController
     {
         $user->persona;
         $user->empleado;
+        $user->perfile;
         return $this->showOne($user);
     }
 
     public function update(UserRequest $request, User $user)  // x-www-form-urlencoded //todo admin only if verificate 052
     {
 
+        // if($user->isDirty()){
+        //     return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
+        //      'code' => 422], 422);
+        // }
+        
         $user->fill($request->all());
 
         $user->password = bcrypt($request->password);
-
-        if($request->has('empresa_id')){
-            $user->empresa_id = $request->empresa_id;
-        }
 
         if ($request->file('imagen')) {
 
@@ -136,13 +144,60 @@ class UserController extends ApiController
             $user->imagen = $nombre;
 
             }
-        
-            //if($user->isDirty()){ //TODO:test 
-           /* if($user->isClean()){
-                return $this->errorResponse('Se debe especificar al menos un valor diferente para actualizar', 422);
-              }*/
 
         $user->save();
+
+        $persona = Persona::findOrFail($user->persona_id);
+
+        if($request->has('nombres')){
+            $persona->nombres = $request->nombres;
+        }
+
+        if($request->has('apellidos')){
+            $persona->apellidos = $request->apellidos;
+        }
+
+        if($request->has('tipoidentificacione_id')){
+            $persona->tipoidentificacione_id = $request->tipoidentificacione_id;
+        }
+
+        if($request->has('identificacion')){
+            $persona->identificacion = $request->identificacion;
+        }
+
+        if($request->has('email')){
+            $persona->email = $request->email;
+        }
+
+        if($request->has('direccion')){
+            $persona->direccion = $request->direccion;
+        }
+
+        if($request->has('rut')){
+            $persona->rut = $request->rut;
+        }
+
+        if($request->has('celular')){
+            $persona->celular = $request->celular;
+        }
+
+        if($request->has('telefono')){
+            $persona->telefono = $request->telefono;
+        }
+
+        if($request->has('cumpleanios')){
+            $persona->cumpleanios = $request->cumpleanios;
+        }
+
+        if($request->has('ciudade_id')){
+            $persona->ciudade_id = $request->ciudade_id;
+        }
+
+        $persona->save();
+
+        $user->persona;
+        $user->perfile;
+        $user->empleado;
         return $this->showOne($user);
     }
 

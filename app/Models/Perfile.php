@@ -12,7 +12,7 @@ class Perfile extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'description',
+        'descripcion',
         'empresa_id'
     ];
 

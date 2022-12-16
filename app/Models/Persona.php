@@ -16,7 +16,6 @@ class Persona extends Model
         'apellidos',
         'rut',
         'identificacion',
-        'tipo_identificacion',
         'direccion',
         'celular',
         'telefono',
@@ -50,8 +49,8 @@ class Persona extends Model
       return $this->hasMany(Proveedore::class);
     }
 
-    public function ciudad()
+    public function ciudade()
     {
-       return $this->hasOne(Ciudad::class);
+       return $this->belongsTo(Ciudade::class);
     }
 }

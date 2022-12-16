@@ -43,11 +43,19 @@ class AuthController extends Controller
         if (!Auth::attempt($request->only('email', 'password'))){
             return response()->json([
                 'message' => 'Credenciales de acceso no válidas'
-            ], 401);
+            // ], 401);
+            ]);
+
         }
 
         //Busca al usuario en la base de datos
         $user = User::where('email', $request['email'])->firstOrFail();
+
+        if(!$user->estatus){
+            return response()->json([
+                'message' => 'Usuario deshabilitado comuniquese con soporte'
+            ]);
+        }
 
         //Genera un nuevo token para el usuario
         $token = $user->createToken('auth_token')->plainTextToken;

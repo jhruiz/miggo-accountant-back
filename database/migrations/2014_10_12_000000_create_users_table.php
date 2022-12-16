@@ -16,7 +16,6 @@ class CreateUsersTable extends Migration
             $table->string('apellidos');
             $table->string('rut')->nullable();
             $table->string('identificacion')->unique();
-            $table->string('tipo_identificacion')->nullable();
             $table->text('direccion')->nullable();
             $table->string('celular')->nullable();
             $table->string('telefono')->nullable();
@@ -24,12 +23,40 @@ class CreateUsersTable extends Migration
             $table->date('cumpleanios')->nullable();
 
             $table->unsignedBigInteger('ciudade_id')->nullable();
+            $table->unsignedBigInteger('tipoidentificacione_id')->nullable();
           
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
+            $table->foreign('tipoidentificacione_id')->references('id')->on('tipoidentificaciones')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
         });
+
+        Schema::create('bancos', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre');
+            $table->text('descripcion');
+            $table->string('telefono')->nullable();
+            $table->text('direccion_cuenta')->nullable();
+            $table->string('numero_sucursal')->nullable();
+    
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('personas_bancos', function (Blueprint $table) {
+            $table->id();
+    
+            $table->unsignedBigInteger('persona_id')->nullable();
+            $table->unsignedBigInteger('banco_id')->nullable();
+    
+            $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
+            $table->foreign('banco_id')->references('id')->on('bancos')->onDelete('cascade');
+    
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    
 
         Schema::create('users', function (Blueprint $table) {
             $table->id();
@@ -131,28 +158,16 @@ class CreateUsersTable extends Migration
         $table->timestamps();
     });
 
-    Schema::create('bancos', function (Blueprint $table) {
-        $table->id();
-        $table->string('nombre');
-        $table->text('descripcion');
-        $table->string('telefono')->nullable();
-        $table->text('direccion_cuenta')->nullable();
-        $table->string('numero_sucursal')->nullable();
-        
-        $table->softDeletes();
-        $table->timestamps();
-    });
-
     Schema::create('empleados', function (Blueprint $table) {
         $table->id();
         $table->double('sueldo')->nullable();
         $table->text('observaciones')->nullable();
         $table->integer('estadisticas')->nullable();
         $table->boolean('estatus')->default('1');//activo o desctivado
-        $table->BigInteger('creador_id')->nullable();//usuario que lo creo
-        $table->date('inicio');
-        $table->string('numero_cuenta');
-        $table->string('tipo_cuenta');
+        $table->BigInteger('creador_id');//usuario que lo creo
+        $table->date('inicio')->nullable();
+        $table->string('numero_cuenta')->nullable();
+        $table->string('tipo_cuenta')->nullable();
 
        $table->unsignedBigInteger('user_id')->unsigned()->nullable();
         //$table->unsignedBigInteger('estado_id')->unsigned()->nullable();
@@ -177,11 +192,12 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('empleados');
-        Schema::dropIfExists('bancos');
         Schema::dropIfExists('clientes');
         Schema::dropIfExists('regimene_proveedore');
         Schema::dropIfExists('proveedores');
         Schema::dropIfExists('users');
+        Schema::dropIfExists('personas_bancos');
+        Schema::dropIfExists('bancos');
         Schema::dropIfExists('personas');
 
     }

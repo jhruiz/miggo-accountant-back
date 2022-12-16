@@ -10,15 +10,15 @@ class PerfileSeeder extends Seeder
 
     public function run()
     {
-        $description[1]= 'ADMINISTRADOR';
+        $descripcion[1]= 'ADMINISTRADOR';
 
-        $description[2]= 'ADMINISTRADOR EMPRESA';
+        $descripcion[2]= 'ADMINISTRADOR EMPRESA';
         
-        $description[3]= 'VENDEDOR';
+        $descripcion[3]= 'VENDEDOR';
 
-        $description[4]= 'BODEGA';     
+        $descripcion[4]= 'BODEGA';     
  
-        $description[5]= 'MECANICO';
+        $descripcion[5]= 'MECANICO';
 
  
         for ($i=1;$i<=5; $i++){
@@ -26,7 +26,7 @@ class PerfileSeeder extends Seeder
             DB::table('perfiles')->insert([
 
             'id' => $i,
-            'description'=> $description[$i],
+            'descripcion'=> $descripcion[$i],
 
           ]);
         }
