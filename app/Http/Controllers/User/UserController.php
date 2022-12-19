@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
-
 use App\Models\User;
 use App\Models\Persona;
+use App\Models\Empleado;
 use App\Http\Requests\UserRequest;
 use App\Http\Controllers\ApiController;
-use App\Models\Empleado;
 use Illuminate\Http\Request;
+use Intervention\Image\ImageManagerStatic as Image;
+
 
 //use Illuminate\Support\Facades\Hash;
 
@@ -26,7 +27,9 @@ class UserController extends ApiController
 
     }
 
-    public function store(UserRequest $request) //form-data
+    // public function store(UserRequest $request) //form-data
+    public function store(Request $request) //form-data
+
     {
         
         if($request->has('identificacion') && $request->has('email') && $request->has('password') && $request->has('nombres') && $request->has('apellidos')){
@@ -83,8 +86,12 @@ class UserController extends ApiController
 
             $file = $request->file('imagen');
             $nombre = 'user'.time() . '.' . $file->getClientOriginalExtension();
-            $path = public_path() . '\images\img_api\users';
-            $file->move($path, $nombre);
+            // $path = public_path() . '\images\img_api\users';
+            // $file->move($path, $nombre);
+
+            $path = public_path('images/img_api/users/'.$nombre);
+            $img = Image::make($file)->fit(144, 144)->save($path);
+            // return $img->response('jpg');
             $user->imagen = $nombre;
         }
 
@@ -140,8 +147,11 @@ class UserController extends ApiController
 
             $file = $request->file('imagen');
             $nombre = 'user'.time() . '.' . $file->getClientOriginalExtension();
-            $path = public_path() . '\images\img_api\users';
-            $file->move($path, $nombre);
+            // $path = public_path() . '\images\img_api\users';
+            // $file->move($path, $nombre);
+
+            $path = public_path('images/img_api/users/'.$nombre);
+            $img = Image::make($file)->fit(144, 144)->save($path);
             $user->imagen = $nombre;
 
             }
