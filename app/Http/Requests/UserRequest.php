@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule as ValidationRule;
 
 class UserRequest extends FormRequest
 {
@@ -15,8 +17,6 @@ class UserRequest extends FormRequest
 
     public function rules()
     {
-        //$user = User::find($this->users);
-
           switch($this->method())
           {
               case 'GET':
@@ -27,22 +27,27 @@ class UserRequest extends FormRequest
               case 'POST':
               {
                   return [
-                    'username' => 'min:4|max:120|unique:users',
-                    'email' => 'bail|min:4|max:120|required|email|unique:users',
-                    'password' => 'min:4|max:120|required',
-                   // 'role_id' => 'required',
-                    //'persona_id' => 'required'
-
+                    'username' => 'min:4|max:20|unique:users',
+                    'email' => 'bail|min:8|max:30|required|email|unique:users',
+                    'password' => 'bail|min:8|max:120|required',
+                    'telefono' => 'bail|nullable|min:7|max:15|required_without:celular',
+                    'celular' => 'bail|nullable|min:9|max:15|required_without:telefono',
+                    'cumpleanios' => 'date',
+                    'empresa_id' => 'required',
+                    'creador_id' => 'required',
+                    'perfile_id' => 'required',
                   ];
               }
               case 'PUT':
                   {
+                    $user = User::findOrFail($this->user->id);
                       return [
-                        'username' => 'min:4|max:120|unique:users,username,'.$this->segment(2),
-                        'email' => 'bail|min:4|max:120|email|unique:users,email,'.$this->segment(2),
-                        'password' => 'bail|min:6|max:20,password,'.$this->segment(2),
-                      //  'role_id' => 'required'
-
+                        'username' => 'min:4|max:20|unique:users,username,'.$user->id,
+                        'email' => 'bail|min:8|max:30|email|unique:users,email,'.$user->id,
+                        'password' => 'bail|nullable|min:8|max:120',
+                        'cumpleanios' => 'date',
+                        'telefono' => 'bail|nullable|min:7|max:15|required_without:celular',
+                        'celular' => 'bail|nullable|min:9|max:15|required_without:telefono',
                       ];
                   }
               case 'PATCH':
@@ -51,21 +56,5 @@ class UserRequest extends FormRequest
               default:break;
           }
 
-      }
-
-      
-      public function messages()
-      {
-          return [
-              'username.required' => 'El :attribute es obligatorio.',
-              'username.unique:users' => 'el username ya esta tomado',
-              'username.min:4' => 'El :attribute debe tener un tamaño minimo de 4 caracteres',
-              'username.max:120' => 'El :attribute debe tener un tamaño maximo de 120 caracteres',
-              'password.required' => 'El :attribute es obligatorio.',
-              'password.bail' => 'debe introducir un valor valido.',
-              'username.unique:users' => 'El :attribute ya esta en uso.',
-              'email.unique:users' => 'El :attribute ya esta en uso.',
-              'email.required' => 'Añade un email correctos.'
-          ];
       }
 }

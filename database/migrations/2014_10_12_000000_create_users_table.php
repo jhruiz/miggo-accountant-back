@@ -46,7 +46,9 @@ class CreateUsersTable extends Migration
 
         Schema::create('personas_bancos', function (Blueprint $table) {
             $table->id();
-    
+            $table->string('numero_cuenta')->nullable();
+            $table->string('tipo_cuenta')->nullable();
+
             $table->unsignedBigInteger('persona_id')->nullable();
             $table->unsignedBigInteger('banco_id')->nullable();
     
@@ -164,19 +166,17 @@ class CreateUsersTable extends Migration
         $table->text('observaciones')->nullable();
         $table->integer('estadisticas')->nullable();
         $table->boolean('estatus')->default('1');//activo o desctivado
-        $table->BigInteger('creador_id');//usuario que lo creo
+        // $table->BigInteger('creador_id');//usuario que lo creo
         $table->date('inicio')->nullable();
-        $table->string('numero_cuenta')->nullable();
-        $table->string('tipo_cuenta')->nullable();
 
-       $table->unsignedBigInteger('user_id')->unsigned()->nullable();
+       $table->unsignedBigInteger('creador_id')->unsigned()->nullable();
         //$table->unsignedBigInteger('estado_id')->unsigned()->nullable();
         $table->unsignedBigInteger('empresa_id')->nullable();
        // $table->unsignedBigInteger('clasificacioncliente_id')->nullable();
         $table->unsignedBigInteger('persona_id')->nullable();
         $table->unsignedBigInteger('banco_id')->nullable();
 
-       $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+       $table->foreign('creador_id')->references('id')->on('users')->onDelete('cascade');
        // $table->foreign('estado_id')->references('id')->on('estados')->onDelete('cascade');
         $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
         //$table->foreign('clasificacioncliente_id')->references('id')->on('clasificacionclientes')->onDelete('cascade');

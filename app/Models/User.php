@@ -80,9 +80,9 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasOne(Perfile::class);
     }
     
-    public function empleado()
-    {
-        return $this->hasOne(Empleado::class);
-    }
+    // public function empleado()
+    // {
+    //     return $this->hasOne(Empleado::class);
+    // }
 
 }

@@ -25,7 +25,7 @@ class EmpleadoFactory extends Factory
             'tipo_cuenta' => 'Ahorro',
             'empresa_id' => 1,
             'persona_id' => $this->faker->unique()->randomElement($personas),
-            'user_id' => $this->faker->randomElement($users),
+            // 'user_id' => $this->faker->randomElement($users),
         ];
     }
 }

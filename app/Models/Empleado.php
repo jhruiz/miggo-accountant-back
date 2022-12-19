@@ -20,7 +20,6 @@ class Empleado extends Model
         'inicio',
         'inicio',
         'inicio',
-        'user_id',
         'numero_cuenta',
         'tipo_cuenta',
         'empresa_id',
@@ -41,7 +40,7 @@ class Empleado extends Model
         return $this->belongsTo(Empresa::class);
     }
 
-    public function user(){
-        return $this->belongsTo(User::class);
-    }
+    // public function user(){
+    //     return $this->belongsTo(User::class);
+    // }
 }

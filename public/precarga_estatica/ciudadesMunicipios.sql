@@ -1,3 +1,4 @@
+-- Active: 1668921651258@@127.0.0.1@3306@laravel-miggo
 INSERT INTO `laravel-miggo`.`ciudades`
 (`id`,
 `descripcion`,

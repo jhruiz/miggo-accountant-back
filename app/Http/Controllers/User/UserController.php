@@ -116,6 +116,7 @@ class UserController extends ApiController
     {
         $user->persona;
         $user->empleado;
+        $user->empresa;
         $user->perfile;
         return $this->showOne($user);
     }
@@ -123,10 +124,10 @@ class UserController extends ApiController
     public function update(UserRequest $request, User $user)  // x-www-form-urlencoded //todo admin only if verificate 052
     {
 
-        // if($user->isDirty()){
-        //     return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
-        //      'code' => 422], 422);
-        // }
+        if($user->isDirty()){
+            return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
+             'code' => 422], 422);
+        }
         
         $user->fill($request->all());
 
