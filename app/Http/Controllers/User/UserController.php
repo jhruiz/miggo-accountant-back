@@ -31,6 +31,9 @@ class UserController extends ApiController
     public function store(Request $request) //form-data
 
     {
+
+        // return response()->json('email:'.$request->has('formData'));//TODO: formData 
+
         
         if($request->has('identificacion') && $request->has('email') && $request->has('password') && $request->has('nombres') && $request->has('apellidos')){
 
@@ -58,11 +61,11 @@ class UserController extends ApiController
                 }
 
                 if($request->has('celular')){
-                    $persona->direccion = $request->direccion;
+                    $persona->celular = $request->celular;
                 }
 
                 if($request->has('telefono')){
-                    $persona->direccion = $request->direccion;
+                    $persona->telefono = $request->telefono;
                 }
                 
                 if($request->has('email')){
@@ -131,10 +134,15 @@ class UserController extends ApiController
     public function update(UserRequest $request, User $user)  // x-www-form-urlencoded //todo admin only if verificate 052
     {
 
-        if($user->isDirty()){
-            return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
-             'code' => 422], 422);
-        }
+        // if($user->isDirty()){
+        //     return response()->json(['error' => 'Se debe especificar al menos un valor diferente para actualizar',
+        //      'code' => 422], 422);
+        // }
+
+            return response()->json('email:'.$request->has('formData'));//TODO: formData 
+            // return response()->json('nombres:'.$request->nombres);
+
+        
         
         $user->fill($request->all());
 
