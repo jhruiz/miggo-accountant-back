@@ -27,8 +27,8 @@ class UserController extends ApiController
 
     }
 
-    // public function store(UserRequest $request) //form-data
-    public function store(Request $request) //form-data
+    public function store(UserRequest $request) //form-data
+    // public function store(Request $request) //form-data
 
     {
 
@@ -139,8 +139,8 @@ class UserController extends ApiController
         //      'code' => 422], 422);
         // }
 
-            return response()->json('email:'.$request->has('formData'));//TODO: formData 
-            // return response()->json('nombres:'.$request->nombres);
+            // return response()->json('email:'.$request->has('email'));//TODO: formData 
+            // return response()->json('email:'.$request->email);
 
         
         
@@ -150,8 +150,9 @@ class UserController extends ApiController
 
         if ($request->file('imagen')) {
 
-            $imagen_path = public_path().'/images/img_api/users/'.$user->imagen;
-            unlink($imagen_path);
+            // $imagen_path = public_path().'/images/img_api/users/'.$user->imagen;
+            $imagen_path = public_path().'\images\img_api\users\''.$user->imagen;
+            // unlink($imagen_path); TODO: elimina la foto vieja pero debe ser provado en el servidor ya que arregla las carpetas segun el sistema operativo buscar alternativa
 
             $file = $request->file('imagen');
             $nombre = 'user'.time() . '.' . $file->getClientOriginalExtension();
