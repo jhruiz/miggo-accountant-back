@@ -143,13 +143,19 @@ class UserController extends ApiController
             // return response()->json('email:'.$request->email);
 
         
-        
-        $user->fill($request->all());
+        if($request->has('username')){
+                $user->password = $request->username;
+        }
 
-        $user->password = bcrypt($request->password);
+        if($request->has('password')){
+              $user->password = bcrypt($request->password);
+        }
+
+        if($request->has('email')){
+            $user->email = $request->email;
+        }
 
         if ($request->file('imagen')) {
-
             // $imagen_path = public_path().'/images/img_api/users/'.$user->imagen;
             $imagen_path = public_path().'\images\img_api\users\''.$user->imagen;
             // unlink($imagen_path); TODO: elimina la foto vieja pero debe ser provado en el servidor ya que arregla las carpetas segun el sistema operativo buscar alternativa

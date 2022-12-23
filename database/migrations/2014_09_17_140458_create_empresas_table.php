@@ -20,19 +20,20 @@ class CreateEmpresasTable extends Migration
             $table->string('telefono2');
             $table->string('email')->unique();
             $table->string('representantelegal');
-            $table->string('imagen');
-            $table->integer('logo');
-            $table->string('texto1');
-            $table->string('texto2');
-            $table->string('texto3');
-            $table->string('texto4');
+            $table->string('imagen')->nullable();
+            $table->integer('logo')->nullable();
+            $table->string('texto1')->nullable();
+            $table->string('texto2')->nullable();
+            $table->string('texto3')->nullable();
+            $table->string('texto4')->nullable();
             $table->integer('vercuentasdb');
-            
+            $table->string('moneda')->default('$')->nullable();
+
             $table->unsignedBigInteger('ciudade_id')->nullable();
-            $table->unsignedBigInteger('empresa_id')->nullable();
+            $table->unsignedBigInteger('sucursal_id')->nullable();
 
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
-            $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
+            $table->foreign('sucursal_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

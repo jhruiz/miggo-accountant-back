@@ -26,6 +26,7 @@ class Empresa extends Model
          'texto2',
          'texto3',
          'texto4',
+         'moneda',
          'vercuentasdb',
          'ciudade_id',
          'empresa_id'

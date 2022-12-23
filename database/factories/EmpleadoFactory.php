@@ -19,13 +19,12 @@ class EmpleadoFactory extends Factory
             'observaciones'=>$this->faker->address,
             'estadisticas'=>$this->faker->randomNumber($nbDigits = 2),
             'estatus' => $this->faker->randomElement($array = array (0,1)),
-            'creador_id' => $this->faker->randomElement($users),
             'inicio'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),
             // 'numero_cuenta' => $this->faker->uuid,
             // 'tipo_cuenta' => 'Ahorro',
             'empresa_id' => 1,
             'persona_id' => $this->faker->unique()->randomElement($personas),
-            // 'user_id' => $this->faker->randomElement($users),
+            'user_id' => $this->faker->randomElement($users),
         ];
     }
 }
