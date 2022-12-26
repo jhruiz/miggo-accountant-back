@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TipoidentificacioneSeeder::class);
         \App\Models\Persona::factory(60)->create();
         \App\Models\Empresa::factory(1)->create();
-        \App\Models\User::factory(4)->create();
+        \App\Models\User::factory(20)->create();
         \App\Models\Cliente::factory(10)->create();
         \App\Models\Proveedore::factory(10)->create();
         \App\Models\Empleado::factory(10)->create();

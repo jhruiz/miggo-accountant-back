@@ -28,14 +28,8 @@ class UserController extends ApiController
     }
 
     public function store(UserRequest $request) //form-data
-    // public function store(Request $request) //form-data
-
     {
-
         // return response()->json('email:'.$request->has('formData'));//TODO: formData 
-
-        
-        if($request->has('identificacion') && $request->has('email') && $request->has('password') && $request->has('nombres') && $request->has('apellidos')){
 
                 $persona = new Persona();
                 if($request->has('nombres')){
@@ -46,7 +40,10 @@ class UserController extends ApiController
                     $persona->apellidos = $request->apellidos;
                 }
 
-                $persona->identificacion = $request->identificacion;
+
+                if($request->has('identificacion')){
+                    $persona->identificacion = $request->identificacion;
+                }
 
                 if($request->has('rut')){
                     $persona->rut = $request->rut;
@@ -104,28 +101,28 @@ class UserController extends ApiController
         if($request->has('empresa_id')){
             $user->empresa_id = $request->empresa_id;
         }
+        if($request->has('perfile_id')){
+            $user->perfile_id = $request->perfile_id;
+        }
 
         $user->save();
 
         $empleado = new Empleado();
         $empleado->persona_id = $persona->id;
-        $empleado->creador_id = $request->creador_id;
+        $empleado->user_id = $request->creador_id;
         $empleado->save();
 
         $real = User::find($user->id);
         $real->persona;
         $real->empresa;
         return $this->showOne($real, 201);
-    }else{
-        return $this->errorResponse('para crear un usuario se debe incluir minimo el nombre, apellido, identificacion, email y el password', 422);
-        }
+
     }
 
 
    public function show(User $user)
     {
         $user->persona;
-        $user->empleado;
         $user->empresa;
         $user->perfile;
         return $this->showOne($user);
@@ -144,7 +141,7 @@ class UserController extends ApiController
 
         
         if($request->has('username')){
-                $user->password = $request->username;
+                $user->username = $request->username;
         }
 
         if($request->has('password')){
@@ -153,6 +150,10 @@ class UserController extends ApiController
 
         if($request->has('email')){
             $user->email = $request->email;
+        }
+         
+        if($request->has('perfile_id')){
+            $user->perfile_id = $request->perfile_id;
         }
 
         if ($request->file('imagen')) {
@@ -223,7 +224,6 @@ class UserController extends ApiController
 
         $user->persona;
         $user->perfile;
-        $user->empleado;
         return $this->showOne($user);
     }
 
