@@ -11,7 +11,7 @@ class CreateMarcavehiculosTable extends Migration
     {
         Schema::create('marcavehiculos', function (Blueprint $table) {
             $table->id();
-            $table->text('description');
+            $table->text('descripcion');
 
             $table->softDeletes();
             $table->timestamps();

@@ -13,18 +13,24 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->truncateTable([
-            'users','empresas','departamentos','personas','clientes','proveedores','empleados','tipoidentificaciones'
+            'users','empresas','departamentos','personas','clientes','proveedores','empleados','tipoidentificaciones',
+            'tipovehiculos','marcavehiculos','partevehiculos',
         ]);
 
         $this->call(PaisSeeder::class);
         $this->call(PerfileSeeder::class);
         $this->call(TipoidentificacioneSeeder::class);
+        $this->call(TipovehiculoSeeder::class);
+        $this->call(MarcavehiculoSeeder::class);
+        $this->call(PartevehiculoSeeder::class);
         \App\Models\Persona::factory(60)->create();
         \App\Models\Empresa::factory(1)->create();
         \App\Models\User::factory(20)->create();
         \App\Models\Cliente::factory(10)->create();
         \App\Models\Proveedore::factory(10)->create();
         \App\Models\Empleado::factory(10)->create();
+        \App\Models\Vehiculo::factory(10)->create();
+
 
 
                 // \App\Models\User::factory(10)->create()->each(function($user){

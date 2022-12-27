@@ -68,6 +68,16 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::ApiResource('departamentos.ciudades','App\Http\Controllers\Pais\DepartamentoCiudadeController', ['only'=> ['index']]);
     Route::ApiResource('ciudades', 'App\Http\Controllers\Pais\CiudadeController', ['only'=> ['show']]); 
 
+    //******************************************VEHICULOS*************************************** */
+
+    Route::ApiResource('empresas.vehiculos', 'App\Http\Controllers\Empresa\EmpresaVehiculoController', ['only'=> ['index']]);
+    Route::ApiResource('vehiculos', 'App\Http\Controllers\Vehiculo\VehiculoController', ['only'=> ['store','show','update','destroy']]);
+    Route::ApiResource('marcavehiculos', 'App\Http\Controllers\Vehiculo\MarcavehiculoController');
+    Route::ApiResource('tipovehiculos', 'App\Http\Controllers\Vehiculo\TipovehiculoController');
+    Route::ApiResource('referencias', 'App\Http\Controllers\Vehiculo\ReferenciaController');
+    Route::ApiResource('partevehiculos', 'App\Http\Controllers\Vehiculo\PartevehiculoController');
+
+
     //********************************************************************************* */
 
 });

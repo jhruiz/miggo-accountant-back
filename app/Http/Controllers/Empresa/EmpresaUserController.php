@@ -9,7 +9,7 @@ use App\Http\Controllers\ApiController;
 
 class EmpresaUserController extends ApiController
 {
-    public function index(Empresa $empresa)//TODO: crear seed para probar nuevos controladores  
+    public function index(Empresa $empresa) 
     {
         $users = $empresa->users()
         ->with('persona')

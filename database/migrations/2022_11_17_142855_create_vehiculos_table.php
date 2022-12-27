@@ -11,22 +11,24 @@ class CreateVehiculosTable extends Migration
     {
         Schema::create('vehiculos', function (Blueprint $table) {
             $table->id();
-            $table->string('placa');
-            $table->string('cilindraje');
-            $table->string('modelo');
-            $table->string('color');
-            $table->string('num_motor');
-            $table->string('num_chasis');
-            $table->string('linea');
-            $table->date('soat');
-            $table->date('tecno');
+            $table->string('placa')->nullable();
+            $table->string('cilindraje')->nullable();
+            $table->string('modelo')->nullable();
+            $table->string('color')->nullable();
+            $table->string('num_motor')->nullable();
+            $table->string('num_chasis')->nullable();
+            $table->string('linea')->nullable();
+            $table->date('soat')->nullable();
+            $table->date('tecno')->nullable();
             
-            $table->unsignedBigInteger('tipovehiculo_id')->nullable();;
-            $table->unsignedBigInteger('marcavehiculo_id')->nullable();;
+            $table->unsignedBigInteger('tipovehiculo_id')->nullable();
+            $table->unsignedBigInteger('marcavehiculo_id')->nullable();
+            $table->unsignedBigInteger('referencia_id')->nullable();
             $table->unsignedBigInteger('empresa_id');
 
             $table->foreign('tipovehiculo_id')->references('id')->on('tipovehiculos')->onDelete('cascade');
             $table->foreign('marcavehiculo_id')->references('id')->on('marcavehiculos')->onDelete('cascade');
+            $table->foreign('referencia_id')->references('id')->on('referencias')->onDelete('cascade');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();

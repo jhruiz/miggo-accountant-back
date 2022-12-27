@@ -12,7 +12,7 @@ class CreatePartevehiculosTable extends Migration
         Schema::create('partevehiculos', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
-            $table->integer('extra');
+            $table->integer('extra')->nullable();
             
             $table->softDeletes();
             $table->timestamps();

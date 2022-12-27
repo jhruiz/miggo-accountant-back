@@ -16,10 +16,19 @@ class CreateTipovehiculosTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
+
+        Schema::create('referencias', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
     }
 
     public function down()
     {
+        Schema::dropIfExists('referencias');
         Schema::dropIfExists('tipovehiculos');
     }
 }
