@@ -12,6 +12,7 @@ class CreatePaisesTable extends Migration
         Schema::create('paises', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
+            $table->string('codigo_dian');
 
             $table->timestamps();
         });
@@ -19,6 +20,7 @@ class CreatePaisesTable extends Migration
         Schema::create('departamentos', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
+            $table->string('codigo_dian');
             
             $table->unsignedBigInteger('paise_id');
 
@@ -30,6 +32,7 @@ class CreatePaisesTable extends Migration
         Schema::create('ciudades', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
+            $table->string('codigo_dian');
 
             $table->unsignedBigInteger('departamento_id');
 

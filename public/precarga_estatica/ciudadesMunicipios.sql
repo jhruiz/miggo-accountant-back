@@ -2,6 +2,7 @@
 INSERT INTO `laravel-miggo`.`ciudades`
 (`id`,
 `descripcion`,
+`codigo_dian`,
 `departamento_id`)
 VALUES
 	(1,'Abriaquí',5),

@@ -12,6 +12,7 @@ class Paise extends Model
 
     protected $fillable = [   
             'descripcion',
+            'codigo_dian',
      ];
 
     protected $table = "paises";
