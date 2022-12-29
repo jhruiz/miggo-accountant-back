@@ -20,9 +20,12 @@ class Partevehiculo extends Model
  
     protected $dates = ['deleted_at'];
 
+    // protected $hidden = [
+    //     'pivot',
+    // ];
 
-    // public function vehiculo()
-    // {
-    //     return $this->hasOne(Vehiculo::class);
-    // }
+    public function tipovehiculos()
+    {
+        return $this->belongsToMany(Partevehiculo::class);
+    }
 }

@@ -76,6 +76,8 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::ApiResource('tipovehiculos', 'App\Http\Controllers\Vehiculo\TipovehiculoController');
     Route::ApiResource('referencias', 'App\Http\Controllers\Vehiculo\ReferenciaController');
     Route::ApiResource('partevehiculos', 'App\Http\Controllers\Vehiculo\PartevehiculoController');
+    Route::ApiResource('tipovehiculos.partevehiculos', 'App\Http\Controllers\Vehiculo\TipovehiculoPartevehiculoController');
+    Route::get('alltipovehiculopartes', 'App\Http\Controllers\Vehiculo\TipovehiculoPartevehiculoController@alltipovehiculopartes'); 
 
 
     //********************************************************************************* */
@@ -110,3 +112,6 @@ Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuContro
 
 
 //****************************************************************************************************************************** */
+
+
+

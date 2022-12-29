@@ -10,22 +10,22 @@ class TipovehiculoSeeder extends Seeder
 
     public function run()
     {
-        $descripcion[1]= 'MOTO';
+        $descripcion[5]= 'MOTO';
 
-        $descripcion[2]= 'CUATRIMOTO';
+        $descripcion[6]= 'CUATRIMOTO';
         
-        $descripcion[3]= 'JETSKY';
+        $descripcion[7]= 'JETSKY';
 
-        $descripcion[4]= 'CARRO';     
+        $descripcion[8]= 'CARRO';     
  
-        $descripcion[5]= 'CAMIONETA';
+        $descripcion[9]= 'CAMIONETA';
 
-        $descripcion[6]= 'FURGON';
+        $descripcion[10]= 'FURGON';
 
-        $descripcion[7]= 'MOTOCARRO';
+        $descripcion[11]= 'MOTOCARRO';
 
  
-        for ($i=1;$i<=7; $i++){
+        for ($i=5;$i<=11; $i++){
         
             DB::table('tipovehiculos')->insert([
 

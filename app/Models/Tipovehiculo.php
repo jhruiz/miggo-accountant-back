@@ -24,4 +24,9 @@ class Tipovehiculo extends Model
     {
         return $this->hasOne(Vehiculo::class);
     }
+
+    public function partevehiculos()
+    {
+        return $this->belongsToMany(Partevehiculo::class)->withTimestamps();
+    }
 }
