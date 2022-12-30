@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class DepartamentoCiudadeController extends ApiController
 {
+    // public function index(Departamento $departamento)
     public function index(Departamento $departamento)
     {
         $ciudades = $departamento->ciudades()
