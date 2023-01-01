@@ -12,6 +12,8 @@ class Ciiugrupo extends Model
     protected $fillable = [   
             'codigo',
             'descripcion',
+            'ciiudivisione_id',
+
      ];
 
     protected $table = "ciiugrupos";

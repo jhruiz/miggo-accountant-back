@@ -14,7 +14,7 @@ class Ciiuseccione extends Model
             'descripcion',
      ];
 
-    protected $table = "ciiuclases";
+    protected $table = "ciiusecciones";
 
     public function ciiudiviciones()
     {

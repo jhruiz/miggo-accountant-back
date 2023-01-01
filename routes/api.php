@@ -79,6 +79,15 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::ApiResource('tipovehiculos.partevehiculos', 'App\Http\Controllers\Vehiculo\TipovehiculoPartevehiculoController');
     Route::get('alltipovehiculopartes', 'App\Http\Controllers\Vehiculo\TipovehiculoPartevehiculoController@alltipovehiculopartes'); 
 
+    //***************************************CODIGO CIIU******************************************************************************************** */
+
+    Route::ApiResource('ciiusecciones', 'App\Http\Controllers\Ciiu\CiiuseccioneController', ['only'=> ['index','show']]);
+    Route::ApiResource('ciiusecciones.ciiudiviciones', 'App\Http\Controllers\Ciiu\CiiuseccioneDivicioneController', ['only'=> ['index']]);
+    Route::ApiResource('ciiudivisiones', 'App\Http\Controllers\Ciiu\CiiudivisioneController', ['only'=> ['index','show']]);
+    Route::ApiResource('ciiudivisiones.ciiugrupos', 'App\Http\Controllers\Ciiu\CiiudivisioneGrupoController', ['only'=> ['index']]);
+    Route::ApiResource('ciiugrupos', 'App\Http\Controllers\Ciiu\CiiugrupoController', ['only'=> ['index','show']]);
+    Route::ApiResource('ciiugrupos.ciiuclases', 'App\Http\Controllers\Ciiu\CiiugrupoClaseController', ['only'=> ['index']]);
+    Route::ApiResource('ciiuclases', 'App\Http\Controllers\Ciiu\CiiuclaseController', ['only'=> ['index','show']]);
 
     //********************************************************************************* */
 
@@ -105,9 +114,6 @@ Route::ApiResource('cloudmenus', 'App\Http\Controllers\Cloudmenu\CloudmenuContro
 
 
 
-
-
-//***************************************Pais******************************************************************************************** */
 
 
 
