@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->truncateTable([
             'users','empresas','departamentos','personas','clientes','proveedores','empleados','tipoidentificaciones',
             'tipovehiculos','marcavehiculos','partevehiculos','ciiusecciones','ciiudivisiones','ciiugrupos',
+            'pucs',
         ]);
 
         $this->call(PaisSeeder::class);
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CiiuseccioneSeeder::class);
         $this->call(CiiudivisioneSeeder::class);
         $this->call(CiiugrupoSeeder::class);
+        $this->call(PucSeeder::class);
         \App\Models\Persona::factory(60)->create();
         \App\Models\Empresa::factory(1)->create();
         \App\Models\User::factory(20)->create();

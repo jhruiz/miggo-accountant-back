@@ -13,7 +13,6 @@ class Puc extends Model
     protected $fillable = [
         'cuenta',
         'descripcion',
-        'nivel',
         'naturaleza',
         'user_id'
     ];

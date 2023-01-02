@@ -10,15 +10,15 @@ class CreatePucsTable extends Migration
     {
         Schema::create('pucs', function (Blueprint $table) {
             $table->id();
-            $table->string('cuenta');
             $table->text('descripcion');
-            $table->integer('nivel');
-            $table->string('naturaleza');
+            $table->string('naturaleza')->nullable();
             $table->BigInteger('user_id')->nullable();
 
             $table->unsignedBigInteger('empresa_id')->nullable();
+            $table->unsignedBigInteger('puc_id')->nullable();
 
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
+            $table->foreign('puc_id')->references('id')->on('pucs')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
