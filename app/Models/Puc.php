@@ -14,11 +14,21 @@ class Puc extends Model
         'cuenta',
         'descripcion',
         'naturaleza',
-        'user_id'
+        'user_id',
+        'empresa_id',
+        'puc_id'
     ];
 
     protected $table = "pucs";
 
     protected $dates = ['deleted_at'];
+
+    public function pucs(){
+        return $this->hasMany(Puc::class);
+     }
+
+     public function empresa(){
+        return $this->belongsTo(Empresa::class);
+     }
 
 }

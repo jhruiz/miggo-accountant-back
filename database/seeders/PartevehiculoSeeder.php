@@ -52,7 +52,7 @@ class PartevehiculoSeeder extends Seeder
         $extra[26] = null;
         $descripcion[27] =	'BATERIA';	
         $extra[27] = null;
-        $descripcion[28] =	'';	
+        $descripcion[28] =	'vacio';	
         $extra[28] = null;
         $descripcion[29] =	'COMANDO DE LUCES'; 
         $extra[29] = null;
@@ -98,7 +98,7 @@ class PartevehiculoSeeder extends Seeder
         $extra[49] = 1;
         $descripcion[50] = 'LLAVES';
         $extra[50] = 1;
-        $descripcion[51] = '';
+        $descripcion[51] = 'vacio';
         $extra[51] = 0;
         $descripcion[52] = 'EXHOSTO';
         $extra[52] = 0;
@@ -166,11 +166,11 @@ class PartevehiculoSeeder extends Seeder
         $extra[83] = 0;
         $descripcion[84] = 'EXPLORADORAS';
         $extra[84] = 0;
-        $descripcion[85] = '';
+        $descripcion[85] = 'vacio';
         $extra[85] = 0;
         $descripcion[86] = 'ESTACIONARIAS';
         $extra[86] = 0;
-        $descripcion[87] = '';
+        $descripcion[87] = 'vacio';
         $extra[87] = 0;
         $descripcion[88] = 'PLUMILLAS TRASERAS';
         $extra[88] = 0;

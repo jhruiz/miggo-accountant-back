@@ -74,6 +74,10 @@ class Empresa extends Model
 
      public function vehiculos(){
       return $this->hasMany(Vehiculo::class);
-   }
+      }
+
+      public function puc(){
+        return $this->hasMany(Puc::class);
+        }
 
 }

@@ -24,11 +24,17 @@ class TipovehiculoPartevehiculoController extends ApiController
     {
         $tipovehiculos = Tipovehiculo::orderBy('id','DESC')->get();
 
-        $tipovehiculos->each(function($tipovehiculos){
-           $tipovehiculos->partevehiculos;
-          });
+        $count = [];
 
-        return $this->showAll($tipovehiculos);
+        foreach ($tipovehiculos as $tipovehiculo) {
+            $count[] = $tipovehiculo->partevehiculos->count();
+        }
+
+        $data = ['data'=> $tipovehiculos, 'count'=> $count];
+
+        return response()->json($data);
+
+        // return $this->showAll(collect($data));
     }
 
     public function update(Request $request, Tipovehiculo $tipovehiculo)

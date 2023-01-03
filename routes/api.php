@@ -89,6 +89,11 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::ApiResource('ciiugrupos.ciiuclases', 'App\Http\Controllers\Ciiu\CiiugrupoClaseController', ['only'=> ['index']]);
     Route::ApiResource('ciiuclases', 'App\Http\Controllers\Ciiu\CiiuclaseController', ['only'=> ['index','show']]);
 
+    //***************************************CUENTAS PUC******************************************************************************************** */
+    
+    Route::ApiResource('pucs', 'App\Http\Controllers\Puc\PucController');
+    Route::get('allpucs/{puc}', 'App\Http\Controllers\Puc\PucController@allpucs'); 
+    
     //********************************************************************************* */
 
 });
@@ -101,7 +106,6 @@ Route::middleware(['auth:sanctum'])->group(function(){
 //Route::get('/users2', 'App\Http\Controllers\User\UserController@index');
 
 
-Route::ApiResource('pucs', 'App\Http\Controllers\Contabilidad\PucController');
 
 Route::ApiResource('empresas', 'App\Http\Controllers\Empresa\EmpresaController');
 Route::ApiResource('impuestos', 'App\Http\Controllers\Empresa\ImpuestoController');

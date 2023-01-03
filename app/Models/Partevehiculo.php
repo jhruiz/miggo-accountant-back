@@ -20,9 +20,9 @@ class Partevehiculo extends Model
  
     protected $dates = ['deleted_at'];
 
-    // protected $hidden = [
-    //     'pivot',
-    // ];
+    protected $hidden = [
+        'pivot',
+    ];
 
     public function tipovehiculos()
     {
