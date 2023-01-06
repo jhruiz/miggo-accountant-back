@@ -13,7 +13,8 @@ class Ciudade extends Model
     protected $fillable = [   
             'descripcion',
             'codigo_dian',
-            'departamento_id'
+            'departamento_id',
+            'creador_id'
      ];
 
     protected $table = "ciudades";

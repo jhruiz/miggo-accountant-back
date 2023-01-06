@@ -7,24 +7,37 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
-class Persona extends Model
+class Tercero extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable =[
-        'nombres',
-        'apellidos',
-        'rut',
-        'identificacion',
-        'direccion',
-        'celular',
-        'telefono',
-        'email',
-        'cumpleanios',
-        'ciudade_id'
+            'nombres',
+            'apellidos',
+            'nit',
+            'identificacion',
+            'direccion',
+            'direccion2',
+            'celular',
+            'telefono',
+            'email',
+            'cumpleanios',
+            'idiomaComunicacion',
+            'sector',
+            'actividad',
+            'siguienteactividad',
+            'tarjetaprofesional',
+            'pronombre',
+            'msgemail',
+            'ciudade_id',
+            'tipodireccione_id',
+            'tipodireccione2_id',
+            'tipoidentificacione_id',
+            'clasificacioncontacto_id',
+            'terminospago_id'
     ];
 
-    protected $table = "personas";
+    protected $table = "terceros";
 
     protected $dates = ['deleted_at'];
 

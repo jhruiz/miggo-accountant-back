@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-
-class Empleado extends Model
+class Socio extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -21,22 +20,10 @@ class Empleado extends Model
         'user_id',
         'empresa_id',
         'tercero_id',
-        'responsable_id'
+        'tipodesocio_id'
     ];
 
-    protected $table = "empleados";
+    protected $table = "socios";
 
     protected $dates = ['deleted_at'];
-
-    public function tercero(){
-        return $this->belongsTo(Tercero::class);
-    }
-
-    public function empresa(){
-        return $this->belongsTo(Empresa::class);
-    }
-
-    // public function user(){
-    //     return $this->belongsTo(User::class);
-    // }
 }

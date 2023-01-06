@@ -32,7 +32,6 @@ class EmpresaFactory extends Factory
         'texto2'=>$this->faker->address,
         'texto3'=>$this->faker->address,
         'texto4'=>$this->faker->address,
-        'vercuentasdb'=>$this->faker->unique()->randomNumber($nbDigits = 5),
 
         ];  
 

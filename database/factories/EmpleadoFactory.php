@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\User;
-use App\Models\Persona;
+use App\Models\Tercero;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EmpleadoFactory extends Factory
@@ -11,7 +11,7 @@ class EmpleadoFactory extends Factory
 
     public function definition()
     {
-        $personas = Persona::orderBy('id', 'ASC')->pluck('id')->all();
+        $terceros = Tercero::orderBy('id', 'ASC')->pluck('id')->all();
         $users = User::orderBy('id', 'ASC')->pluck('id')->all();
 
         return [
@@ -23,7 +23,7 @@ class EmpleadoFactory extends Factory
             // 'numero_cuenta' => $this->faker->uuid,
             // 'tipo_cuenta' => 'Ahorro',
             'empresa_id' => 1,
-            'persona_id' => $this->faker->unique()->randomElement($personas),
+            'tercero_id' => $this->faker->unique()->randomElement($terceros),
             'user_id' => $this->faker->randomElement($users),
         ];
     }

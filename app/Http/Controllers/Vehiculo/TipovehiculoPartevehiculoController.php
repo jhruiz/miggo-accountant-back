@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Vehiculo;
 use App\Models\Tipovehiculo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ApiController;
+use App\Models\Partevehiculo;
 
 class TipovehiculoPartevehiculoController extends ApiController
 {
@@ -46,17 +47,16 @@ class TipovehiculoPartevehiculoController extends ApiController
         return $this->showOne($tipovehiculo);
     }
 
-    public function destroy(Request $request, Tipovehiculo $tipovehiculo)
+    public function destroy(Request $request, Tipovehiculo $tipovehiculo, Partevehiculo $partevehiculo)
     {
-        if(!$tipovehiculo->partevehiculos()->find($request->partevehiculo_id))
+        if(!$tipovehiculo->partevehiculos()->find($partevehiculo->id))
         {
             return $this->errorResponse("La Parte del Vehiculo especificada no esta asociada a ese tipo",404);
         }
 
-        $tipovehiculo->partevehiculos()->detach($request->partevehiculo_id);
-
+        $tipovehiculo->partevehiculos()->detach($partevehiculo->id);
         $tipovehiculo->save();
 
-        return $this->showOne($tipovehiculo);
+        return $this->showOne($partevehiculo);
     }
 }

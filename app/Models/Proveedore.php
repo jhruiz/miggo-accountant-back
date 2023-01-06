@@ -12,7 +12,6 @@ class Proveedore extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable =[
-        'nit',
         'nombre',
         'telefono',
         'paginaweb',
@@ -23,16 +22,15 @@ class Proveedore extends Model
         'estatus',
         'user_id',
         'empresa_id',
-        'regimene_id',
-        'persona_id'
+        'tercero_id'
     ];
 
     protected $table = "proveedores";
 
     protected $dates = ['deleted_at'];
 
-    public function persona(){
-        return $this->belongsTo(Persona::class);
+    public function tercero(){
+        return $this->belongsTo(Tercero::class);
     }
 
     public function empresa(){

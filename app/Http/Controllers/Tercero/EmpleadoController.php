@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Persona;
+namespace App\Http\Controllers\Tercero;
 
 use App\Models\Empleado;
 use Illuminate\Http\Request;
@@ -18,7 +18,7 @@ class EmpleadoController extends ApiController
         $empleados->each(function($empleados){
         //     $empleados->empresa;
              $empleados->user;// 1 a 1
-            $empleados->persona;
+            $empleados->tercero;
           });
 
         return $this->showAll($empleados);
@@ -33,7 +33,7 @@ class EmpleadoController extends ApiController
 
     public function show(Empleado $empleado)
     {
-        $empleado->persona;
+        $empleado->tercero;
         $empleado->user;
         return $this->showOne($empleado);
     }

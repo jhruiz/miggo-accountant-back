@@ -1008,5 +1008,8 @@ class CiiugrupoSeeder extends Seeder
 
           ]);
         }
+
+        $sql = database_path($path= 'precarga_estatica/ciiuclases.sql');
+        DB::unprepared(file_get_contents($sql));
     }
 }

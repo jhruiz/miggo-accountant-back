@@ -12,26 +12,26 @@ class Cliente extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable =[
-
-        'nit',
         'paginaweb',
         'diascredito',
         'limitecredito',
         'observaciones',
         'estadisticas',
         'estatus',
+        'mesajeEstatus',
         'user_id',
         'empresa_id',
         'clasificacioncliente_id',
-        'persona_id'
+        'tercero_id',
+        'clientedescuento_id'
     ];
 
     protected $table = "clientes";
 
     protected $dates = ['deleted_at'];
 
-    public function persona(){
-        return $this->belongsTo(Persona::class);
+    public function tercero(){
+        return $this->belongsTo(Tercero::class);
     }
 
     public function clasificacioncliente(){

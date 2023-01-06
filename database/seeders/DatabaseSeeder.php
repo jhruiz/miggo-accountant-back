@@ -13,9 +13,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->truncateTable([
-            'users','empresas','departamentos','personas','clientes','proveedores','empleados','tipoidentificaciones',
-            'tipovehiculos','marcavehiculos','partevehiculos','ciiusecciones','ciiudivisiones','ciiugrupos',
-            'pucs',
+            'users','empresas','paises','departamentos','ciudades','terceros','clientes','proveedores','empleados','tipoidentificaciones',
+            'partevehiculo_tipovehiculo','tipovehiculos','marcavehiculos','partevehiculos','ciiusecciones','ciiudivisiones','ciiugrupos',
+            'ciiuclases','pucs','cloudmenus','perfiles','tipodirecciones', 'gradodeudores', 'clasificacioncontactos', 'terminospagos',
+            'tiposocios','regimenes'
+
         ]);
 
         $this->call(PaisSeeder::class);
@@ -28,13 +30,16 @@ class DatabaseSeeder extends Seeder
         $this->call(CiiudivisioneSeeder::class);
         $this->call(CiiugrupoSeeder::class);
         $this->call(PucSeeder::class);
-        \App\Models\Persona::factory(60)->create();
+        $this->call(MenuSeeder::class);
+        \App\Models\Tercero::factory(60)->create();
         \App\Models\Empresa::factory(1)->create();
         \App\Models\User::factory(20)->create();
         \App\Models\Cliente::factory(10)->create();
         \App\Models\Proveedore::factory(10)->create();
         \App\Models\Empleado::factory(10)->create();
         \App\Models\Vehiculo::factory(10)->create();
+        
+
 
 
 

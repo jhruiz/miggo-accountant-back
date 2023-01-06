@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Persona;
+use App\Models\Tercero;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -12,7 +12,7 @@ class UserFactory extends Factory
     public function definition()
     {
         static $password;
-        $personas = Persona::orderBy('id', 'ASC')->pluck('id')->all();
+        $terceros = Tercero::orderBy('id', 'ASC')->pluck('id')->all();
 
         $img = file_get_contents(__DIR__.'/../../public/images/profile/user-uploads'.'/user-'.'0'.rand(1, 9).'.jpg');
         $fileName = Str::random(5).'_'.'.jpg';
@@ -29,7 +29,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'empresa_id' => 1,
             'imagen' =>  $fileName,
-            'persona_id' => $this->faker->unique()->randomElement($personas),
+            'Tercero_id' => $this->faker->unique()->randomElement($terceros),
 
             ];
     }

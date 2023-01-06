@@ -12,11 +12,8 @@ class PaisSeeder extends Seeder
     public function run()
     {
      
-        DB::table('paises')->insert([ 
-            'id' => 1,
-            'descripcion'=> 'Colombia',
-            'codigo_dian'=> 'Co',
-        ]);
+        $sql = database_path($path= 'precarga_estatica/paises.sql');
+        DB::unprepared(file_get_contents($sql));
 
             $id[1]=5;
             $departamentos[1]= 'ANTIOQUIA';
@@ -159,10 +156,13 @@ class PaisSeeder extends Seeder
             'id' => $id[$i],
             'descripcion'=> $departamentos[$i],
             'codigo_dian'=> $codigo_dian[$i],
-            'paise_id'=> 1,
+            'paise_id'=> 170,
 
           ]);
         }
+
+        $sql = database_path($path= 'precarga_estatica/miggo_ciudades_dian.sql');
+        DB::unprepared(file_get_contents($sql));
 
 
     }

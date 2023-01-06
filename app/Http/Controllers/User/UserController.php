@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\User;
-use App\Models\Persona;
+use App\Models\tercero;
 use App\Models\Empleado;
 use App\Http\Requests\UserRequest;
 use App\Http\Controllers\ApiController;
@@ -31,53 +31,53 @@ class UserController extends ApiController
     {
         // return response()->json('email:'.$request->has('formData'));//TODO: formData 
 
-                $persona = new Persona();
+                $tercero = new tercero();
                 if($request->has('nombres')){
-                    $persona->nombres = $request->nombres;
+                    $tercero->nombres = $request->nombres;
                 }
 
                 if($request->has('apellidos')){
-                    $persona->apellidos = $request->apellidos;
+                    $tercero->apellidos = $request->apellidos;
                 }
 
 
                 if($request->has('identificacion')){
-                    $persona->identificacion = $request->identificacion;
+                    $tercero->identificacion = $request->identificacion;
                 }
 
                 if($request->has('rut')){
-                    $persona->rut = $request->rut;
+                    $tercero->rut = $request->rut;
                 }
 
                 if($request->has('tipo_identificacion')){
-                    $persona->tipo_identificacion = $request->tipo_identificacion;
+                    $tercero->tipo_identificacion = $request->tipo_identificacion;
                 }
 
                 if($request->has('direccion')){
-                    $persona->direccion = $request->direccion;
+                    $tercero->direccion = $request->direccion;
                 }
 
                 if($request->has('celular')){
-                    $persona->celular = $request->celular;
+                    $tercero->celular = $request->celular;
                 }
 
                 if($request->has('telefono')){
-                    $persona->telefono = $request->telefono;
+                    $tercero->telefono = $request->telefono;
                 }
                 
                 if($request->has('email')){
-                    $persona->email = $request->email;
+                    $tercero->email = $request->email;
                 }
 
                 if($request->has('cumpleanios')){
-                    $persona->cumpleanios = $request->cumpleanios;
+                    $tercero->cumpleanios = $request->cumpleanios;
                 }
 
                 if($request->has('ciudade_id')){
-                    $persona->ciudade_id = $request->ciudade_id;
+                    $tercero->ciudade_id = $request->ciudade_id;
                 }
 
-                $persona->save();
+                $tercero->save();
 
 
         $user = new User($request->all());
@@ -96,7 +96,7 @@ class UserController extends ApiController
         }
 
         $user->password  = bcrypt($request->password);
-        $user->persona_id = $persona->id;
+        $user->tercero_id = $tercero->id;
 
         if($request->has('empresa_id')){
             $user->empresa_id = $request->empresa_id;
@@ -108,12 +108,12 @@ class UserController extends ApiController
         $user->save();
 
         $empleado = new Empleado();
-        $empleado->persona_id = $persona->id;
+        $empleado->tercero_id = $tercero->id;
         $empleado->user_id = $request->creador_id;
         $empleado->save();
 
         $real = User::find($user->id);
-        $real->persona;
+        $real->tercero;
         $real->empresa;
         return $this->showOne($real, 201);
 
@@ -122,7 +122,7 @@ class UserController extends ApiController
 
    public function show(User $user)
     {
-        $user->persona;
+        $user->tercero;
         $user->empresa;
         $user->perfile;
         return $this->showOne($user);
@@ -174,55 +174,55 @@ class UserController extends ApiController
 
         $user->save();
 
-        $persona = Persona::findOrFail($user->persona_id);
+        $tercero = tercero::findOrFail($user->tercero_id);
 
         if($request->has('nombres')){
-            $persona->nombres = $request->nombres;
+            $tercero->nombres = $request->nombres;
         }
 
         if($request->has('apellidos')){
-            $persona->apellidos = $request->apellidos;
+            $tercero->apellidos = $request->apellidos;
         }
 
         if($request->has('tipoidentificacione_id')){
-            $persona->tipoidentificacione_id = $request->tipoidentificacione_id;
+            $tercero->tipoidentificacione_id = $request->tipoidentificacione_id;
         }
 
         if($request->has('identificacion')){
-            $persona->identificacion = $request->identificacion;
+            $tercero->identificacion = $request->identificacion;
         }
 
         if($request->has('email')){
-            $persona->email = $request->email;
+            $tercero->email = $request->email;
         }
 
         if($request->has('direccion')){
-            $persona->direccion = $request->direccion;
+            $tercero->direccion = $request->direccion;
         }
 
         if($request->has('rut')){
-            $persona->rut = $request->rut;
+            $tercero->rut = $request->rut;
         }
 
         if($request->has('celular')){
-            $persona->celular = $request->celular;
+            $tercero->celular = $request->celular;
         }
 
         if($request->has('telefono')){
-            $persona->telefono = $request->telefono;
+            $tercero->telefono = $request->telefono;
         }
 
         if($request->has('cumpleanios')){
-            $persona->cumpleanios = $request->cumpleanios;
+            $tercero->cumpleanios = $request->cumpleanios;
         }
 
         if($request->has('ciudade_id')){
-            $persona->ciudade_id = $request->ciudade_id;
+            $tercero->ciudade_id = $request->ciudade_id;
         }
 
-        $persona->save();
+        $tercero->save();
 
-        $user->persona;
+        $user->tercero;
         $user->perfile;
         return $this->showOne($user);
     }
@@ -230,7 +230,7 @@ class UserController extends ApiController
     public function destroy(User $user)
     {
         $user->delete($user);
-        $user->persona;
+        $user->tercero;
         return $this->showOne($user);
     }
 
@@ -238,7 +238,7 @@ class UserController extends ApiController
     {
         $user->estatus = $user->estatus ? false : true;
         $user->update();
-        $user->persona;
+        $user->tercero;
         return $this->showOne($user);
     }
 }

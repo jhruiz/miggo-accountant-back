@@ -53,13 +53,13 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::ApiResource('empresas.perfiles', 'App\Http\Controllers\Empresa\EmpresaPerfileController', ['only'=> ['index','store']]);
 
 
-    //*************************************RUTAS DE PERSONA*********** */
+    //*************************************RUTAS DE Tercero*********** */
 
-    Route::ApiResource('empleados', 'App\Http\Controllers\Persona\EmpleadoController');
-    Route::ApiResource('clientes', 'App\Http\Controllers\Persona\ClienteController');
-    Route::ApiResource('provedores', 'App\Http\Controllers\Persona\ProveedoreController');
-    Route::ApiResource('personas', 'App\Http\Controllers\Persona\PersonaController');
-    Route::ApiResource('tipoidentificaciones', 'App\Http\Controllers\Persona\TipoidentificacioneController', ['only'=> ['index','show']]);
+    Route::ApiResource('empleados', 'App\Http\Controllers\Tercero\EmpleadoController');
+    Route::ApiResource('clientes', 'App\Http\Controllers\Tercero\ClienteController');
+    Route::ApiResource('provedores', 'App\Http\Controllers\Tercero\ProveedoreController');
+    Route::ApiResource('terceros', 'App\Http\Controllers\Tercero\TerceroController');
+    Route::ApiResource('tipoidentificaciones', 'App\Http\Controllers\Tercero\TipoidentificacioneController', ['only'=> ['index','show']]);
 
 
     //*************************************RUTAS DE PAIS*********** */

@@ -28,11 +28,65 @@ class CreatePerfilesTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
+
+        Schema::create('tipodirecciones', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('gradodeudores', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('clasificacioncontactos', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('terminospagos', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('tiposocios', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('clientedescuentos', function (Blueprint $table) {
+            $table->id();
+            $table->text('descripcion');
+
+            $table->softDeletes();
+            $table->timestamps();
+        });
     }
 
 
     public function down()
     {
+        Schema::dropIfExists('clientedescuentos');
+        Schema::dropIfExists('tiposocios');
+        Schema::dropIfExists('terminospagos');
+        Schema::dropIfExists('clasificacioncontactos');
+        Schema::dropIfExists('gradodeudores');
+        Schema::dropIfExists('tipodirecciones');
         Schema::dropIfExists('tipoidentificaciones');
         Schema::dropIfExists('perfiles');
     }

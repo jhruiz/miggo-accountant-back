@@ -21,7 +21,21 @@ class PucSeeder extends Seeder
         $descripcion[8] = 'CUENTAS DE ORDEN DEUDORAS';
         $descripcion[9] = 'CUENTAS DE ORDEN ACREEDORAS';
         
+        // A su vez, las tres primeras clases conforman las cuentas de balance, las clases 4,5,6 y 7 conforman las cuentas de resultado 
+        // y finalmente las clases 8 y 9 se denominan las cuentas de orden. Las cuentas de balance, reciben esta denominación debido a 
+        // que son las usadas para realizar el balance general, y las cuentas de resultado, el estado de resultado o de pérdida y ganancia
  
+        // Activo: Débito.
+        // Pasivo: Crédito.
+        // Patrimonio: Crédito.
+        // Ingresos: Crédito.
+        // Gastos: Débito.
+        // Costo de ventas: Débito.
+        // Costo de fabricación: Débito.
+        // Cuentas de orden deudoras: Crédito.
+        // Cuentas de orden acreedoras: Débito.
+
+
         for ($i=1;$i<=9; $i++){
         
             DB::table('pucs')->insert([
@@ -31,5 +45,8 @@ class PucSeeder extends Seeder
 
           ]);
         }
+
+        $sql = database_path($path= 'precarga_estatica/pucs.sql');
+        DB::unprepared(file_get_contents($sql));
     }
 }

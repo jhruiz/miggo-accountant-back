@@ -22,12 +22,12 @@ class User extends Authenticatable implements MustVerifyEmail
         'imagen',
         'estadologin',
         'intentos',
-        'preselect',
         'validaciongestion',
-        'persona_id',
+        'estatus',
+        'mesajeEstatus',
+        'tercero_id',
         'perfile_id',
-        'empresa_id',
-        'estatus'
+        'empresa_id'
     ];
 
     protected $table = "users";

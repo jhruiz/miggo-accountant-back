@@ -206,5 +206,8 @@ class PartevehiculoSeeder extends Seeder
 
           ]);
         }
+
+        $sql = database_path($path= 'precarga_estatica/miggo_partevehiculos_tipovehiculos.sql');
+        DB::unprepared(file_get_contents($sql));
     }
 }

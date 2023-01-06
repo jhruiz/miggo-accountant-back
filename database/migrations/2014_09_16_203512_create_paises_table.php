@@ -21,6 +21,7 @@ class CreatePaisesTable extends Migration
             $table->id();
             $table->text('descripcion');
             $table->string('codigo_dian');
+            $table->string('creador_id')->nullable();
             
             $table->unsignedBigInteger('paise_id');
 
@@ -33,6 +34,7 @@ class CreatePaisesTable extends Migration
             $table->id();
             $table->text('descripcion');
             $table->string('codigo_dian');
+            $table->string('creador_id')->nullable();
 
             $table->unsignedBigInteger('departamento_id');
 
