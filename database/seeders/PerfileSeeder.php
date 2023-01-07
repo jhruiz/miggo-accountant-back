@@ -226,5 +226,61 @@ class PerfileSeeder extends Seeder
 
           ]);
         }
+
+        $descripcion[1]= 'Aportes en Linea S.A';
+
+        $descripcion[2]= 'Dirección de Impuestos y Aduanas Nacionales';
+
+        $descripcion[3]= 'Municipio Santiago de Cali';
+
+ 
+        for ($i=1;$i<=3; $i++){
+        
+            DB::table('pagadoas')->insert([
+
+            'id' => $i,
+            'descripcion'=> $descripcion[$i],
+
+          ]);
+        }
+
+
+        $descripcion[1]= 'Activo';
+
+        $descripcion[2]= 'Vendido';
+
+        $descripcion[3]= 'Depreciado';
+
+        $descripcion[4]= 'Inactivo';
+
+        $descripcion[5]= 'Alquilado';
+
+        for ($i=1;$i<=5; $i++){
+        
+            DB::table('estadoactivos')->insert([
+
+            'id' => $i,
+            'descripcion'=> $descripcion[$i],
+
+          ]);
+        }
+
+        $descripcion[1]= 'vehículo';
+
+        $descripcion[2]= 'inmueble';
+
+        $descripcion[3]= 'máquina ';
+
+        $descripcion[4]= 'otros';
+
+        for ($i=1;$i<=5; $i++){
+        
+            DB::table('tipoactivos')->insert([
+
+            'id' => $i,
+            'descripcion'=> $descripcion[$i],
+
+          ]);
+        }
     }
 }

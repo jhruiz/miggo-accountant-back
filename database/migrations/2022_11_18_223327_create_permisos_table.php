@@ -20,9 +20,6 @@ class CreatePermisosTable extends Migration
             $table->text('ayuda')->nullable();
 
             $table->integer('cloudmenu_id')->nullable();
-            //$table->unsignedBigInteger('cloudmenu_id')->nullable();
-
-            //$table->foreign('cloudmenu_id')->references('id')->on('cloudmenus')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -56,22 +53,10 @@ class CreatePermisosTable extends Migration
             $table->timestamps();
         });
 
-        /*
-        Schema::create('menuprincipales', function (Blueprint $table) {
-            $table->id();
-            $table->string('descripcion');
-            $table->string('clase_icon');
-
-            $table->softDeletes();
-            $table->timestamps();
-        });
-*/
-
     }
 
     public function down()
     {
-        //Schema::dropIfExists('menuprincipales');
         Schema::dropIfExists('cloudmenu_perfile');
         Schema::dropIfExists('permisos');
         Schema::dropIfExists('cloudmenus');

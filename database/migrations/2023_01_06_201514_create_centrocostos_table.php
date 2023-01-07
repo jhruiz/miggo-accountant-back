@@ -12,7 +12,7 @@ class CreateCentrocostosTable extends Migration
         Schema::create('centrocostos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->text('descripcion');
+            $table->text('descripcion')->nullable();
 
             $table->unsignedBigInteger('empresa_id');
 

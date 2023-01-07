@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Persona;
+namespace App\Http\Controllers\Tercero;
 
 use Illuminate\Http\Request;
 use App\Models\Tipoidentificacione;

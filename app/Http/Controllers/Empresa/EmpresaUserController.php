@@ -12,7 +12,7 @@ class EmpresaUserController extends ApiController
     public function index(Empresa $empresa) 
     {
         $users = $empresa->users()
-        ->with('persona')
+        ->with('tercero')
         ->orderBy('id','DESC')
         ->get()
         ->unique()
