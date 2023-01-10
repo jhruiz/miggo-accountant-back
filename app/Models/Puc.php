@@ -31,4 +31,8 @@ class Puc extends Model
         return $this->belongsTo(Empresa::class);
      }
 
+     public function activosfijos(){
+        return $this->hasMany(Activosfijo::class);
+     }
+
 }

@@ -38,13 +38,12 @@ class TipovehiculoPartevehiculoController extends ApiController
         // return $this->showAll(collect($data));
     }
 
-    public function update(Request $request, Tipovehiculo $tipovehiculo)
+    public function update(Request $request, Tipovehiculo $tipovehiculo, Partevehiculo $partevehiculo)
     {
-        $tipovehiculo->partevehiculos()->attach($request->partevehiculo_id);
-       
+        $tipovehiculo->partevehiculos()->attach($partevehiculo->id);
         $tipovehiculo->save();
 
-        return $this->showOne($tipovehiculo);
+        return $this->showOne($partevehiculo);
     }
 
     public function destroy(Request $request, Tipovehiculo $tipovehiculo, Partevehiculo $partevehiculo)

@@ -13,6 +13,7 @@ class CreateGrupoactivosTable extends Migration
             $table->id();
             $table->string('codigo');
             $table->text('descripcion');
+            $table->integer('creador_id')->nullable();
 
             $table->unsignedBigInteger('empresa_id')->nullable();
 
@@ -24,12 +25,12 @@ class CreateGrupoactivosTable extends Migration
 
         Schema::create('tipoactivos', function (Blueprint $table) {
             $table->id();
-            $table->string('codigo')->nullable();
             $table->text('descripcion');
+            $table->integer('creador_id')->nullable();
 
-            $table->unsignedBigInteger('empresa_id')->nullable();
+            // $table->unsignedBigInteger('empresa_id')->nullable();
 
-            $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
+            // $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -38,6 +39,7 @@ class CreateGrupoactivosTable extends Migration
         Schema::create('estadoactivos', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
+            $table->integer('creador_id')->nullable();
 
             $table->softDeletes();
             $table->timestamps();
@@ -47,19 +49,20 @@ class CreateGrupoactivosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('codigo');
-            $table->text('direccion');
+            $table->text('direccion')->nullable();
             $table->boolean('alquilable')->default('0');//activo o desctivado
-            $table->string('imagen');
-            $table->string('nivelcentrocosto');
-            $table->date('fechacompra');
-            $table->integer('depreciaraniocompra');
-            $table->integer('depreciarmesescompra');
-            $table->string('salvamento');
-            $table->integer('depreciaranio');
-            $table->integer('depreciarmeses');
-            $table->double('residuo');
-            $table->text('observaciones');
-            $table->double('costohora');
+            $table->string('imagen')->nullable();
+            $table->string('nivelcentrocosto')->nullable();
+            $table->date('adquisicionfecha')->nullable();
+            $table->integer('depreciaraniocompra')->nullable();
+            $table->integer('depreciarmesescompra')->nullable();
+            $table->string('salvamento')->nullable();
+            $table->integer('depreciaranio')->nullable();
+            $table->integer('depreciarmeses')->nullable();
+            $table->double('residuo')->nullable();
+            $table->text('observaciones')->nullable();
+            $table->double('costohora')->nullable();
+            $table->integer('creador_id')->nullable();
 
             $table->unsignedBigInteger('ciudade_id')->nullable();
             $table->unsignedBigInteger('tipoactivo_id')->nullable();
@@ -67,6 +70,7 @@ class CreateGrupoactivosTable extends Migration
             $table->unsignedBigInteger('estadoactivo_id')->nullable();
             $table->unsignedBigInteger('responsable_id')->nullable();
             $table->unsignedBigInteger('centrocosto_id')->nullable();
+            $table->unsignedBigInteger('grupoactivo_id')->nullable();
 
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
             $table->foreign('tipoactivo_id')->references('id')->on('tipoactivos')->onDelete('cascade');
@@ -74,6 +78,7 @@ class CreateGrupoactivosTable extends Migration
             $table->foreign('estadoactivo_id')->references('id')->on('estadoactivos')->onDelete('cascade');
             $table->foreign('responsable_id')->references('id')->on('terceros')->onDelete('cascade');
             $table->foreign('centrocosto_id')->references('id')->on('centrocostos')->onDelete('cascade');
+            $table->foreign('grupoactivo_id')->references('id')->on('grupoactivos')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

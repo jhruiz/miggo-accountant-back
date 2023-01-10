@@ -69,7 +69,7 @@ class Empresa extends Model
      }
 
      public function empleados(){
-        return $this->hasMany(Ciudad::class);
+        return $this->hasMany(Empleado::class);
      }
 
      public function vehiculos(){
@@ -78,6 +78,14 @@ class Empresa extends Model
 
       public function puc(){
         return $this->hasMany(Puc::class);
-        }
+      }
+
+      public function gruposactivosfijos(){
+        return $this->hasMany(Gruposactivosfijo::class);
+      }
+
+      public function activosfijos(){
+        return $this->hasMany(Activosfijo::class);
+      }
 
 }

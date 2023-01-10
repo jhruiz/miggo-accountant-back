@@ -42,28 +42,27 @@ class Tercero extends Model
     protected $dates = ['deleted_at'];
 
 
-    public function users()
-    {
+    public function users(){
       return $this->hasMany(User::class);
     }
 
-    public function clientes()
-    {
+    public function clientes(){
       return $this->hasMany(Cliente::class);
     }
 
-    public function empleados()
-    {
+    public function empleados(){
       return $this->hasMany(Empleado::class);
     }
 
-    public function proveedores()
-    {
+    public function proveedores(){
       return $this->hasMany(Proveedore::class);
     }
 
-    public function ciudade()
-    {
+    public function ciudade(){
        return $this->belongsTo(Ciudade::class);
+    }
+
+    public function activosfijos(){
+      return $this->hasMany(Activosfijo::class);
     }
 }

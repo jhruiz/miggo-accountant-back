@@ -29,9 +29,13 @@ class Ciudade extends Model
       return $this->belongsTo(Empresa::class);
     }
 
-    public function persona()
+    public function terceros()
     {
-      return $this->hasMany(Persona::class);
+      return $this->hasMany(Tercero::class);
+    }
+
+    public function activosfijos(){
+      return $this->hasMany(Activosfijo::class);
     }
 
 }

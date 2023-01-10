@@ -93,7 +93,18 @@ Route::middleware(['auth:sanctum'])->group(function(){
     
     Route::ApiResource('pucs', 'App\Http\Controllers\Puc\PucController');
     Route::get('allpucs/{puc}', 'App\Http\Controllers\Puc\PucController@allpucs'); 
+
     
+    //***************************************ACTIVOS FIJOS, TIPOS Y GRUPOS******************************************************************************************** */
+
+    Route::ApiResource('empresas.activosfijos', 'App\Http\Controllers\Empresa\EmpresaActivosfijoController', ['only'=> ['index']]);
+    Route::ApiResource('activosfijos', 'App\Http\Controllers\Activo\ActivosfijoController', ['only'=> ['store','show','update','destroy']]);
+    Route::ApiResource('empresas.gruposactivosfijos', 'App\Http\Controllers\Empresa\EmpresaGruposactivosfijoController', ['only'=> ['index']]);
+    Route::ApiResource('gruposactivosfijos', 'App\Http\Controllers\Activo\GruposactivosfijoController', ['only'=> ['store','show','update','destroy']]);
+    Route::ApiResource('tiposactivosfijos', 'App\Http\Controllers\Activo\TiposactivosfijoController');
+    Route::ApiResource('estadoactivos', 'App\Http\Controllers\Activo\EstadoactivoController');
+
+
     //********************************************************************************* */
 
 });
