@@ -14,7 +14,7 @@ class Tiposactivosfijo extends Model
             'descripcion'
      ];
 
-    protected $table = "tipoactivos";
+    protected $table = "tipoactivosfijos";
 
     protected $dates = ['deleted_at'];
 

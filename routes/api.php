@@ -55,6 +55,7 @@ Route::middleware(['auth:sanctum'])->group(function(){
 
     //*************************************RUTAS DE Tercero*********** */
 
+    Route::ApiResource('empresas.empleados', 'App\Http\Controllers\Empresa\EmpresaEmpleadoController');
     Route::ApiResource('empleados', 'App\Http\Controllers\Tercero\EmpleadoController');
     Route::ApiResource('clientes', 'App\Http\Controllers\Tercero\ClienteController');
     Route::ApiResource('provedores', 'App\Http\Controllers\Tercero\ProveedoreController');

@@ -10,8 +10,8 @@ class EmpresaActivosfijoController extends ApiController
 {
     public function index(Empresa $empresa)
     {
-        $activosfijos = $empresa->activosfijos()
-        // ->with('')
+        $activosfijos = $empresa->gruposactivosfijos()
+        ->with('activosfijos')
         ->orderBy('id','DESC')
         ->get()
         ->unique()

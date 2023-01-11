@@ -16,7 +16,7 @@ class Gruposactivosfijo extends Model
             'empresa_id'
      ];
 
-    protected $table = "grupoactivos";
+    protected $table = "grupoactivosfijos";
 
     protected $dates = ['deleted_at'];
 

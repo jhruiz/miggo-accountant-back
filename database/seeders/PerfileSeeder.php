@@ -275,7 +275,7 @@ class PerfileSeeder extends Seeder
 
         for ($i=1;$i<=5; $i++){
         
-            DB::table('tipoactivos')->insert([
+            DB::table('tipoactivosfijos')->insert([
 
             'id' => $i,
             'descripcion'=> $descripcion[$i],

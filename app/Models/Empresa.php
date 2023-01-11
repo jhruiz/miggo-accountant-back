@@ -84,8 +84,8 @@ class Empresa extends Model
         return $this->hasMany(Gruposactivosfijo::class);
       }
 
-      public function activosfijos(){
-        return $this->hasMany(Activosfijo::class);
-      }
+      // public function activosfijos(){
+      //   return $this->hasMany(Activosfijo::class);
+      // }
 
 }

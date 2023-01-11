@@ -4,12 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGrupoactivosTable extends Migration
+class CreateGrupoactivosfijosTable extends Migration
 {
 
     public function up()
     {
-        Schema::create('grupoactivos', function (Blueprint $table) {
+        Schema::create('grupoactivosfijos', function (Blueprint $table) {
             $table->id();
             $table->string('codigo');
             $table->text('descripcion');
@@ -23,7 +23,7 @@ class CreateGrupoactivosTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('tipoactivos', function (Blueprint $table) {
+        Schema::create('tipoactivosfijos', function (Blueprint $table) {
             $table->id();
             $table->text('descripcion');
             $table->integer('creador_id')->nullable();
@@ -65,20 +65,20 @@ class CreateGrupoactivosTable extends Migration
             $table->integer('creador_id')->nullable();
 
             $table->unsignedBigInteger('ciudade_id')->nullable();
-            $table->unsignedBigInteger('tipoactivo_id')->nullable();
+            $table->unsignedBigInteger('tipoactivosfijo_id')->nullable();
             $table->unsignedBigInteger('puc_id')->nullable();
             $table->unsignedBigInteger('estadoactivo_id')->nullable();
             $table->unsignedBigInteger('responsable_id')->nullable();
             $table->unsignedBigInteger('centrocosto_id')->nullable();
-            $table->unsignedBigInteger('grupoactivo_id')->nullable();
+            $table->unsignedBigInteger('gruposactivosfijo_id')->nullable();
 
             $table->foreign('ciudade_id')->references('id')->on('ciudades')->onDelete('cascade');
-            $table->foreign('tipoactivo_id')->references('id')->on('tipoactivos')->onDelete('cascade');
+            $table->foreign('tipoactivosfijo_id')->references('id')->on('tipoactivosfijos')->onDelete('cascade');
             $table->foreign('puc_id')->references('id')->on('pucs')->onDelete('cascade');
             $table->foreign('estadoactivo_id')->references('id')->on('estadoactivos')->onDelete('cascade');
             $table->foreign('responsable_id')->references('id')->on('terceros')->onDelete('cascade');
             $table->foreign('centrocosto_id')->references('id')->on('centrocostos')->onDelete('cascade');
-            $table->foreign('grupoactivo_id')->references('id')->on('grupoactivos')->onDelete('cascade');
+            $table->foreign('gruposactivosfijo_id')->references('id')->on('grupoactivosfijos')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -89,7 +89,7 @@ class CreateGrupoactivosTable extends Migration
     {
         Schema::dropIfExists('activosfijos');
         Schema::dropIfExists('estadoactivos');
-        Schema::dropIfExists('tipoactivos');
-        Schema::dropIfExists('grupoactivos');
+        Schema::dropIfExists('tipoactivosfijos');
+        Schema::dropIfExists('grupoactivosfijos');
     }
 }
