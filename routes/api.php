@@ -24,6 +24,10 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/datauser', [AuthController::class, 'dataUser'])->middleware('auth:sanctum');
 
+Route::get('/prueba', function(){
+    return 'esto es una prueba';
+});
+
 
 //***************************************************************************************************** */
 // Email verificacion de usuario nuevo y si cambia el correo, reenvio de verificacion, link de recuperacion de contraseña
